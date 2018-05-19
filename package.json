@@ -7,13 +7,17 @@
     "type": "git",
     "url": "https://github.com/OfficeDev/office-ui-fabric-react"
   },
+  "workspaces": [
+    "scripts",
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
     "_rushInstall": "node node_modules/@microsoft/rush/bin/rush install -c",
     "_rushBuild": "node node_modules/@microsoft/rush/bin/rush build --verbose",
     "_rushBuildToFabric": "node node_modules/@microsoft/rush/bin/rush build --to office-ui-fabric-react --verbose",
     "_rushRebuild": "node node_modules/@microsoft/rush/bin/rush rebuild --production --verbose",
     "_rushRebuildFast": "node node_modules/@microsoft/rush/bin/rush rebuild --verbose",
-    "postinstall": "npm run _rushInstall && npm run _rushBuildToFabric",
     "test": "npm run _rushBuild",
     "vrtest": "cd apps && cd vr-tests && npm run screener",
     "start": "cd packages && cd office-ui-fabric-react && npm start",
@@ -28,6 +32,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@microsoft/rush": "4.3.0"
+    "lerna": "^2.11.0"
   }
 }

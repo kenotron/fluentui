@@ -18,9 +18,10 @@
     "update-snapshots": "node ../../scripts/build.js jest -u"
   },
   "devDependencies": {
+    "@uifabric/build": ">=0.0.1 <1.0.0",
     "@types/es6-promise": "0.0.32",
     "@types/prop-types": "15.5.2",
-    "@types/react": "16.3.13",
+    "@types/react": "16.3.14",
     "@types/react-addons-test-utils": "0.14.18",
     "@types/react-test-renderer": "^16.0.0",
     "@types/react-dom": "16.0.5",
