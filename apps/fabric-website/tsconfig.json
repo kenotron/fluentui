@@ -20,7 +20,12 @@
       "office-ui-fabric-react/lib/*": [
         "node_modules/office-ui-fabric-react/lib/*"
       ]
-    }
+    },
+    "lib": [
+      "es2015",
+      "es2015.collection",
+      "dom"
+    ]
   },
   "include": [
     "src"

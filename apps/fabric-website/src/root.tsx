@@ -12,7 +12,7 @@ import { HomePage } from './pages/HomePage/HomePage';
 import WindowWidthUtility from './utilities/WindowWidthUtility';
 import './styles/styles.scss';
 import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
-const corePackageData = require('../node_modules/office-ui-fabric-core/package.json');
+const corePackageData = require('office-ui-fabric-core/package.json');
 const corePackageVersion: string = corePackageData && corePackageData.version || '9.2.0';
 
 initializeIcons();

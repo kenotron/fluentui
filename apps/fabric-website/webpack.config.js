@@ -42,13 +42,6 @@ module.exports = function (argv) {
           'react-dom': 'ReactDOM'
         },
       ],
-
-      resolve: {
-        alias: {
-          'office-ui-fabric-react/src': path.join(__dirname, 'node_modules/office-ui-fabric-react/src'),
-          'office-ui-fabric-react/lib': path.join(__dirname, 'node_modules/office-ui-fabric-react/lib')
-        }
-      },
     },
     isProductionArg /* only production */
   );
