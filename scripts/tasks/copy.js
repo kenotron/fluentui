@@ -1,11 +1,8 @@
-// @ts-check
 const path = require('path');
 
-/**
- * Handles resolve like require.resolve but respects the glob patterns
- * @param {string} pattern
- */
 function expandSourcePath(pattern) {
+  const requireResolveCwd = require('../require-resolve-cwd');
+
   if (!pattern) {
     return null;
   }
@@ -18,17 +15,22 @@ function expandSourcePath(pattern) {
   // tries to resolve the packages, handling scoped packages
   const splitPattern = pattern.split('/');
   const packageName = pattern[0] == '@' ? `${splitPattern[0]}/${splitPattern[1]}` : splitPattern[0];
-  const resolvedPackageJson = require.resolve(`${packageName}/package.json`);
 
-  if (!resolvedPackageJson) {
-    // returns pattern if the packageName didn't contain a package.json (not really a package)
-    return pattern;
+  try {
+    const resolvedPackageJson = requireResolveCwd(`${packageName}/package.json`);
+
+    if (!resolvedPackageJson) {
+      // returns pattern if the packageName didn't contain a package.json (not really a package)
+      return pattern;
+    }
+
+    return pattern.replace(packageName, path.dirname(resolvedPackageJson));
+  } catch (e) {
+    console.error(e);
   }
-
-  return pattern.replace(packageName, path.dirname(resolvedPackageJson));
 }
 
-module.exports = function (options) {
+module.exports = function(options) {
   const { logStartTask, logEndTask } = require('../logging');
   const path = require('path');
   const fs = require('fs');
@@ -57,17 +59,22 @@ module.exports = function (options) {
   return promise;
 
   function startCopy(source, destination) {
-    promise = promise.then(() => new Promise((resolve, reject) => {
-      const copy = require('cpx').copy;
+    promise = promise.then(
+      () =>
+        new Promise((resolve, reject) => {
+          const copy = require('cpx').copy;
 
-      console.log(`  Copying "${path.relative(process.cwd(), source)}" to "${path.relative(process.cwd(), destination)}"`);
-      copy(source, destination, (err) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve();
-        }
-      });
-    }));
+          console.log(
+            `  Copying "${path.relative(process.cwd(), source)}" to "${path.relative(process.cwd(), destination)}"`
+          );
+          copy(source, destination, err => {
+            if (err) {
+              reject(err);
+            } else {
+              resolve();
+            }
+          });
+        })
+    );
   }
 };

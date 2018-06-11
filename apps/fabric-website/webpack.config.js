@@ -1,9 +1,10 @@
-module.exports = function (argv) {
+module.exports = function(argv) {
   const path = require('path');
   const resources = require('../../scripts/tasks/webpack-resources');
   const version = require('./package.json').version;
   const isDogfoodArg = argv.indexOf('--dogfood') > -1;
   const isProductionArg = argv.indexOf('--production') > -1;
+  const requireResolveCwd = require('../../scripts/require-resolve-cwd');
   const now = Date.now();
 
   // Production defaults
@@ -16,7 +17,7 @@ module.exports = function (argv) {
     publicPath = 'https://static2df.sharepointonline.com/files/fabric/fabric-website/dist/';
     entryPointName = 'fabric-sitev5-df';
   } else if (!isProductionArg) {
-    publicPath = "/dist/";
+    publicPath = '/dist/';
   } else {
     minFileNamePart = '.min';
   }
@@ -36,13 +37,20 @@ module.exports = function (argv) {
 
       externals: [
         {
-          'react': 'React'
+          react: 'React'
         },
         {
           'react-dom': 'ReactDOM'
-        },
+        }
       ],
+
+      resolve: {
+        alias: {
+          'office-ui-fabric-react/src': requireResolveCwd('office-ui-fabric-react/src'),
+          'office-ui-fabric-react/lib': requireResolveCwd('office-ui-fabric-react/lib')
+        }
+      }
     },
     isProductionArg /* only production */
   );
-}
+};
