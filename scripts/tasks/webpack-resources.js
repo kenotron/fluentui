@@ -11,7 +11,7 @@ module.exports = {
 
   createConfig(packageName, isProduction, customConfig, onlyProduction) {
     const resolveLoader = {
-      modules: [path.resolve(__dirname, '../node_modules'), path.resolve(process.cwd(), 'node_modules')]
+      modules: ['node_modules']
     };
 
     const module = {

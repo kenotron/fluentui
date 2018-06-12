@@ -36,8 +36,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^2.11.0",
     "husky": "^0.14.3",
+    "lerna": "^2.11.0",
     "lint-staged": "^7.0.5"
   },
   "lint-staged": {
@@ -50,5 +50,8 @@
       "node ./scripts/lint-staged/prettier",
       "git add"
     ]
+  },
+  "resolutions": {
+    "@types/react": "16.3.16"
   }
 }
