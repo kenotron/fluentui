@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const PacktrackerPlugin = require('@packtracker/webpack-plugin');
 const resources = require('../../scripts/webpack/webpack-resources');
 
 // Files which should not be considered top-level entries.
@@ -19,7 +20,14 @@ module.exports = Object.keys(Entries).map(
         externals: {
           react: 'React',
           'react-dom': 'ReactDOM'
-        }
+        },
+        plugins: [
+          new PacktrackerPlugin({
+            project_token: '27d54348-c333-4d3d-8505-c3a0a8a2d30f',
+            upload: true,
+            fail_build: true
+          })
+        ]
         // plugins: [
         //   {
         //     apply: compiler => {
