@@ -25,7 +25,8 @@ module.exports = Object.keys(Entries).map(
           new PacktrackerPlugin({
             project_token: '27d54348-c333-4d3d-8505-c3a0a8a2d30f',
             upload: true,
-            fail_build: true
+            fail_build: true,
+            branch: process.env.BUILD_SOURCEBRANCH
           })
         ]
         // plugins: [
