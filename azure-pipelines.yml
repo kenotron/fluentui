@@ -17,9 +17,5 @@ steps:
     displayName: rush install
 
   - script: |
-      npm run checkchange
-    displayName: check change
-
-  - script: |
       npm run buildci
     displayName: build ci
