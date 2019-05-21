@@ -1,22 +1,35 @@
 import * as React from 'react';
-import { Facepile } from './Facepile';
-import { IButtonProps } from '../Button/index';
-import {
-  IPersonaProps,
-  PersonaInitialsColor,
-  PersonaSize
-} from '../Persona/index';
+import { FacepileBase } from './Facepile.base';
+import { IStyle, ITheme } from '../../Styling';
+import { IRefObject, IStyleFunctionOrObject } from '../../Utilities';
+import { IButtonProps } from '../../Button';
+import { IPersonaSharedProps, PersonaInitialsColor, PersonaSize } from '../../Persona';
+import { IKeytipProps } from '../../Keytip';
 
-export interface IFacepile {
+export interface IFacepile {}
 
-}
-
-export interface IFacepileProps extends React.Props<Facepile> {
+export interface IFacepileProps extends React.ClassAttributes<FacepileBase> {
   /**
    * Optional callback to access the IFacepile interface. Use this instead of ref for accessing
    * the public methods and properties of the component.
    */
-  componentRef?: (component: IFacepile | null) => void;
+  componentRef?: IRefObject<IFacepile>;
+
+  /**
+   * Call to provide customized styling that will layer on top of the variant rules.
+   */
+  styles?: IStyleFunctionOrObject<IFacepileStyleProps, IFacepileStyles>;
+
+  /**
+   * Theme provided by High-Order Component.
+   */
+  theme?: ITheme;
+
+  /**
+   * Additional css class to apply to the Facepile
+   * @defaultvalue undefined
+   */
+  className?: string;
 
   /**
    * Array of IPersonaProps that define each Persona.
@@ -44,8 +57,8 @@ export interface IFacepileProps extends React.Props<Facepile> {
   addButtonProps?: IButtonProps;
 
   /**
-   * Deprecated at v0.70, use 'overflowButtonProps' instead;
-   * @deprecated
+   * Deprecated at v0.70, use `overflowButtonProps` instead.
+   * @deprecated Use `overflowButtonProps` instead.
    */
   chevronButtonProps?: IButtonProps;
 
@@ -56,12 +69,7 @@ export interface IFacepileProps extends React.Props<Facepile> {
   overflowButtonType?: OverflowButtonType;
 
   /** Method to access properties on the underlying Persona control */
-  getPersonaProps?: (persona: IFacepilePersona) => IPersonaProps;
-
-  /**
-   * Optional class for Facepile root element.
-   */
-  className?: string;
+  getPersonaProps?: (persona: IFacepilePersona) => IPersonaSharedProps;
 }
 
 export interface IFacepilePersona extends React.ButtonHTMLAttributes<HTMLButtonElement | HTMLDivElement> {
@@ -115,6 +123,11 @@ export interface IFacepilePersona extends React.ButtonHTMLAttributes<HTMLButtonE
    * handlers.
    */
   data?: any;
+
+  /**
+   * Optional keytip for this button that is only added when 'onClick' is defined for the persona
+   */
+  keytipProps?: IKeytipProps;
 }
 
 export enum OverflowButtonType {
@@ -126,4 +139,37 @@ export enum OverflowButtonType {
   more = 2,
   /** Chevron overflow icon */
   downArrow = 3
+}
+
+export interface IFacepileStyleProps {
+  /**
+   * Theme provided by High-Order Component.
+   */
+  theme: ITheme;
+
+  /**
+   * Accept custom classNames
+   */
+  className?: string;
+
+  /**
+   * Pixel value for spacing around button. Number value set in pixels
+   */
+  spacingAroundItemButton?: number;
+}
+
+export interface IFacepileStyles {
+  /**
+   * Style for the root element.
+   */
+  root: IStyle;
+  addButton: IStyle;
+  descriptiveOverflowButton: IStyle;
+  itemContainer: IStyle;
+  itemButton: IStyle;
+  members: IStyle;
+  member: IStyle;
+  overflowButton: IStyle;
+  overflowInitialsIcon: IStyle;
+  screenReaderOnly: IStyle;
 }

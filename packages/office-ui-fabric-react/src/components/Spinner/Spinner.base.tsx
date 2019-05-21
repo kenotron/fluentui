@@ -1,35 +1,18 @@
 import * as React from 'react';
 import { ISpinnerProps, ISpinnerStyleProps, ISpinnerStyles, SpinnerType, SpinnerSize } from './Spinner.types';
-import {
-  BaseComponent,
-  customizable,
-  classNamesFunction,
-  DelayedRender,
-  getNativeProps,
-  divProperties
-} from '../../Utilities';
+import { BaseComponent, classNamesFunction, DelayedRender, getNativeProps, divProperties } from '../../Utilities';
 
 const getClassNames = classNamesFunction<ISpinnerStyleProps, ISpinnerStyles>();
 
-@customizable('Spinner', ['theme'])
 export class SpinnerBase extends BaseComponent<ISpinnerProps, any> {
-
   public static defaultProps: ISpinnerProps = {
     size: SpinnerSize.medium,
-    ariaLive: 'polite'
+    ariaLive: 'polite',
+    labelPosition: 'bottom'
   };
 
   public render() {
-    const {
-      type,
-      size,
-      ariaLabel,
-      ariaLive,
-      getStyles,
-      label,
-      theme,
-      className
-    } = this.props;
+    const { type, size, ariaLabel, ariaLive, styles, label, theme, className, labelPosition } = this.props;
     const statusMessage = ariaLabel || label;
     const nativeProps = getNativeProps(this.props, divProperties, ['size']);
 
@@ -40,28 +23,25 @@ export class SpinnerBase extends BaseComponent<ISpinnerProps, any> {
       styleSize = type === SpinnerType.large ? SpinnerSize.large : SpinnerSize.medium;
     }
 
-    const classNames = getClassNames(getStyles!, {
+    const classNames = getClassNames(styles!, {
       theme: theme!,
       size: styleSize,
-      className
+      className,
+      labelPosition
     });
 
     return (
-      <div { ...nativeProps } className={ classNames.root }>
-        <div className={ classNames.circle } />
-        {
-          label && <div className={ classNames.label }>{ label }</div>
-        }
-        {
-          statusMessage &&
-          <div role='status' aria-live={ ariaLive }>
+      <div {...nativeProps} className={classNames.root}>
+        <div className={classNames.circle} />
+        {label && <div className={classNames.label}>{label}</div>}
+        {statusMessage && (
+          <div role="status" aria-live={ariaLive}>
             <DelayedRender>
-              <div className={ classNames.screenReaderText }>{ statusMessage }</div>
+              <div className={classNames.screenReaderText}>{statusMessage}</div>
             </DelayedRender>
           </div>
-        }
+        )}
       </div>
     );
   }
-
 }

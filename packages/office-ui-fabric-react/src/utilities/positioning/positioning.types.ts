@@ -1,4 +1,3 @@
-
 import { DirectionalHint } from '../../common/DirectionalHint';
 import { IPoint } from './positioning.types';
 import { IRectangle } from '../../Utilities';
@@ -28,19 +27,9 @@ export interface IPositionProps {
   /** The gap between the callout and the target */
   gapSpace?: number;
   /**
-  * @deprecated this will be removed in 6.0 and will only be available in ICalloutPositionProps.
-  * The width of the beak.
-  */
-  beakWidth?: number;
-  /**
    * The bounding rectangle for which  the contextual menu can appear in.
    */
   bounds?: IRectangle;
-  /**
-   * @deprecated this will be removed in 6.0 and will only be available in ICalloutPositionProps.
-   * If true then the beak is visible. If false it will not be shown.
-   */
-  isBeakVisible?: boolean;
   /**
    * If true the position returned will have the menu element cover the target.
    * If false then it will position next to the target;
@@ -49,19 +38,25 @@ export interface IPositionProps {
   /**
    * If true the position will not change edges in an attempt to fit the rectangle within bounds.
    * It will still attempt to align it to whatever bounds are given.
-   * @default false
+   * @defaultvalue false
    */
   directionalHintFixed?: boolean;
+
+  /**
+   * If true the positioning logic will prefer flipping edges over nudging the rectangle to fit within bounds,
+   * thus making sure the the element align perfectly with target.
+   */
+  alignTargetEdge?: boolean;
 }
 
 export interface ICalloutPositionProps extends IPositionProps {
   /**
-  * The width of the beak.
-  */
+   * The width of the beak.
+   */
   beakWidth?: number;
+
   /**
-   * @deprecated this will be removed in 6.0 and will only be available in ICalloutPositionProps.
-   * If true then the beak is visible. If false it will not be shown.
+   * Whether or not the beak is visible
    */
   isBeakVisible?: boolean;
 }
@@ -106,13 +101,6 @@ export interface IPosition {
   [key: string]: number | undefined;
 }
 
-/**
- * @deprecated use IPosition instead.
- * This will be removed in 6.0
- */
-export interface ICalloutPositon extends IPosition {
-}
-
 export interface IPoint {
   x: number;
   y: number;
@@ -122,12 +110,12 @@ export interface IPositionDirectionalHintData {
   targetEdge: RectangleEdge;
   alignmentEdge?: RectangleEdge;
   isAuto?: boolean;
+  alignTargetEdge?: boolean;
 }
 
-/**
- * @deprecated Do not use this will be removed in 6.0.
- * Use IPositionDirectionalHintData instead
- */
-export interface IPositionedData extends IPositionDirectionalHintData {
-
+export interface IRelativePositions {
+  calloutPosition: IPosition;
+  beakPosition: { position: IPosition | undefined; display: 'block' };
+  directionalClassName: string;
+  submenuDirection: DirectionalHint;
 }

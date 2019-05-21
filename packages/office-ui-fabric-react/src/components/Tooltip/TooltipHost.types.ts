@@ -1,11 +1,16 @@
 import * as React from 'react';
-import { TooltipHost } from './TooltipHost';
+import { TooltipHostBase } from './TooltipHost.base';
 import { TooltipDelay, ITooltipProps } from './Tooltip.types';
 import { ICalloutProps } from '../../Callout';
 import { DirectionalHint } from '../../common/DirectionalHint';
+import { IRefObject, IStyleFunctionOrObject } from '../../Utilities';
+import { IStyle, ITheme } from '../../Styling';
 
 export interface ITooltipHost {
-
+  /**
+   * Dismisses the tooltip
+   */
+  dismiss: () => void;
 }
 
 export enum TooltipOverflowMode {
@@ -19,62 +24,17 @@ export enum TooltipOverflowMode {
 /**
  * Tooltip component props.
  */
-export interface ITooltipHostProps extends React.HTMLAttributes<HTMLDivElement | TooltipHost> {
+export interface ITooltipHostProps extends React.HTMLAttributes<HTMLDivElement | TooltipHostBase> {
   /**
    * Optional callback to access the ITooltipHost interface. Use this instead of ref for accessing
    * the public methods and properties of the component.
    */
-  componentRef?: (component: ITooltipHost | null) => void;
+  componentRef?: IRefObject<ITooltipHost>;
 
   /**
    * Additional properties to pass through for Callout, reference detail properties in ICalloutProps
    */
   calloutProps?: ICalloutProps;
-
-  /**
-   * Additional properties to pass through for Tooltip, reference detail properties in ITooltipProps
-   */
-  tooltipProps?: ITooltipProps;
-
-  /**
-   * Whether or not to mark the container as described by the tooltip.
-   * If not specified, the caller should mark as element as described by the tooltip id.
-   */
-  setAriaDescribedBy?: boolean;
-
-  /**
-   * Length of delay
-   * @default medium
-   */
-  delay?: TooltipDelay;
-
-  /**
-   * String to be passed to the tooltip
-   */
-  content?: string;
-
-  /**
-   * Indicator of how the tooltip should be anchored to its targetElement.
-   * @default DirectionalHint.topCenter
-   */
-  directionalHint?: DirectionalHint;
-
-  /**
-   * How the element should be positioned in RTL layouts.
-   * If not specified, a mirror of `directionalHint` will be used instead
-   */
-  directionalHintForRTL?: DirectionalHint;
-
-  /**
-   * Only show if there is overflow. If set, the tooltip hosts observes  and only shows the tooltip if this element has overflow.
-   * It also uses the parent as target element for the tooltip.
-   */
-  overflowMode?: TooltipOverflowMode;
-
-  /**
-   * Optional class name to apply to tooltip host.
-   */
-  hostClassName?: string;
 
   /**
    * Optionally a number of milliseconds to delay closing the tooltip, so that
@@ -85,7 +45,80 @@ export interface ITooltipHostProps extends React.HTMLAttributes<HTMLDivElement |
   closeDelay?: number;
 
   /**
+   * String to be passed to the tooltip
+   */
+  content?: string;
+
+  /**
+   * Length of delay
+   * @defaultvalue medium
+   */
+  delay?: TooltipDelay;
+
+  /**
+   * Indicator of how the tooltip should be anchored to its targetElement.
+   */
+  directionalHint?: DirectionalHint;
+
+  /**
+   * How the element should be positioned in RTL layouts.
+   * If not specified, a mirror of `directionalHint` will be used instead
+   */
+  directionalHintForRTL?: DirectionalHint;
+
+  /**
+   * Optional class name to apply to tooltip host.
+   */
+  hostClassName?: string;
+
+  /**
+   * Only show if there is overflow. If set, the tooltip hosts observes  and only shows the tooltip if this element has overflow.
+   * It also uses the parent as target element for the tooltip.
+   */
+  overflowMode?: TooltipOverflowMode;
+
+  /**
+   * Whether or not to mark the container as described by the tooltip.
+   * If not specified, the caller should mark as element as described by the tooltip id.
+   */
+  setAriaDescribedBy?: boolean;
+
+  /**
+   * Additional properties to pass through for Tooltip, reference detail properties in ITooltipProps
+   */
+  tooltipProps?: ITooltipProps;
+
+  /**
+   * Call to provide customized styling that will layer on top of the variant rules.
+   */
+  styles?: IStyleFunctionOrObject<ITooltipHostStyleProps, ITooltipHostStyles>;
+
+  /**
+   * Theme provided by High-Order Component.
+   */
+  theme?: ITheme;
+
+  /**
    * Notifies when tooltip becomes visible or hidden, whatever the trigger was.
    */
   onTooltipToggle?(isTooltipVisible: boolean): void;
+}
+
+export interface ITooltipHostStyleProps {
+  /**
+   * Accept theme prop.
+   */
+  theme: ITheme;
+
+  /**
+   * Accept optional classNames for the host wrapper
+   */
+  className?: string;
+}
+
+export interface ITooltipHostStyles {
+  /**
+   * Style for the host wrapper element.
+   */
+  root: IStyle;
 }

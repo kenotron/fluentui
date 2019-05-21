@@ -7,13 +7,13 @@ $ms-color-themeTertiary: "[theme:themeTertiary, default: #71afe5]";
 $ms-color-themeLight: "[theme:themeLight, default: #c7e0f4]";
 $ms-color-themeLighter: "[theme:themeLighter, default: #deecf9]";
 $ms-color-themeLighterAlt: "[theme:themeLighterAlt, default: #eff6fc]";
+$ms-color-themeAccent: "[theme:accent, default:#0078d4]";
 
 $ms-color-black: "[theme:black, default: #000000]";
 $ms-color-neutralDark: "[theme:neutralDark, default: #212121]";
 $ms-color-neutralPrimary: "[theme:neutralPrimary, default: #333333]";
 $ms-color-neutralPrimaryAlt: "[theme:neutralPrimaryAlt, default: #3c3c3c]";
 $ms-color-neutralSecondary: "[theme:neutralSecondary, default: #666666]";
-$ms-color-neutralSecondaryAlt: "[theme:neutralSecondaryAlt, default: #767676]";
 $ms-color-neutralTertiary: "[theme:neutralTertiary, default: #a6a6a6]";
 $ms-color-neutralTertiaryAlt: "[theme:neutralTertiaryAlt, default: #c8c8c8]";
 $ms-color-neutralQuaternary: "[theme:neutralQuaternary, default: #d0d0d0]";
@@ -49,8 +49,8 @@ $ms-color-greenDark: "[theme:greenDark, default: #004b1c]";
 $ms-color-green: "[theme:green, default: #107c10]";
 $ms-color-greenLight: "[theme:greenLight, default: #bad80a]";
 $ms-color-error: "[theme:error, default: #a80000]";
-$ms-color-errorText: "[theme:errorText, default: #333333]";
-$ms-color-errorBackground: "[theme:errorBackground, default: #fde7e9]";
+$ms-color-errorText: "[theme:warningText, default: #333333]";
+$ms-color-errorBackground: "[theme:errorBackground, default: rgba(232,17,35,.2)]";
 $ms-color-success: "[theme:success, default: #107c10]";
 $ms-color-successText: "[theme:successText, default: #333333]";
 $ms-color-successBackground: "[theme:successBackground, default: #dff6dd]";
@@ -67,3 +67,6 @@ $ms-color-info: "[theme:info, default: #666666]";
 $ms-color-infoText: "[theme:infoText, default: #333333]";
 $ms-color-infoBackground: "[theme:infoBackground, default: #f4f4f4]";
 $ms-color-orangeLighter: "[theme:orangeLighter, default: #ea4300]";
+
+// DEPRECATED
+$ms-color-neutralSecondaryAlt: "[theme:neutralSecondaryAlt, default: #767676]";

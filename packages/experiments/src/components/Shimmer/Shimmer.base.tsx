@@ -1,161 +1,124 @@
 import * as React from 'react';
-import {
-  BaseComponent,
-  classNamesFunction,
-} from '../../Utilities';
-import {
-  IShimmerProps,
-  IShimmerStyleProps,
-  IShimmerStyles,
-  ShimmerElementType,
-  ICircle,
-  ILine,
-  IGap,
-  ShimmerElementVerticalAlign,
-} from './Shimmer.types';
-import {
-  DefaultPalette,
-  IStyleSet
-} from '../../Styling';
-import { ShimmerLine } from './ShimmerLine/ShimmerLine';
-import { ShimmerCircle } from './ShimmerCircle/ShimmerCircle';
+import { BaseComponent, classNamesFunction, DelayedRender } from '../../Utilities';
+import { IShimmerProps, IShimmerStyleProps, IShimmerStyles, IShimmerElement } from './Shimmer.types';
+import { ShimmerElementsGroup } from './ShimmerElementsGroup/ShimmerElementsGroup';
 
-const LINE_DEFAULT_HEIGHT = 16;
-const CIRCLE_DEFAULT_HEIGHT = 24;
+export interface IShimmerState {
+  /**
+   * Flag for knowing when to remove the shimmerWrapper from the DOM.
+   */
+  contentLoaded?: boolean;
+}
+
+const TRANSITION_ANIMATION_INTERVAL = 200; /* ms */
 
 const getClassNames = classNamesFunction<IShimmerStyleProps, IShimmerStyles>();
 
-export class ShimmerBase extends BaseComponent<IShimmerProps, {}> {
+export class ShimmerBase extends BaseComponent<IShimmerProps, IShimmerState> {
   public static defaultProps: IShimmerProps = {
-    width: 100,
     isDataLoaded: false,
     isBaseStyle: false
   };
-  private _classNames: {[key in keyof IShimmerStyles]: string};
+
+  private _classNames: { [key in keyof IShimmerStyles]: string };
+  private _lastTimeoutId: number | undefined;
+
   constructor(props: IShimmerProps) {
     super(props);
+
+    this.state = {
+      contentLoaded: props.isDataLoaded
+    };
+
+    this._warnDeprecations({
+      isBaseStyle: 'customElementsGroup',
+      width: 'widthInPercentage or widthInPixel',
+      lineElements: 'shimmerElements'
+    });
+
+    this._warnMutuallyExclusive({
+      lineElements: 'shimmerElements',
+      customElementsGroup: 'lineElements'
+    });
+  }
+
+  public componentWillReceiveProps(nextProps: IShimmerProps): void {
+    const { isDataLoaded } = nextProps;
+
+    if (this._lastTimeoutId !== undefined) {
+      this._async.clearTimeout(this._lastTimeoutId);
+      this._lastTimeoutId = undefined;
+    }
+    if (isDataLoaded) {
+      this._lastTimeoutId = this._async.setTimeout(() => {
+        this.setState({
+          contentLoaded: isDataLoaded
+        });
+        this._lastTimeoutId = undefined;
+      }, TRANSITION_ANIMATION_INTERVAL);
+    } else {
+      this.setState({
+        contentLoaded: isDataLoaded
+      });
+    }
   }
 
   public render(): JSX.Element {
-    const { getStyles, width, lineElements, children, isDataLoaded, isBaseStyle } = this.props;
-    const maxHeight: number | undefined = lineElements ? this._findMaxHeight(lineElements) : undefined;
-    this._classNames = getClassNames(getStyles!, { width, maxHeight, isDataLoaded, isBaseStyle });
+    const {
+      styles,
+      width,
+      lineElements,
+      shimmerElements,
+      children,
+      isDataLoaded,
+      isBaseStyle,
+      widthInPercentage,
+      widthInPixel,
+      className,
+      customElementsGroup,
+      theme,
+      ariaLabel
+    } = this.props;
 
-    const elements: JSX.Element[] | JSX.Element = lineElements ?
-      lineElements.map((elem: ICircle | ILine | IGap, index: number): JSX.Element => {
-        switch (elem.type) {
-          case ShimmerElementType.CIRCLE:
-            if (!elem.height) {
-              elem.height = CIRCLE_DEFAULT_HEIGHT;
-            }
-            return (
-              <ShimmerCircle
-                key={ index }
-                { ...elem }
-                borderAlignStyle={ this._getBorderAlignStyles(maxHeight, elem) }
-              />
-            );
-          case ShimmerElementType.GAP:
-            const gapWidth = elem.widthInPercentage || elem.widthInPixel ?
-              elem.widthInPercentage ? elem.widthInPercentage + '%' : elem.widthInPixel + 'px'
-              : '5px';
-            return (
-              <div
-                key={ index }
-                // tslint:disable-next-line:jsx-ban-props
-                style={ {
-                  width: gapWidth,
-                  height: maxHeight + 'px',
-                  backgroundColor: `${DefaultPalette.white}`
-                } }
-              />
-            );
-          case ShimmerElementType.LINE:
-            if (!elem.height) {
-              elem.height = LINE_DEFAULT_HEIGHT;
-            }
-            return (
-              <ShimmerLine
-                key={ index }
-                { ...elem }
-                borderAlignStyle={ this._getBorderAlignStyles(maxHeight, elem) }
-              />
-            );
-        }
-      }) : (
-        <ShimmerLine
-          height={ LINE_DEFAULT_HEIGHT }
-        />
-      );
+    const { contentLoaded } = this.state;
 
-    return (
-      <div className={ this._classNames.root }>
-        <div className={ this._classNames.shimmerWrapper }>
-          { !!isBaseStyle ? children : elements }
-        </div>
+    // lineElements is a deprecated prop so need to check which one was used.
+    const elements: IShimmerElement[] | undefined = shimmerElements || lineElements;
 
-        { !!isDataLoaded &&
-          <div className={ this._classNames.dataWrapper }>
-            { !!children ? children : null }
-          </div>
-        }
-      </div>
-    );
-  }
-
-  private _findMaxHeight(items: Array<ICircle | IGap | ILine>): number {
-    const itemsDefaulted: Array<ICircle | IGap | ILine> = items.map((item: ICircle | IGap | ILine): ICircle | IGap | ILine => {
-      switch (item.type) {
-        case ShimmerElementType.CIRCLE:
-          if (!item.height) {
-            item.height = CIRCLE_DEFAULT_HEIGHT;
-          }
-        case ShimmerElementType.LINE:
-          if (!item.height) {
-            item.height = LINE_DEFAULT_HEIGHT;
-          }
-      }
-      return item;
+    this._classNames = getClassNames(styles!, {
+      theme: theme!,
+      width,
+      isDataLoaded,
+      widthInPercentage,
+      widthInPixel,
+      className,
+      transitionAnimationInterval: TRANSITION_ANIMATION_INTERVAL
     });
 
-    const maxHeight = itemsDefaulted.reduce((acc: number, next: ICircle | IGap | ILine): number => {
-      return next.height ?
-        next.height > acc ? next.height : acc
-        : acc;
-    }, 0);
-    return maxHeight;
-  }
-
-  private _getBorderAlignStyles(maxHeight: number | undefined, elem: ICircle | IGap | ILine): IStyleSet | undefined {
-    const elemHeight: number | undefined = elem.height;
-
-    const dif: number | undefined = maxHeight && elemHeight ?
-      maxHeight - elemHeight > 0 ?
-        maxHeight - elemHeight : undefined
-      : undefined;
-
-    let borderStyle: IStyleSet | undefined;
-    const hasVerticalAlign: boolean = elem.verticalAlign ? true : false;
-
-    if (elem.verticalAlign === ShimmerElementVerticalAlign.CENTER || !hasVerticalAlign) {
-      borderStyle = {
-        alignSelf: 'center',
-        borderBottom: `${dif ? dif / 2 : 0}px solid ${DefaultPalette.white}`,
-        borderTop: `${dif ? dif / 2 : 0}px solid ${DefaultPalette.white}`
-      };
-    } else if (elem.verticalAlign === ShimmerElementVerticalAlign.TOP && hasVerticalAlign) {
-      borderStyle = {
-        alignSelf: 'top',
-        borderBottom: `${dif ? dif : 0}px solid ${DefaultPalette.white}`,
-        borderTop: `0px solid ${DefaultPalette.white}`
-      };
-    } else if (elem.verticalAlign === ShimmerElementVerticalAlign.BOTTOM && hasVerticalAlign) {
-      borderStyle = {
-        alignSelf: 'bottom',
-        borderBottom: `0px solid ${DefaultPalette.white}`,
-        borderTop: `${dif ? dif : 0}px solid ${DefaultPalette.white}`
-      };
-    }
-    return borderStyle;
+    return (
+      <div className={this._classNames.root}>
+        {!contentLoaded && (
+          <div className={this._classNames.shimmerWrapper}>
+            {isBaseStyle ? (
+              children // isBaseStyle prop is deprecated and this check needs to be removed in the future
+            ) : customElementsGroup ? (
+              customElementsGroup
+            ) : (
+              <ShimmerElementsGroup shimmerElements={elements} />
+            )}
+          </div>
+        )}
+        {// isBaseStyle prop is deprecated and needs to be removed in the future
+        !isBaseStyle && children && <div className={this._classNames.dataWrapper}>{children}</div>}
+        {ariaLabel &&
+          !isDataLoaded && (
+            <div role="status" aria-live="polite">
+              <DelayedRender>
+                <div className={this._classNames.screenReaderText}>{ariaLabel}</div>
+              </DelayedRender>
+            </div>
+          )}
+      </div>
+    );
   }
 }

@@ -1,6 +1,83 @@
 # Change Log - @uifabric/icons
 
-This log was last generated on Sun, 25 Mar 2018 03:08:03 GMT and should not be manually modified.
+This log was last generated on Tue, 20 Nov 2018 20:12:42 GMT and should not be manually modified.
+
+## 6.3.0
+Tue, 20 Nov 2018 20:12:42 GMT
+
+### Minor changes
+
+- Icons: Add new font files that were missed from the most recent update.
+
+## 6.2.0
+Tue, 20 Nov 2018 13:32:17 GMT
+
+### Minor changes
+
+- Icons: Added many new icons from the Fabric icons tool (aka.ms/fabric-icons)
+
+## 6.1.2
+Mon, 08 Oct 2018 12:24:15 GMT
+
+### Patches
+
+- Moving tslint/prettier dependencies 
+
+## 6.1.1
+Fri, 21 Sep 2018 14:25:46 GMT
+
+### Patches
+
+- Adding a version stamp file
+
+## 6.1.0
+Wed, 22 Aug 2018 05:10:19 GMT
+
+### Minor changes
+
+- Add IconNamesInput alongside IconNames const enum
+
+## 6.0.3
+Tue, 14 Aug 2018 10:27:33 GMT
+
+### Patches
+
+- disabling codepen task
+
+## 6.0.2
+Wed, 27 Jun 2018 23:59:19 GMT
+
+### Patches
+
+- Republish to address issue #5353
+
+## 6.0.1
+Tue, 05 Jun 2018 00:44:30 GMT
+
+### Patches
+
+- Added Prettier
+
+## 6.0.0
+Wed, 30 May 2018 20:28:33 GMT
+
+### Breaking changes
+
+- Minimum React version is now 16.3.2.
+
+## 5.8.0
+Wed, 16 May 2018 00:05:17 GMT
+
+### Minor changes
+
+- Update to FabricMDL2 v2.80.
+
+## 5.7.1
+Mon, 16 Apr 2018 10:23:26 GMT
+
+### Patches
+
+- Removing module entry temporarily. (Will be added back in 6.0.)
 
 ## 5.7.0
 Sun, 25 Mar 2018 03:08:03 GMT

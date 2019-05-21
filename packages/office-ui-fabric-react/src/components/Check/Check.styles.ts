@@ -1,20 +1,20 @@
 import { ICheckStyleProps, ICheckStyles } from './Check.types';
-import {
-  HighContrastSelector,
-  IStyle,
-} from '../../Styling';
+import { HighContrastSelector, IStyle, getGlobalClassNames } from '../../Styling';
+import { getRTL } from '../../Utilities';
 
-export const getStyles = (
-  props: ICheckStyleProps
-): ICheckStyles => {
-  const {
-    checkBoxHeight = '18px',
-    checked,
-    className,
-    theme,
-  } = props;
+const GlobalClassNames = {
+  root: 'ms-Check',
+  circle: 'ms-Check-circle',
+  check: 'ms-Check-check'
+};
+
+export const getStyles = (props: ICheckStyleProps): ICheckStyles => {
+  const { checkBoxHeight = '18px', checked, className, theme } = props;
 
   const { palette, semanticColors } = theme;
+  const isRTL = getRTL();
+
+  const classNames = getGlobalClassNames(GlobalClassNames, theme);
 
   const sharedCircleCheck: IStyle = {
     fontSize: checkBoxHeight,
@@ -27,10 +27,10 @@ export const getStyles = (
     verticalAlign: 'middle'
   };
 
-  return ({
+  return {
     root: [
-      'ms-Check',
-
+      classNames.root,
+      theme.fonts.medium,
       {
         // lineHeight currently needs to be a string to output without 'px'
         lineHeight: '1',
@@ -50,14 +50,14 @@ export const getStyles = (
             left: '1px',
             borderRadius: '50%',
             opacity: 1,
-            background: semanticColors.bodyBackground,
+            background: semanticColors.bodyBackground
           },
 
           /**
            * TODO: Come back to this once .checkHost has been
            * converted to mergeStyles
            */
-          '.checkHost:hover &, .checkHost:focus &, &:hover, &:focus': {
+          '$checkHost:hover &, $checkHost:focus &, &:hover, &:focus': {
             opacity: 1
           }
         }
@@ -77,13 +77,13 @@ export const getStyles = (
               }
             }
           }
-        },
+        }
       ],
       className
     ],
 
     circle: [
-      'ms-Check-circle',
+      classNames.circle,
       sharedCircleCheck,
 
       {
@@ -102,14 +102,14 @@ export const getStyles = (
     ],
 
     check: [
-      'ms-Check-check',
+      classNames.check,
       sharedCircleCheck,
 
       {
         opacity: 0,
         color: palette.neutralTertiaryAlt,
         fontSize: '16px',
-        left: '.5px',
+        left: isRTL ? '-0.5px' : '.5px', // for centering the check icon inside the circle.
 
         selectors: {
           ':hover': {
@@ -134,6 +134,8 @@ export const getStyles = (
           }
         }
       }
-    ]
-  });
+    ],
+
+    checkHost: [{}]
+  };
 };

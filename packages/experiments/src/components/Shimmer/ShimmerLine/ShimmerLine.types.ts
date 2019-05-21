@@ -1,13 +1,8 @@
 import * as React from 'react';
-import {
-  IStyle,
-  IStyleSet
-} from '../../../Styling';
-import { IStyleFunction } from '../../../Utilities';
+import { IStyle, ITheme } from '../../../Styling';
+import { IStyleFunctionOrObject, IRefObject } from '../../../Utilities';
 
-export interface IShimmerLine {
-
-}
+export interface IShimmerLine {}
 
 /**
  * ShimmerLine component props.
@@ -17,7 +12,7 @@ export interface IShimmerLineProps extends React.AllHTMLAttributes<HTMLElement> 
    * Optional callback to access the IShimmerLine interface. Use this instead of ref for accessing
    * the public methods and properties of the component.
    */
-  componentRef?: (component: IShimmerLine | null) => void;
+  componentRef?: IRefObject<IShimmerLine>;
 
   /**
    * Sets the height of the rectangle.
@@ -38,29 +33,33 @@ export interface IShimmerLineProps extends React.AllHTMLAttributes<HTMLElement> 
   widthInPixel?: number;
 
   /**
-   * @default center
-   */
-  verticalAlign?: string;
-
-  /**
    * Sets custom styling of the rectangle.
    */
-  borderAlignStyle?: IStyleSet;
+  borderStyle?: IStyle;
+
+  /**
+   * Theme provided by High-Order Component.
+   */
+  theme?: ITheme;
 
   /**
    * Call to provide customized styling that will layer on top of the variant rules.
    */
-  getStyles?: IStyleFunction<IShimmerLineStyleProps, IShimmerLineStyles>;
+  styles?: IStyleFunctionOrObject<IShimmerLineStyleProps, IShimmerLineStyles>;
 }
 
 export interface IShimmerLineStyleProps {
   height?: number;
-  verticalAlign?: string;
   widthInPercentage?: number;
   widthInPixel?: number;
-  borderAlignStyle?: IStyleSet;
+  borderStyle?: IStyle;
+  theme: ITheme;
 }
 
 export interface IShimmerLineStyles {
   root?: IStyle;
+  topLeftCorner?: IStyle;
+  topRightCorner?: IStyle;
+  bottomRightCorner?: IStyle;
+  bottomLeftCorner?: IStyle;
 }

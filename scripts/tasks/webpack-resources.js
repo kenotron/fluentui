@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const merge = require('./merge');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 const webpackVersion = require('webpack/package.json').version;
 console.log(`Webpack version: ${webpackVersion}`);
@@ -8,59 +9,65 @@ console.log(`Webpack version: ${webpackVersion}`);
 module.exports = {
   webpack,
 
-  createConfig(packageName, isProduction, customConfig, onlyProduction) {
-
+  createConfig(packageName, isProduction, customConfig, onlyProduction, excludeSourceMaps) {
     const resolveLoader = {
-      modules: [
-        path.resolve(__dirname, '../node_modules'),
-        path.resolve(process.cwd(), 'node_modules')
-      ]
+      modules: [path.resolve(__dirname, '../node_modules'), path.resolve(process.cwd(), 'node_modules')]
     };
 
     const module = {
       noParse: [/autoit.js/],
-      rules: [
-        {
-          test: /\.js$/,
-          use: 'source-map-loader',
-          enforce: 'pre'
-        }
-      ]
+      rules: excludeSourceMaps
+        ? []
+        : [
+            {
+              test: /\.js$/,
+              use: 'source-map-loader',
+              enforce: 'pre'
+            }
+          ]
     };
 
-    const devtool = 'source-map';
+    const devtool = 'cheap-module-source-map';
     const configs = [];
 
     if (!onlyProduction) {
-      configs.push(merge(
-        {
-          mode: 'development',
-          output: {
-            filename: `[name].js`,
-            path: path.resolve(process.cwd(), 'dist')
+      configs.push(
+        merge(
+          {
+            mode: 'development',
+            output: {
+              filename: `[name].js`,
+              path: path.resolve(process.cwd(), 'dist'),
+              pathinfo: false
+            },
+            resolveLoader,
+            module,
+            devtool,
+            plugins: getPlugins(packageName, false)
           },
-          resolveLoader,
-          module,
-          devtool,
-          plugins: getPlugins(packageName, false)
-        },
-        customConfig
-      ));
+          customConfig
+        )
+      );
     }
 
     if (isProduction) {
-      configs.push(merge({
-        mode: 'production',
-        output: {
-          filename: `[name].min.js`,
-          path: path.resolve(process.cwd(), 'dist')
-        },
+      configs.push(
+        merge(
+          {
+            mode: 'production',
+            output: {
+              filename: `[name].min.js`,
+              path: path.resolve(process.cwd(), 'dist')
+            },
 
-        resolveLoader,
-        module,
-        devtool,
-        plugins: getPlugins(packageName, true)
-      }, customConfig));
+            resolveLoader,
+            module,
+            devtool: excludeSourceMaps ? undefined : devtool,
+            plugins: getPlugins(packageName, true)
+          },
+          customConfig
+        )
+      );
     }
 
     return configs;
@@ -79,37 +86,34 @@ module.exports = {
         mode: 'development',
 
         resolveLoader: {
-          modules: [
-            path.resolve(__dirname, '../node_modules'),
-            path.resolve(process.cwd(), 'node_modules')
-          ]
+          modules: [path.resolve(__dirname, '../node_modules'), path.resolve(process.cwd(), 'node_modules')]
         },
         resolve: {
           extensions: ['.ts', '.tsx', '.js']
         },
 
-        devtool: 'source-map',
+        devtool: 'eval',
 
         module: {
           rules: [
             {
               test: [/\.tsx?$/],
-              use: 'ts-loader',
-              exclude: [
-                /node_modules/,
-                /\.scss.ts$/,
-                /\.test.tsx?$/
-              ]
+              use: {
+                loader: 'ts-loader',
+                options: {
+                  experimentalWatchApi: true,
+                  transpileOnly: true
+                }
+              },
+              exclude: [/node_modules/, /\.scss.ts$/, /\.test.tsx?$/]
             },
             {
               test: /\.scss$/,
               enforce: 'pre',
-              exclude: [
-                /node_modules/
-              ],
+              exclude: [/node_modules/],
               use: [
                 {
-                  loader: '@microsoft/loader-load-themed-styles', // creates style nodes from JS strings
+                  loader: '@microsoft/loader-load-themed-styles' // creates style nodes from JS strings
                 },
                 {
                   loader: 'css-loader', // translates CSS into CommonJS
@@ -123,10 +127,8 @@ module.exports = {
                 {
                   loader: 'postcss-loader',
                   options: {
-                    plugins: function () {
-                      return [
-                        require('autoprefixer')
-                      ];
+                    plugins: function() {
+                      return [require('autoprefixer')];
                     }
                   }
                 },
@@ -139,35 +141,34 @@ module.exports = {
         },
 
         plugins: [
-          new WebpackNotifierPlugin(),
-          new webpack.WatchIgnorePlugin([
-            /\.js$/,
-            /\.d\.ts$/
-          ])
+          // TODO: will investigate why this doesn't work on mac
+          // new WebpackNotifierPlugin(),
+          new ForkTsCheckerWebpackPlugin(),
+          new webpack.ProgressPlugin()
         ]
       },
       customConfig
     );
   }
-
 };
 
-function getPlugins(
-  bundleName,
-  isProduction
-) {
+function getPlugins(bundleName, isProduction) {
   const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
   const plugins = [];
 
   if (isProduction) {
-
     plugins.push(
       new BundleAnalyzerPlugin({
         analyzerMode: 'static',
         reportFilename: bundleName + '.stats.html',
         openAnalyzer: false,
         generateStatsFile: true,
+        statsOptions: {
+          source: false,
+          reasons: false,
+          chunks: false
+        },
         statsFilename: bundleName + '.stats.json',
         logLevel: 'warn'
       })

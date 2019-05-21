@@ -1,23 +1,18 @@
-const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
-const execSync = require('./exec-sync');
+const readConfig = require('./read-config');
 
-const newVersion = process.argv[2];
-const newDep = process.argv[3] || newVersion;
+const rushJson = readConfig('rush.json');
+if (!rushJson) {
+  console.error('Could not find rush.json');
+  return;
+}
 
-const packages = [
-  'utilities',
-  'merge-styles',
-  'icons',
-  'styling',
-  'office-ui-fabric-react',
-  'experiments'
-];
+const packages = rushPackages.projects.filter(project => project.shouldPublish);
 
 for (const package of packages) {
-  let packagePath = path.resolve('../packages', package);
+  const packagePath = path.resolve('..', package.projectFolder);
 
-  console.log(`Publishing ${chalk.magenta(package)} in ${packagePath}`);
-  execSync('npm publish --tag beta', undefined, packagePath);
+  console.log(`Publishing ${chalk.magenta(package.packageName)} in ${packagePath}`);
+  //  execSync('npm publish --tag beta', undefined, packagePath);
 }
