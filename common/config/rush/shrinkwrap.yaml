@@ -1188,20 +1188,6 @@ packages:
       react-dom: ^0.14.9 || ^15.0.1-0 || ^16.0.0-0
     resolution:
       integrity: sha512-IQgJhJUq3ZY84N+aWfPxQsQwcZSvmp0hubTUavLDMp7rFyohhbNiwJta7hYwv9eppwXtgaFBbOXKOC5ieG/YMQ==
-  /@uifabric/date-time/0.3.5:
-    dependencies:
-      '@microsoft/load-themed-styles': 1.8.83
-      '@uifabric/set-version': 1.1.3
-      '@uifabric/styling': 6.45.3
-      '@uifabric/utilities': 6.35.5
-      office-ui-fabric-react: 6.165.1
-      tslib: 1.9.3
-    dev: false
-    peerDependencies:
-      react: ^0.14.9 || ^15.0.1-0 || ^16.0.0-0
-      react-dom: ^0.14.9 || ^15.0.1-0 || ^16.0.0-0
-    resolution:
-      integrity: sha512-Izvn9xUjS6rZlkvHuLht20wmTGi0tQVUTzQtPtZ/fkts/JLq89cBoHm7xu4z7CfB2r9K1bsKd0Am28NFuRfjqw==
   /@uifabric/experiments/6.75.0/react-dom@16.6.3+react@16.6.3:
     dependencies:
       '@microsoft/load-themed-styles': 1.8.85
@@ -10888,23 +10874,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-o2fRSjmGC8lTwFr2bKp2h6+fFqQ+ggtDIk/St3JWF/UYud70wnos081AkGeIRdKt0EpnxlHsDJZ0ab/3+Tndrw==
-  /office-ui-fabric-react/6.165.1:
-    dependencies:
-      '@microsoft/load-themed-styles': 1.9.2
-      '@uifabric/foundation': 0.7.6
-      '@uifabric/icons': 6.5.2
-      '@uifabric/merge-styles': 6.17.4
-      '@uifabric/set-version': 1.1.3
-      '@uifabric/styling': 6.47.6
-      '@uifabric/utilities': 6.39.3
-      prop-types: 15.7.2
-      tslib: 1.9.3
-    dev: false
-    peerDependencies:
-      react: '>=16.3.2-0 <17.0.0'
-      react-dom: '>=16.3.2-0 <17.0.0'
-    resolution:
-      integrity: sha512-ytARTuZwDql08+JLnt0/VWbzlXuLTPA2O2NAEKpv6I6Avm/7G6TS/VT+XO0odHS6+O31rkdwh6xK6p9zuxwa7w==
   /on-finished/2.3.0:
     dependencies:
       ee-first: 1.1.1
