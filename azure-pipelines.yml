@@ -18,6 +18,10 @@ steps:
       versionSpec: '10.x'
     displayName: 'Install Node.js'
 
+  - scripts: |
+      npm run check-deps
+    displayName: rush check
+
   - script: |
       node common/scripts/install-run-rush.js install --bypass-policy
     displayName: rush install

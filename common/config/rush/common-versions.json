@@ -43,8 +43,8 @@
      * For example, allow some projects to use an older TypeScript compiler
      * (in addition to whatever "usual" version is being used by other projects in the repo):
      */
-    "react": ["~16.8.0"],
-    "react-dom": ["~16.8.0"],
+    "@types/react": ["16.8.12"],
+    "@types/react-dom": ["16.8.3"],
     "office-ui-fabric-core": ["^9.0.0", "10.0.0"]
   }
 }
