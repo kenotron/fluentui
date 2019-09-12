@@ -2,7 +2,7 @@
   "name": "@uifabric/monaco-bundle",
   "version": "0.1.0",
   "description": "Bundle of Monaco for easy consumption without additional loaders.",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "sideEffects": true,
   "repository": {

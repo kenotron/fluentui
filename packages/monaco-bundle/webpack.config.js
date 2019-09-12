@@ -1,5 +1,6 @@
 const path = require('path');
 const resources = require('@uifabric/build/webpack/webpack-resources');
+const webpack = require('webpack');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const PACKAGE_NAME = 'monaco-bundle';
@@ -9,7 +10,7 @@ module.exports = resources.createConfig(PACKAGE_NAME, IS_PRODUCTION, {
   // Based on https://github.com/microsoft/monaco-editor/blob/master/docs/integrate-esm.md
   entry: {
     //
-    index: 'monaco-editor/esm/vs/editor/edcore.main.js',
+    index: 'monaco-editor/esm/vs/editor/editor.main.js',
     // index: './src/index.js'
     complete: 'monaco-editor/esm/vs/editor/editor.main.js',
     'editor.worker': 'monaco-editor/esm/vs/editor/editor.worker.js',
@@ -24,8 +25,8 @@ module.exports = resources.createConfig(PACKAGE_NAME, IS_PRODUCTION, {
   },
 
   output: {
-    libraryTarget: 'var',
-    library: 'Monaco'
+    libraryTarget: 'commonjs2'
+    //library: 'Monaco'
     // globalObject: 'self' // required for monaco--see https://github.com/webpack/webpack/issues/6642
   },
 
@@ -36,13 +37,12 @@ module.exports = resources.createConfig(PACKAGE_NAME, IS_PRODUCTION, {
     writeToDisk: true
   },
 
-  optimization: {
-    splitChunks: {
-      chunks: 'all'
-    }
-  },
-
-  plugins: [new BundleAnalyzerPlugin(), new resources.webpack.ProgressPlugin()]
+  plugins: [
+    new resources.webpack.ProgressPlugin(),
+    new webpack.optimize.LimitChunkCountPlugin({
+      maxChunks: 1
+    })
+  ]
 });
 // ...resources.createConfig(PACKAGE_NAME, IS_PRODUCTION, {
 //   entry: {
