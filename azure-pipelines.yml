@@ -46,6 +46,7 @@ jobs:
 
   - job: Validate
     dependsOn: Build
+    pool: 'Self Host Ubuntu'
     steps:
       # No need for checkout since we're using build artifacts.
       - checkout: none
@@ -65,6 +66,7 @@ jobs:
 
   - job: Deploy
     dependsOn: Build
+    pool: 'Self Host Ubuntu'
     steps:
       # No need for checkout since we're using build artifacts.
       - checkout: none
