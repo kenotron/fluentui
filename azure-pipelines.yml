@@ -5,10 +5,12 @@ trigger: none
 variables:
   - group: fabric-variables
 
-pool: 'Self Host Ubuntu'
+pool:
+  vmImage: 'Ubuntu 16.04'
 
 jobs:
   - job: Build
+    pool: 'Self Host Ubuntu'
     steps:
       # TODO: remove, temporarily disabled to speed debugging
       # - checkout: none
