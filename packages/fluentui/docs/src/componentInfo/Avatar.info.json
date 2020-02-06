@@ -1,0 +1,194 @@
+{
+  "implementsCreateShorthand": true,
+  "mappedShorthandProp": "name",
+  "apiPath": "Avatar",
+  "componentClassName": "ui-avatar",
+  "constructorName": null,
+  "displayName": "Avatar",
+  "docblock": {
+    "description": "An Avatar is a graphical representation of a user.",
+    "tags": []
+  },
+  "filename": "Avatar.tsx",
+  "filenameWithoutExt": "Avatar",
+  "isChild": false,
+  "isParent": true,
+  "parentDisplayName": null,
+  "props": [
+    {
+      "description": "Accessibility behavior if overridden by the user.",
+      "tags": [],
+      "types": [
+        {
+          "name": "Accessibility",
+          "parameters": [
+            {
+              "name": "never",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "accessibility",
+      "required": false
+    },
+    {
+      "description": "An element type to render as (string or component).",
+      "defaultValue": "div",
+      "tags": [],
+      "types": [
+        {
+          "name": "React.ElementType"
+        }
+      ],
+      "name": "as",
+      "required": false
+    },
+    {
+      "description": "Additional CSS class name(s) to apply.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "className",
+      "required": false
+    },
+    {
+      "description": "",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "design",
+      "required": false
+    },
+    {
+      "description": "Custom method for generating the initials from the name property, which is shown if no image is provided.",
+      "defaultValue": "getInitials",
+      "tags": [],
+      "types": [
+        {
+          "name": "function",
+          "value": "(name: string) => string"
+        }
+      ],
+      "name": "getInitials",
+      "required": false
+    },
+    {
+      "description": "Shorthand for the image.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "ImageProps"
+            }
+          ]
+        }
+      ],
+      "name": "image",
+      "required": false
+    },
+    {
+      "description": "Shorthand for the label.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "LabelProps"
+            }
+          ]
+        }
+      ],
+      "name": "label",
+      "required": false
+    },
+    {
+      "description": "The name used for displaying the initials of the avatar if the image is not provided.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "name",
+      "required": false
+    },
+    {
+      "description": "Size multiplier.",
+      "defaultValue": "medium",
+      "tags": [],
+      "types": [
+        {
+          "name": "SizeValue"
+        }
+      ],
+      "name": "size",
+      "required": false
+    },
+    {
+      "description": "Shorthand for the status of the user.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "StatusProps"
+            }
+          ]
+        }
+      ],
+      "name": "status",
+      "required": false
+    },
+    {
+      "description": "Additional CSS styles to apply to the component instance.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ComponentSlotStyle",
+          "parameters": [
+            {
+              "name": "any",
+              "keyword": true
+            },
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "styles",
+      "required": false
+    },
+    {
+      "description": "Override for theme site variables to allow modifications of component styling via themes.",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "variables",
+      "required": false
+    }
+  ],
+  "repoPath": "packages/fluentui/react/src/components/Avatar/Avatar.tsx",
+  "subcomponentName": null,
+  "subcomponents": [],
+  "type": "component"
+}

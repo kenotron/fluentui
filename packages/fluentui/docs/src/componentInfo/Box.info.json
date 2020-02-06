@@ -1,0 +1,102 @@
+{
+  "implementsCreateShorthand": true,
+  "mappedShorthandProp": "children",
+  "apiPath": "Box",
+  "componentClassName": "ui-box",
+  "constructorName": null,
+  "displayName": "Box",
+  "docblock": {
+    "description": "A Box is a basic component, commonly used for slots in other Fluent UI components.\nBy default it just renders a `div`.",
+    "tags": []
+  },
+  "filename": "Box.tsx",
+  "filenameWithoutExt": "Box",
+  "isChild": false,
+  "isParent": true,
+  "parentDisplayName": null,
+  "props": [
+    {
+      "description": "An element type to render as (string or component).",
+      "defaultValue": "div",
+      "tags": [],
+      "types": [
+        {
+          "name": "React.ElementType"
+        }
+      ],
+      "name": "as",
+      "required": false
+    },
+    {
+      "description": "Additional CSS class name(s) to apply.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "className",
+      "required": false
+    },
+    {
+      "description": "Shorthand for primary content.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ReactNode"
+        }
+      ],
+      "name": "content",
+      "required": false
+    },
+    {
+      "description": "",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "design",
+      "required": false
+    },
+    {
+      "description": "Additional CSS styles to apply to the component instance.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ComponentSlotStyle",
+          "parameters": [
+            {
+              "name": "BoxProps"
+            },
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "styles",
+      "required": false
+    },
+    {
+      "description": "Override for theme site variables to allow modifications of component styling via themes.",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "variables",
+      "required": false
+    }
+  ],
+  "repoPath": "packages/fluentui/react/src/components/Box/Box.tsx",
+  "subcomponentName": null,
+  "subcomponents": [],
+  "type": "component"
+}

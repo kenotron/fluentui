@@ -1,0 +1,366 @@
+{
+  "implementsCreateShorthand": true,
+  "mappedShorthandProp": "content",
+  "apiPath": "Button",
+  "componentClassName": "ui-button",
+  "constructorName": null,
+  "displayName": "Button",
+  "docblock": {
+    "description": "A Button enables users to take an action, such as submitting a form, opening a dialog, etc.",
+    "tags": [
+      {
+        "title": "accessibility",
+        "description": "Implements [ARIA Button](https://www.w3.org/TR/wai-aria-practices-1.1/#button) design pattern."
+      }
+    ]
+  },
+  "filename": "Button.tsx",
+  "filenameWithoutExt": "Button",
+  "isChild": false,
+  "isParent": true,
+  "parentDisplayName": null,
+  "props": [
+    {
+      "description": "Accessibility behavior if overridden by the user.",
+      "defaultValue": "buttonBehavior",
+      "tags": [],
+      "types": [
+        {
+          "name": "Accessibility",
+          "parameters": [
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "accessibility",
+      "required": false
+    },
+    {
+      "description": "An element type to render as (string or component).",
+      "defaultValue": "button",
+      "tags": [],
+      "types": [
+        {
+          "name": "React.ElementType"
+        }
+      ],
+      "name": "as",
+      "required": false
+    },
+    {
+      "description": "A button can appear circular.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "circular",
+      "required": false
+    },
+    {
+      "description": "Additional CSS class name(s) to apply.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "className",
+      "required": false
+    },
+    {
+      "description": "Shorthand for primary content.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "BoxProps"
+            }
+          ]
+        }
+      ],
+      "name": "content",
+      "required": false
+    },
+    {
+      "description": "",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "design",
+      "required": false
+    },
+    {
+      "description": "A button can show that it cannot be interacted with.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "disabled",
+      "required": false
+    },
+    {
+      "description": "A button can fill the width of its container.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "fluid",
+      "required": false
+    },
+    {
+      "description": "A button can have an icon.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "IconProps"
+            }
+          ]
+        }
+      ],
+      "name": "icon",
+      "required": false
+    },
+    {
+      "description": "A button can contain only an icon.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "iconOnly",
+      "required": false
+    },
+    {
+      "description": "An icon button can format its Icon to appear before or after its content",
+      "tags": [],
+      "types": [
+        {
+          "name": "literal",
+          "value": "before"
+        },
+        {
+          "name": "literal",
+          "value": "after"
+        }
+      ],
+      "name": "iconPosition",
+      "required": false
+    },
+    {
+      "description": "A button that inherits its background and has a subtle appearance",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "inverted",
+      "required": false
+    },
+    {
+      "description": "Shorthand to customize a button's loader.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "LoaderProps"
+            }
+          ]
+        }
+      ],
+      "name": "loader",
+      "required": false
+    },
+    {
+      "description": "A button can show a loading indicator.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "loading",
+      "required": false
+    },
+    {
+      "description": "Called after a user clicks the button.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "ButtonProps"
+            }
+          ]
+        }
+      ],
+      "name": "onClick",
+      "required": false
+    },
+    {
+      "description": "Called after a user focuses the button.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "ButtonProps"
+            }
+          ]
+        }
+      ],
+      "name": "onFocus",
+      "required": false
+    },
+    {
+      "description": "A button can emphasize that it represents the primary action.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "primary",
+      "required": false
+    },
+    {
+      "description": "A button can emphasize that it represents an alternative action.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "secondary",
+      "required": false
+    },
+    {
+      "description": "A button can be sized.",
+      "defaultValue": "medium",
+      "tags": [],
+      "types": [
+        {
+          "name": "SizeValue"
+        }
+      ],
+      "name": "size",
+      "required": false
+    },
+    {
+      "description": "Additional CSS styles to apply to the component instance.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ComponentSlotStyle",
+          "parameters": [
+            {
+              "name": "any",
+              "keyword": true
+            },
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "styles",
+      "required": false
+    },
+    {
+      "description": "A button can be formatted to show only text in order to indicate a less-pronounced action.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "text",
+      "required": false
+    },
+    {
+      "description": "Override for theme site variables to allow modifications of component styling via themes.",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "variables",
+      "required": false
+    }
+  ],
+  "repoPath": "packages/fluentui/react/src/components/Button/Button.tsx",
+  "subcomponentName": null,
+  "subcomponents": ["ButtonGroup"],
+  "type": "component"
+}

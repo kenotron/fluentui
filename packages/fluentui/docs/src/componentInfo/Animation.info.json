@@ -1,0 +1,418 @@
+{
+  "implementsCreateShorthand": false,
+  "apiPath": "Animation",
+  "componentClassName": "ui-animation",
+  "constructorName": "Animation",
+  "displayName": "Animation",
+  "docblock": {
+    "description": "An Animation provides animation effects to rendered elements.",
+    "tags": []
+  },
+  "filename": "Animation.tsx",
+  "filenameWithoutExt": "Animation",
+  "isChild": false,
+  "isParent": true,
+  "parentDisplayName": null,
+  "props": [
+    {
+      "description": "Run the enter animation when the component mounts, if it is initially shown.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "appear",
+      "required": false
+    },
+    {
+      "description": "Additional CSS class name(s) to apply.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "className",
+      "required": false
+    },
+    {
+      "description": "Specifies a delay for the start of an animation. Negative values are\nalso allowed. If using negative values, the animation will start as if it had already been\nplaying for that amount of time.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "delay",
+      "required": false
+    },
+    {
+      "description": "Specifies whether an animation should be played forwards, backwards or in alternate cycles.\nIt can have the following values:\n- normal (default) - The animation is played as normal (forwards)\n- reverse - The animation is played in reverse direction (backwards)\n- alternate - The animation is played forwards first, then backwards\n- alternate-reverse - The animation is played backwards first, then forwards",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "direction",
+      "required": false
+    },
+    {
+      "description": "Specifies how long an animation should take to complete.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "duration",
+      "required": false
+    },
+    {
+      "description": "Specifies a style for the target element when the animation is not playing (i.e. before it starts, after it ends, or both).\nIt can have the following values:\n- none (default) - Animation will not apply any styles to the element before or after it is executing\n- forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)\n- backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period\n- both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "fillMode",
+      "required": false
+    },
+    {
+      "description": "Specifies the number of times an animation should run.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "iterationCount",
+      "required": false
+    },
+    {
+      "description": "Custom parameters for the keyframe defined for the animation.",
+      "tags": [],
+      "types": [
+        {
+          "name": "object",
+          "keyword": true
+        }
+      ],
+      "name": "keyframeParams",
+      "required": false
+    },
+    {
+      "description": "Wait until the first \"enter\" transition to mount the component (add it to the DOM).",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "mountOnEnter",
+      "required": false
+    },
+    {
+      "description": "The name for the animation that should be applied, defined in the theme.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "name",
+      "required": false
+    },
+    {
+      "description": "Callback fired before the \"entering\" status is applied.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "AnimationProps"
+            }
+          ]
+        }
+      ],
+      "name": "onEnter",
+      "required": false
+    },
+    {
+      "description": "Callback fired after the \"entered\" status is applied.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "AnimationProps"
+            }
+          ]
+        }
+      ],
+      "name": "onEntered",
+      "required": false
+    },
+    {
+      "description": "Callback fired after the \"entering\" status is applied.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "AnimationProps"
+            }
+          ]
+        }
+      ],
+      "name": "onEntering",
+      "required": false
+    },
+    {
+      "description": "Callback fired before the \"exiting\" status is applied.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "AnimationProps"
+            }
+          ]
+        }
+      ],
+      "name": "onExit",
+      "required": false
+    },
+    {
+      "description": "Callback fired after the \"exited\" status is applied.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "AnimationProps"
+            }
+          ]
+        }
+      ],
+      "name": "onExited",
+      "required": false
+    },
+    {
+      "description": "Callback fired after the \"exiting\" status is applied.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "AnimationProps"
+            }
+          ]
+        }
+      ],
+      "name": "onExiting",
+      "required": false
+    },
+    {
+      "description": "Specifies whether the animation is running or paused. It can have the following values:\n- paused - Specifies that the animation is paused\n- running - Default value. Specifies that the animation is running\n- initial - Sets this property to its default value.\n- inherit - Inherits this property from its parent element.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "playState",
+      "required": false
+    },
+    {
+      "description": "Additional CSS styles to apply to the component instance.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ComponentSlotStyle",
+          "parameters": [
+            {
+              "name": "any",
+              "keyword": true
+            },
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "styles",
+      "required": false
+    },
+    {
+      "description": "The duration of the transition, in milliseconds.",
+      "defaultValue": 0,
+      "tags": [],
+      "types": [
+        {
+          "name": "number",
+          "keyword": true
+        },
+        {
+          "name": "object",
+          "value": "number | { enter?: number; exit?: number; appear?: number; }"
+        }
+      ],
+      "name": "timeout",
+      "required": false
+    },
+    {
+      "description": "Specifies the speed curve of the animation. It can have the following values:\n- ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)\n- linear - Specifies an animation with the same speed from start to end\n- ease-in - Specifies an animation with a slow start\n- ease-out - Specifies an animation with a slow end\n- ease-in-out - Specifies an animation with a slow start and end\n- cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "timingFunction",
+      "required": false
+    },
+    {
+      "description": "Unmount the component (remove it from the DOM) when it is not shown.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "unmountOnExit",
+      "required": false
+    },
+    {
+      "description": "Override for theme site variables to allow modifications of component styling via themes.",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "variables",
+      "required": false
+    },
+    {
+      "description": "Show the component; triggers the enter or exit animation.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "visible",
+      "required": false
+    }
+  ],
+  "repoPath": "packages/fluentui/react/src/components/Animation/Animation.tsx",
+  "subcomponentName": null,
+  "subcomponents": [],
+  "type": "component"
+}

@@ -1,0 +1,286 @@
+{
+  "implementsCreateShorthand": false,
+  "apiPath": "Accordion",
+  "componentClassName": "ui-accordion",
+  "constructorName": "Accordion",
+  "displayName": "Accordion",
+  "docblock": {
+    "description": "An Accordion represents stacked set of content sections, with action elements to toggle the display of these sections.",
+    "tags": [
+      {
+        "title": "accessibility",
+        "description": "Implements [ARIA Accordion](https://www.w3.org/TR/wai-aria-practices-1.1/#accordion) design pattern (keyboard navigation not yet supported)."
+      }
+    ]
+  },
+  "filename": "Accordion.tsx",
+  "filenameWithoutExt": "Accordion",
+  "isChild": false,
+  "isParent": true,
+  "parentDisplayName": null,
+  "props": [
+    {
+      "description": "Accessibility behavior if overridden by the user.",
+      "defaultValue": "accordionBehavior",
+      "tags": [],
+      "types": [
+        {
+          "name": "Accessibility",
+          "parameters": [
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "accessibility",
+      "required": false
+    },
+    {
+      "description": "Index of the currently active panel.",
+      "tags": [],
+      "types": [
+        {
+          "name": "number",
+          "keyword": true
+        },
+        {
+          "name": "array",
+          "parameters": [
+            {
+              "name": "number",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "activeIndex",
+      "required": false
+    },
+    {
+      "description": "An element type to render as (string or component).",
+      "defaultValue": "dl",
+      "tags": [],
+      "types": [
+        {
+          "name": "React.ElementType"
+        }
+      ],
+      "name": "as",
+      "required": false
+    },
+    {
+      "description": "Additional CSS class name(s) to apply.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "className",
+      "required": false
+    },
+    {
+      "description": "Initial activeIndex value.",
+      "tags": [],
+      "types": [
+        {
+          "name": "number",
+          "keyword": true
+        },
+        {
+          "name": "array",
+          "parameters": [
+            {
+              "name": "number",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "defaultActiveIndex",
+      "required": false
+    },
+    {
+      "description": "",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "design",
+      "required": false
+    },
+    {
+      "description": "Only allow one panel to be expanded at a time.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "exclusive",
+      "required": false
+    },
+    {
+      "description": "At least one panel should be expanded at any time.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "expanded",
+      "required": false
+    },
+    {
+      "description": "Called when a panel title is clicked.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All item props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "AccordionProps"
+            }
+          ]
+        }
+      ],
+      "name": "onTitleClick",
+      "required": false
+    },
+    {
+      "description": "Shorthand array of props for Accordion.",
+      "tags": [],
+      "types": [
+        {
+          "name": "array",
+          "parameters": [
+            {
+              "name": "object",
+              "value": "{ content: ShorthandValue<AccordionContentProps>; title: ShorthandValue<AccordionTitleProps>; }[]"
+            }
+          ]
+        }
+      ],
+      "name": "panels",
+      "required": false
+    },
+    {
+      "description": "A custom renderer for each Accordion's panel content.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "The panel's component type.",
+          "type": null,
+          "name": "Component"
+        },
+        {
+          "title": "param",
+          "description": "The panel's computed props.",
+          "type": null,
+          "name": "props"
+        }
+      ],
+      "types": [
+        {
+          "name": "ShorthandRenderFunction",
+          "parameters": [
+            {
+              "name": "AccordionContentProps"
+            }
+          ]
+        }
+      ],
+      "name": "renderPanelContent",
+      "required": false
+    },
+    {
+      "description": "A custom renderer for each Accordion's panel title.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "The panel's component type.",
+          "type": null,
+          "name": "Component"
+        },
+        {
+          "title": "param",
+          "description": "The panel's computed props.",
+          "type": null,
+          "name": "props"
+        }
+      ],
+      "types": [
+        {
+          "name": "ShorthandRenderFunction",
+          "parameters": [
+            {
+              "name": "AccordionTitleProps"
+            }
+          ]
+        }
+      ],
+      "name": "renderPanelTitle",
+      "required": false
+    },
+    {
+      "description": "Additional CSS styles to apply to the component instance.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ComponentSlotStyle",
+          "parameters": [
+            {
+              "name": "any",
+              "keyword": true
+            },
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "styles",
+      "required": false
+    },
+    {
+      "description": "Override for theme site variables to allow modifications of component styling via themes.",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "variables",
+      "required": false
+    }
+  ],
+  "repoPath": "packages/fluentui/react/src/components/Accordion/Accordion.tsx",
+  "subcomponentName": null,
+  "subcomponents": ["AccordionContent", "AccordionTitle"],
+  "type": "component"
+}

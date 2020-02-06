@@ -1,0 +1,361 @@
+{
+  "implementsCreateShorthand": true,
+  "mappedShorthandProp": "children",
+  "apiPath": "Carousel",
+  "behaviors": [
+    {
+      "name": "menuAsToolbarBehavior",
+      "displayName": "MenuAsToolbar",
+      "category": "Menu"
+    },
+    {
+      "name": "tabListBehavior",
+      "displayName": "TabList",
+      "category": "Tab"
+    },
+    {
+      "name": "tabBehavior",
+      "displayName": "Tab",
+      "category": "Tab"
+    }
+  ],
+  "componentClassName": "ui-carousel",
+  "constructorName": "Carousel",
+  "displayName": "Carousel",
+  "docblock": {
+    "description": "A Carousel displays data organised as a gallery.",
+    "tags": [
+      {
+        "title": "accessibility",
+        "description": "Implements [ARIA Carousel](https://www.w3.org/WAI/tutorials/carousels/structure/) design pattern."
+      },
+      {
+        "title": "accessibilityIssues",
+        "description": "[VoiceOver doens't narrate label referenced by aria-labelledby attribute, when role is \"tabpanel\"](https://bugs.chromium.org/p/chromium/issues/detail?id=1040924)"
+      }
+    ]
+  },
+  "filename": "Carousel.tsx",
+  "filenameWithoutExt": "Carousel",
+  "isChild": false,
+  "isParent": true,
+  "parentDisplayName": null,
+  "props": [
+    {
+      "description": "Accessibility behavior if overridden by the user.",
+      "defaultValue": "carouselBehavior",
+      "tags": [
+        {
+          "title": "available",
+          "description": "menuAsToolbarBehavior, tabListBehavior, tabBehavior"
+        }
+      ],
+      "types": [
+        {
+          "name": "Accessibility",
+          "parameters": [
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "accessibility",
+      "required": false
+    },
+    {
+      "description": "Index of the currently active item.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        },
+        {
+          "name": "number",
+          "keyword": true
+        }
+      ],
+      "name": "activeIndex",
+      "required": false
+    },
+    {
+      "description": "Sets the aria-roledescription attribute.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "ariaRoleDescription",
+      "required": false
+    },
+    {
+      "description": "An element type to render as (string or component).",
+      "defaultValue": "div",
+      "tags": [],
+      "types": [
+        {
+          "name": "React.ElementType"
+        }
+      ],
+      "name": "as",
+      "required": false
+    },
+    {
+      "description": "Specifies if the process of switching slides is circular.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "circular",
+      "required": false
+    },
+    {
+      "description": "Additional CSS class name(s) to apply.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "className",
+      "required": false
+    },
+    {
+      "description": "Initial activeIndex value.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        },
+        {
+          "name": "number",
+          "keyword": true
+        }
+      ],
+      "name": "defaultActiveIndex",
+      "required": false
+    },
+    {
+      "description": "",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "design",
+      "required": false
+    },
+    {
+      "description": "Message generator for item position in the carousel. Used to generate the\ntext for pagination. Also generates invisible text content for each item\nwhich is added along with the slide content. These are used by the screen\nreader to narrate position when active item is changed.",
+      "tags": [],
+      "types": [
+        {
+          "name": "function",
+          "value": "(index: number, size: number) => string"
+        }
+      ],
+      "name": "getItemPositionText",
+      "required": false
+    },
+    {
+      "description": "Shorthand array of props for CarouselItem.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandCollection",
+          "parameters": [
+            {
+              "name": "CarouselItemProps"
+            },
+            {
+              "name": "never",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "items",
+      "required": false
+    },
+    {
+      "description": "Shorthand array of props for the buttons of the CarouselNavigation.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "CarouselNavigationProps"
+            }
+          ]
+        },
+        {
+          "name": "ShorthandCollection",
+          "parameters": [
+            {
+              "name": "CarouselNavigationItemProps"
+            }
+          ]
+        }
+      ],
+      "name": "navigation",
+      "required": false
+    },
+    {
+      "description": "A Carousel can position its navigation below the content by default,\nabove the content, to the start or to the end of the content.",
+      "tags": [],
+      "types": [
+        {
+          "name": "literal",
+          "value": "below"
+        },
+        {
+          "name": "literal",
+          "value": "above"
+        },
+        {
+          "name": "literal",
+          "value": "start"
+        },
+        {
+          "name": "literal",
+          "value": "end"
+        }
+      ],
+      "name": "navigationPosition",
+      "required": false
+    },
+    {
+      "description": "Called when a panel title is clicked.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All Carousel props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "CarouselProps"
+            }
+          ]
+        }
+      ],
+      "name": "onActiveIndexChange",
+      "required": false
+    },
+    {
+      "description": "Shorthand for the paddle that navigates to the next item.",
+      "defaultValue": {},
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "ButtonProps"
+            }
+          ]
+        }
+      ],
+      "name": "paddleNext",
+      "required": false
+    },
+    {
+      "description": "Shorthand for the paddle that navigates to the previous item.",
+      "defaultValue": {},
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "ButtonProps"
+            }
+          ]
+        }
+      ],
+      "name": "paddlePrevious",
+      "required": false
+    },
+    {
+      "description": "A Carousel can position its paddels inside the content, outside or inline\nwith the navigation component.",
+      "tags": [],
+      "types": [
+        {
+          "name": "literal",
+          "value": "inline"
+        },
+        {
+          "name": "literal",
+          "value": "inside"
+        },
+        {
+          "name": "literal",
+          "value": "outside"
+        }
+      ],
+      "name": "paddlesPosition",
+      "required": false
+    },
+    {
+      "description": "Additional CSS styles to apply to the component instance.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ComponentSlotStyle",
+          "parameters": [
+            {
+              "name": "any",
+              "keyword": true
+            },
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "styles",
+      "required": false
+    },
+    {
+      "description": "Override for theme site variables to allow modifications of component styling via themes.",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "variables",
+      "required": false
+    }
+  ],
+  "repoPath": "packages/fluentui/react/src/components/Carousel/Carousel.tsx",
+  "subcomponentName": null,
+  "subcomponents": ["CarouselItem", "CarouselNavigation", "CarouselNavigationItem"],
+  "type": "component"
+}

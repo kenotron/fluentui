@@ -1,0 +1,4 @@
+{
+  "js": "import React from 'react'\nimport { Accordion } from '@fluentui/react'\n\nconst panels = [\n  {\n    key: 'one',\n    title: 'One',\n    content: '2 3 4',\n  },\n  {\n    key: 'two',\n    title: 'Five',\n    content: '6 7 8 9',\n  },\n  {\n    key: 'three',\n    title: \"What's next?\",\n    content: '10',\n  },\n]\n\nconst AccordionExclusiveExample = () => <Accordion panels={panels} exclusive />\n\nexport default AccordionExclusiveExample\n",
+  "ts": "import * as React from 'react'\nimport { Accordion } from '@fluentui/react'\n\nconst panels = [\n  {\n    key: 'one',\n    title: 'One',\n    content: '2 3 4',\n  },\n  {\n    key: 'two',\n    title: 'Five',\n    content: '6 7 8 9',\n  },\n  {\n    key: 'three',\n    title: \"What's next?\",\n    content: '10',\n  },\n]\n\nconst AccordionExclusiveExample = () => <Accordion panels={panels} exclusive />\n\nexport default AccordionExclusiveExample\n"
+}

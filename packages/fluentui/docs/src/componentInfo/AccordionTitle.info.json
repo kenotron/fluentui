@@ -1,0 +1,257 @@
+{
+  "implementsCreateShorthand": true,
+  "mappedShorthandProp": "content",
+  "apiPath": "Accordion.Title",
+  "componentClassName": "ui-accordion__title",
+  "constructorName": "AccordionTitle",
+  "displayName": "AccordionTitle",
+  "docblock": {
+    "description": "An AccordionTitle represents the title of Accordion's item that can be interacted with to expand or collapse the item's content.",
+    "tags": []
+  },
+  "filename": "AccordionTitle.tsx",
+  "filenameWithoutExt": "AccordionTitle",
+  "isChild": true,
+  "isParent": false,
+  "parentDisplayName": "Accordion",
+  "props": [
+    {
+      "description": "Id of the content it owns.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "accordionContentId",
+      "required": false
+    },
+    {
+      "description": "Whether or not the title is in the open state.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "active",
+      "required": false
+    },
+    {
+      "description": "An element type to render as (string or component).",
+      "defaultValue": "dt",
+      "tags": [],
+      "types": [
+        {
+          "name": "React.ElementType"
+        }
+      ],
+      "name": "as",
+      "required": false
+    },
+    {
+      "description": "If at least one panel needs to stay active and this title does not correspond to the last active one.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "canBeCollapsed",
+      "required": false
+    },
+    {
+      "description": "Additional CSS class name(s) to apply.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "className",
+      "required": false
+    },
+    {
+      "description": "Shorthand for primary content.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ReactNode"
+        }
+      ],
+      "name": "content",
+      "required": false
+    },
+    {
+      "description": "Ref to the clickable element that contains the title.",
+      "defaultValue": "noop",
+      "tags": [],
+      "types": [
+        {
+          "name": "Ref",
+          "parameters": [
+            {
+              "name": "HTMLElement"
+            }
+          ]
+        }
+      ],
+      "name": "contentRef",
+      "required": false
+    },
+    {
+      "description": "",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "design",
+      "required": false
+    },
+    {
+      "description": "An accordion title can show it is currently unable to be interacted with.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "disabled",
+      "required": false
+    },
+    {
+      "description": "AccordionTitle index inside Accordion.",
+      "tags": [],
+      "types": [
+        {
+          "name": "number",
+          "keyword": true
+        }
+      ],
+      "name": "index",
+      "required": false
+    },
+    {
+      "description": "Shorthand for the active indicator.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "IconProps"
+            }
+          ]
+        }
+      ],
+      "name": "indicator",
+      "required": false
+    },
+    {
+      "description": "Called on click.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "AccordionTitleProps"
+            }
+          ]
+        }
+      ],
+      "name": "onClick",
+      "required": false
+    },
+    {
+      "description": "Called after user's focus.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "AccordionTitleProps"
+            }
+          ]
+        }
+      ],
+      "name": "onFocus",
+      "required": false
+    },
+    {
+      "description": "Additional CSS styles to apply to the component instance.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ComponentSlotStyle",
+          "parameters": [
+            {
+              "name": "any",
+              "keyword": true
+            },
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "styles",
+      "required": false
+    },
+    {
+      "description": "Override for theme site variables to allow modifications of component styling via themes.",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "variables",
+      "required": false
+    }
+  ],
+  "repoPath": "packages/fluentui/react/src/components/Accordion/AccordionTitle.tsx",
+  "subcomponentName": "Title",
+  "subcomponents": null,
+  "type": "component"
+}

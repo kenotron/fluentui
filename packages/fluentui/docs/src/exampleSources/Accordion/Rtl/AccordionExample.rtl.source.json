@@ -1,0 +1,4 @@
+{
+  "js": "import React from 'react'\nimport { Accordion } from '@fluentui/react'\n\nconst panels = [\n  {\n    key: 'first',\n    title: 'مرحبا العالم',\n    content: 'مرحبا العالم',\n  },\n  {\n    key: 'second',\n    title: 'مرحبا المريخ',\n    content: 'مرحبا المريخ',\n  },\n]\n\nconst AccordionExampleRtl = () => <Accordion defaultActiveIndex={[0]} panels={panels} />\n\nexport default AccordionExampleRtl\n",
+  "ts": "import * as React from 'react'\nimport { Accordion } from '@fluentui/react'\n\nconst panels = [\n  {\n    key: 'first',\n    title: 'مرحبا العالم',\n    content: 'مرحبا العالم',\n  },\n  {\n    key: 'second',\n    title: 'مرحبا المريخ',\n    content: 'مرحبا المريخ',\n  },\n]\n\nconst AccordionExampleRtl = () => <Accordion defaultActiveIndex={[0]} panels={panels} />\n\nexport default AccordionExampleRtl\n"
+}

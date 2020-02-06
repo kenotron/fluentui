@@ -1,0 +1,407 @@
+{
+  "implementsCreateShorthand": false,
+  "apiPath": "Alert",
+  "behaviors": [
+    {
+      "name": "alertWarningBehavior",
+      "displayName": "AlertWarning",
+      "category": "Alert"
+    }
+  ],
+  "componentClassName": "ui-alert",
+  "constructorName": "Alert",
+  "displayName": "Alert",
+  "docblock": {
+    "description": "An Alert displays a brief, important message to attract a user's attention without interrupting their current task.",
+    "tags": [
+      {
+        "title": "accessibility",
+        "description": "Implements [ARIA Alert](https://www.w3.org/TR/wai-aria-practices-1.1/#alert) design pattern."
+      }
+    ]
+  },
+  "filename": "Alert.tsx",
+  "filenameWithoutExt": "Alert",
+  "isChild": false,
+  "isParent": true,
+  "parentDisplayName": null,
+  "props": [
+    {
+      "description": "Accessibility behavior if overridden by the user.",
+      "defaultValue": "alertBehavior",
+      "tags": [
+        {
+          "title": "available",
+          "description": "alertWarningBehavior"
+        }
+      ],
+      "types": [
+        {
+          "name": "Accessibility",
+          "parameters": [
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "accessibility",
+      "required": false
+    },
+    {
+      "description": "An alert can contain action buttons.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "ButtonGroupProps"
+            }
+          ]
+        },
+        {
+          "name": "ShorthandCollection",
+          "parameters": [
+            {
+              "name": "ButtonProps"
+            }
+          ]
+        }
+      ],
+      "name": "actions",
+      "required": false
+    },
+    {
+      "description": "An element type to render as (string or component).",
+      "defaultValue": "div",
+      "tags": [],
+      "types": [
+        {
+          "name": "React.ElementType"
+        }
+      ],
+      "name": "as",
+      "required": false
+    },
+    {
+      "description": "An alert's position relative to neighboring items.",
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        },
+        {
+          "name": "literal",
+          "value": "top"
+        },
+        {
+          "name": "literal",
+          "value": "bottom"
+        }
+      ],
+      "name": "attached",
+      "required": false
+    },
+    {
+      "description": "An alert can have a body that contains header and content elements.",
+      "defaultValue": {},
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "BoxProps"
+            }
+          ]
+        }
+      ],
+      "name": "body",
+      "required": false
+    },
+    {
+      "description": "Additional CSS class name(s) to apply.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "className",
+      "required": false
+    },
+    {
+      "description": "Shorthand for primary content.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "BoxProps"
+            }
+          ]
+        }
+      ],
+      "name": "content",
+      "required": false
+    },
+    {
+      "description": "An alert may be formatted to display a danger message.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "danger",
+      "required": false
+    },
+    {
+      "description": "A default value for the `visible` prop.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "defaultVisible",
+      "required": false
+    },
+    {
+      "description": "",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "design",
+      "required": false
+    },
+    {
+      "description": "A button shorthand for the dismiss action slot. To use this slot the alert should be\ndismissible.",
+      "defaultValue": {
+        "icon": "close"
+      },
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "ButtonProps"
+            }
+          ]
+        }
+      ],
+      "name": "dismissAction",
+      "required": false
+    },
+    {
+      "description": "An alert can be dismissible.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "dismissible",
+      "required": false
+    },
+    {
+      "description": "An alert can only take up the width of its content.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "fitted",
+      "required": false
+    },
+    {
+      "description": "An alert may contain a header.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "TextProps"
+            }
+          ]
+        }
+      ],
+      "name": "header",
+      "required": false
+    },
+    {
+      "description": "An alert may contain an icon.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "IconProps"
+            }
+          ]
+        }
+      ],
+      "name": "icon",
+      "required": false
+    },
+    {
+      "description": "An alert may be formatted to display information.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "info",
+      "required": false
+    },
+    {
+      "description": "Called after user will dismiss the alert.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "AlertProps"
+            }
+          ]
+        }
+      ],
+      "name": "onDismiss",
+      "required": false
+    },
+    {
+      "description": "Called after the alert is focused.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "AlertProps"
+            }
+          ]
+        }
+      ],
+      "name": "onFocus",
+      "required": false
+    },
+    {
+      "description": "Additional CSS styles to apply to the component instance.",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "styles",
+      "required": false
+    },
+    {
+      "description": "An alert can be formatted to display a successful message.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "success",
+      "required": false
+    },
+    {
+      "description": "Override for theme site variables to allow modifications of component styling via themes.",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "variables",
+      "required": false
+    },
+    {
+      "description": "An alert can be set to visible to force itself to be shown.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "visible",
+      "required": false
+    },
+    {
+      "description": "An alert can be formatted to display a warning message.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "warning",
+      "required": false
+    }
+  ],
+  "repoPath": "packages/fluentui/react/src/components/Alert/Alert.tsx",
+  "subcomponentName": null,
+  "subcomponents": [],
+  "type": "component"
+}

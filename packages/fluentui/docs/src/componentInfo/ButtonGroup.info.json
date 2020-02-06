@@ -1,0 +1,153 @@
+{
+  "implementsCreateShorthand": true,
+  "mappedShorthandProp": "content",
+  "apiPath": "Button.Group",
+  "componentClassName": "ui-buttons",
+  "constructorName": "ButtonGroup",
+  "displayName": "ButtonGroup",
+  "docblock": {
+    "description": "A ButtonGroup represents multiple related actions as a group.",
+    "tags": []
+  },
+  "filename": "ButtonGroup.tsx",
+  "filenameWithoutExt": "ButtonGroup",
+  "isChild": true,
+  "isParent": false,
+  "parentDisplayName": "Button",
+  "props": [
+    {
+      "description": "Accessibility behavior if overridden by the user.",
+      "tags": [],
+      "types": [
+        {
+          "name": "Accessibility",
+          "parameters": [
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "accessibility",
+      "required": false
+    },
+    {
+      "description": "An element type to render as (string or component).",
+      "defaultValue": "div",
+      "tags": [],
+      "types": [
+        {
+          "name": "React.ElementType"
+        }
+      ],
+      "name": "as",
+      "required": false
+    },
+    {
+      "description": "The buttons contained inside the ButtonGroup.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandCollection",
+          "parameters": [
+            {
+              "name": "ButtonProps"
+            },
+            {
+              "name": "never",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "buttons",
+      "required": false
+    },
+    {
+      "description": "The buttons inside group can appear circular.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "circular",
+      "required": false
+    },
+    {
+      "description": "Additional CSS class name(s) to apply.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "className",
+      "required": false
+    },
+    {
+      "description": "Shorthand for primary content.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ReactNode"
+        }
+      ],
+      "name": "content",
+      "required": false
+    },
+    {
+      "description": "",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "design",
+      "required": false
+    },
+    {
+      "description": "Additional CSS styles to apply to the component instance.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ComponentSlotStyle",
+          "parameters": [
+            {
+              "name": "any",
+              "keyword": true
+            },
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "styles",
+      "required": false
+    },
+    {
+      "description": "Override for theme site variables to allow modifications of component styling via themes.",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "variables",
+      "required": false
+    }
+  ],
+  "repoPath": "packages/fluentui/react/src/components/Button/ButtonGroup.tsx",
+  "subcomponentName": "Group",
+  "subcomponents": null,
+  "type": "component"
+}

@@ -1,0 +1,4 @@
+{
+  "js": "import React from 'react'\nimport ComponentBestPractices from '../../../../components/ComponentBestPractices'\n\nconst doList = [\n  'Use Accordion for grouping parts of the UI (multipart forms, articles...).',\n  'Use Tree component to display a hierarchical structure that allows user to select one item.',\n]\n\nconst AccordionBestPractices = () => {\n  return <ComponentBestPractices doList={doList} />\n}\n\nexport default AccordionBestPractices\n",
+  "ts": "import * as React from 'react'\n\nimport ComponentBestPractices from '../../../../components/ComponentBestPractices'\n\nconst doList = [\n  'Use Accordion for grouping parts of the UI (multipart forms, articles...).',\n  'Use Tree component to display a hierarchical structure that allows user to select one item.',\n]\n\nconst AccordionBestPractices: React.FunctionComponent<{}> = () => {\n  return <ComponentBestPractices doList={doList} />\n}\n\nexport default AccordionBestPractices\n"
+}

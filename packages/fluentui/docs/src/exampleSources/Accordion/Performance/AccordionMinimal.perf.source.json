@@ -1,0 +1,4 @@
+{
+  "js": "import { Accordion } from '@fluentui/react'\nimport React from 'react'\n\nconst AccordionMinimalPerf = () => <Accordion />\n\nAccordionMinimalPerf.iterations = 1000\nAccordionMinimalPerf.filename = 'AccordionMinimal.perf.tsx'\nexport default AccordionMinimalPerf\n",
+  "ts": "import { Accordion } from '@fluentui/react'\nimport * as React from 'react'\n\nconst AccordionMinimalPerf = () => <Accordion />\n\nAccordionMinimalPerf.iterations = 1000\nAccordionMinimalPerf.filename = 'AccordionMinimal.perf.tsx'\n\nexport default AccordionMinimalPerf\n"
+}

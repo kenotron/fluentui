@@ -1,0 +1,236 @@
+{
+  "implementsCreateShorthand": true,
+  "mappedShorthandProp": "header",
+  "apiPath": "Attachment",
+  "componentClassName": "ui-attachment",
+  "constructorName": "Attachment",
+  "displayName": "Attachment",
+  "docblock": {
+    "description": "An Attachment represents a file or media attachment, which may contain some metadata or actions.",
+    "tags": []
+  },
+  "filename": "Attachment.tsx",
+  "filenameWithoutExt": "Attachment",
+  "isChild": false,
+  "isParent": true,
+  "parentDisplayName": null,
+  "props": [
+    {
+      "description": "Accessibility behavior if overridden by the user.",
+      "defaultValue": "attachmentBehavior",
+      "tags": [],
+      "types": [
+        {
+          "name": "Accessibility",
+          "parameters": [
+            {
+              "name": "any",
+              "keyword": true
+            }
+          ]
+        }
+      ],
+      "name": "accessibility",
+      "required": false
+    },
+    {
+      "description": "Button shorthand for the action slot.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "ButtonProps"
+            }
+          ]
+        }
+      ],
+      "name": "action",
+      "required": false
+    },
+    {
+      "description": "An Attachment can be styled to indicate possible user interaction.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "actionable",
+      "required": false
+    },
+    {
+      "description": "An element type to render as (string or component).",
+      "defaultValue": "div",
+      "tags": [],
+      "types": [
+        {
+          "name": "React.ElementType"
+        }
+      ],
+      "name": "as",
+      "required": false
+    },
+    {
+      "description": "Additional CSS class name(s) to apply.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        }
+      ],
+      "name": "className",
+      "required": false
+    },
+    {
+      "description": "A string describing the attachment.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "TextProps"
+            }
+          ]
+        }
+      ],
+      "name": "description",
+      "required": false
+    },
+    {
+      "description": "",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "design",
+      "required": false
+    },
+    {
+      "description": "An attachment can show that it cannot be interacted with.",
+      "defaultValue": false,
+      "tags": [],
+      "types": [
+        {
+          "name": "boolean",
+          "keyword": true
+        }
+      ],
+      "name": "disabled",
+      "required": false
+    },
+    {
+      "description": "The name of the attachment.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "TextProps"
+            }
+          ]
+        }
+      ],
+      "name": "header",
+      "required": false
+    },
+    {
+      "description": "Shorthand for the icon.",
+      "tags": [],
+      "types": [
+        {
+          "name": "ShorthandValue",
+          "parameters": [
+            {
+              "name": "IconProps"
+            }
+          ]
+        }
+      ],
+      "name": "icon",
+      "required": false
+    },
+    {
+      "description": "Called after user's click.",
+      "tags": [
+        {
+          "title": "param",
+          "description": "React's original SyntheticEvent.",
+          "type": null,
+          "name": "event"
+        },
+        {
+          "title": "param",
+          "description": "All props.",
+          "type": null,
+          "name": "data"
+        }
+      ],
+      "types": [
+        {
+          "name": "ComponentEventHandler",
+          "parameters": [
+            {
+              "name": "AttachmentProps"
+            }
+          ]
+        }
+      ],
+      "name": "onClick",
+      "required": false
+    },
+    {
+      "description": "Value indicating percent complete.",
+      "tags": [],
+      "types": [
+        {
+          "name": "string",
+          "keyword": true
+        },
+        {
+          "name": "number",
+          "keyword": true
+        }
+      ],
+      "name": "progress",
+      "required": false
+    },
+    {
+      "description": "Additional CSS styles to apply to the component instance.",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "styles",
+      "required": false
+    },
+    {
+      "description": "Override for theme site variables to allow modifications of component styling via themes.",
+      "tags": [],
+      "types": [
+        {
+          "name": "any",
+          "keyword": true
+        }
+      ],
+      "name": "variables",
+      "required": false
+    }
+  ],
+  "repoPath": "packages/fluentui/react/src/components/Attachment/Attachment.tsx",
+  "subcomponentName": null,
+  "subcomponents": [],
+  "type": "component"
+}
