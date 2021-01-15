@@ -1,15 +1,15 @@
-// @ts-check
-const resources = require('../../scripts/webpack/webpack-resources');
+const path = require('path');
 const webpack = require('webpack');
 const { webpackMerge } = require('just-scripts');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-const BUNDLE_NAME = 'fluentui-react';
-
-let config = resources.createConfig(BUNDLE_NAME, false, {
+let baseConfig = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
   },
-
+  devtool: false,
+  entry: undefined,
+  mode: 'development',
   module: {
     rules: [
       {
@@ -59,22 +59,66 @@ let config = resources.createConfig(BUNDLE_NAME, false, {
       },
     ],
   },
+};
 
-  // @ts-ignore
+const shared = {
+  react: { singleton: true },
+  'react-dom': { singleton: true },
+  '@fluentui/utilities': { singleton: true },
+  '@fluentui/theme': { singleton: true },
+  '@fluentui/merge-styles': { singleton: true },
+  '@fluentui/dom-utilities': { singleton: true },
+};
+
+let buttonConfig = webpackMerge(baseConfig, {
+  output: {
+    path: path.join(__dirname, 'dist/button'),
+  },
+  plugins: [
+    new BundleAnalyzerPlugin(),
+    new webpack.container.ModuleFederationPlugin({
+      name: 'fluentuiReactButton',
+      filename: 'remoteEntry.js',
+      exposes: {
+        '.': '@fluentui/react-internal/src/compat/components/Button',
+      },
+      shared,
+    }),
+  ],
+});
+
+let labelConfig = webpackMerge(baseConfig, {
+  output: {
+    path: path.join(__dirname, 'dist/label'),
+  },
+  plugins: [
+    new webpack.container.ModuleFederationPlugin({
+      name: 'fluentuiReactLabel',
+      filename: 'remoteEntry.js',
+      exposes: {
+        '.': '@fluentui/react-internal/src/components/Label',
+      },
+      shared,
+    }),
+  ],
+});
+
+let metaConfig = webpackMerge(baseConfig, {
   plugins: [
     new webpack.container.ModuleFederationPlugin({
       name: 'fluentuiReact',
       filename: 'remoteEntry.js',
       exposes: {
-        './Button': './src/Button',
+        './lib/compat/Button': 'fluentuiRemote/Button',
+        './lib/Label': 'fluentuiRemote/Label',
       },
+      remotes: {
+        'fluentuiRemote/Button': 'fluentuiReactButton@http://localhost:2345/button/remoteEntry.js',
+        'fluentuiRemote/Label': 'fluentuiReactLabel@http://localhost:2345/label/remoteEntry.js',
+      },
+      shared,
     }),
   ],
-  output: {
-    filename: `${BUNDLE_NAME}.mf.js`,
-  },
-})[0];
+});
 
-delete config.entry;
-
-module.exports = config;
+module.exports = [buttonConfig, labelConfig, metaConfig];

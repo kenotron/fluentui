@@ -20,9 +20,9 @@ import {
   FocusRects,
 } from '../../../Utilities';
 import { createMergedRef } from '@fluentui/utilities';
-import { Icon, FontIcon, ImageIcon } from '../../../Icon';
+import { Icon, FontIcon, ImageIcon } from '../../../components/Icon';
 import { DirectionalHint } from '../../../common/DirectionalHint';
-import { ContextualMenu, IContextualMenuProps } from '../../../ContextualMenu';
+import { ContextualMenu, IContextualMenuProps } from '../../../components/ContextualMenu';
 import { IButtonProps, IButton } from './Button.types';
 import { IButtonClassNames, getBaseButtonClassNames } from './BaseButton.classNames';
 import {
