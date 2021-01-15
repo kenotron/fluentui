@@ -75,7 +75,6 @@ let buttonConfig = webpackMerge(baseConfig, {
     path: path.join(__dirname, 'dist/button'),
   },
   plugins: [
-    new BundleAnalyzerPlugin(),
     new webpack.container.ModuleFederationPlugin({
       name: 'fluentuiReactButton',
       filename: 'remoteEntry.js',
@@ -103,6 +102,27 @@ let labelConfig = webpackMerge(baseConfig, {
   ],
 });
 
+let breadcrumbConfig = webpackMerge(baseConfig, {
+  output: {
+    path: path.join(__dirname, 'dist/breadcrumb'),
+  },
+  plugins: [
+    // new BundleAnalyzerPlugin(),
+    new webpack.container.ModuleFederationPlugin({
+      name: 'fluentuiReactBreadcrumb',
+      filename: 'remoteEntry.js',
+      exposes: {
+        '.': '@fluentui/react/src/Breadcrumb',
+        '@fluentui/react-internal/lib/compat/Button': 'fluentuiReact/lib/compat/Button',
+      },
+      remotes: {
+        fluentuiReact: 'fluentuiReact@http://localhost:2345/remoteEntry.js',
+      },
+      shared,
+    }),
+  ],
+});
+
 let metaConfig = webpackMerge(baseConfig, {
   plugins: [
     new webpack.container.ModuleFederationPlugin({
@@ -111,14 +131,16 @@ let metaConfig = webpackMerge(baseConfig, {
       exposes: {
         './lib/compat/Button': 'fluentuiRemote/Button',
         './lib/Label': 'fluentuiRemote/Label',
+        './lib/Breadcrumb': 'fluentuiRemote/Breadcrumb',
       },
       remotes: {
         'fluentuiRemote/Button': 'fluentuiReactButton@http://localhost:2345/button/remoteEntry.js',
         'fluentuiRemote/Label': 'fluentuiReactLabel@http://localhost:2345/label/remoteEntry.js',
+        'fluentuiRemote/Breadcrumb': 'fluentuiReactBreadcrumb@http://localhost:2345/breadcrumb/remoteEntry.js',
       },
       shared,
     }),
   ],
 });
 
-module.exports = [buttonConfig, labelConfig, metaConfig];
+module.exports = [buttonConfig, labelConfig, breadcrumbConfig, metaConfig];
