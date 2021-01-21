@@ -21,6 +21,8 @@ for (const component of rootComponents) {
 const metaConfig = {
   output: {},
   entry: './dummy.js',
+  mode: 'production',
+  devtool: 'source-map',
   plugins: [
     new webpack.container.ModuleFederationPlugin({
       name: 'fluentuiReact',
