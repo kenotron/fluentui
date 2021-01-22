@@ -18,7 +18,7 @@
     "noImplicitThis": true,
     "skipLibCheck": true,
     "lib": ["es5", "dom", "es2015.promise"],
-    "typeRoots": ["../../node_modules/@types", "../../typings"],
+    "typeRoots": ["../../node_modules/@types", "../../typings", "../../ladingTypes"],
     "types": ["webpack-env", "custom-global"]
   },
   "include": ["src"]

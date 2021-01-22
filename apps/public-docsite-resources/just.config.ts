@@ -1,3 +1,5 @@
-import { preset } from '@fluentui/scripts';
+import { preset, task, webpackDevServerTask } from '@fluentui/scripts';
 
 preset();
+
+task('dev', webpackDevServerTask());
