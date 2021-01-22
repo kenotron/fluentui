@@ -7,6 +7,7 @@ const webpack = require('webpack');
 const shared = {
   react: { singleton: true },
   'react-dom': { singleton: true },
+  '@fluentui/react-internal': { singleton: true },
 };
 
 const rootComponents = fs
@@ -23,6 +24,9 @@ const metaConfig = {
   entry: './dummy.js',
   mode: 'production',
   devtool: 'source-map',
+  optimization: {
+    concatenateModules: false,
+  },
   plugins: [
     new webpack.container.ModuleFederationPlugin({
       name: 'fluentuiReact',
@@ -30,7 +34,7 @@ const metaConfig = {
       exposes: {
         ...rootComponentsExposes,
         './lib/compat/Button': '@fluentui/react/lib/compat/Button',
-        // '.': '@fluentui/react/lib/index',
+        '.': '@fluentui/react/lib/index',
       },
       shared,
     }),
