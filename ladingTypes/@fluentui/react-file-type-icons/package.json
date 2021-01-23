@@ -1,13 +1,13 @@
 {
-  "name": "@fluentui/azure-themes",
-  "version": "8.0.0-beta.38",
-  "description": "Azure themes for Fluent UI React",
+  "name": "@fluentui/react-file-type-icons",
+  "version": "8.0.0-beta.12",
+  "description": "Fluent UI React file type icon set.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
-  "typings": "lib/index.d.ts",
   "sideEffects": [
     "lib/version.js"
   ],
+  "typings": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/microsoft/fluentui"
@@ -17,17 +17,26 @@
     "build": "just-scripts build",
     "bundle": "just-scripts bundle",
     "lint": "just-scripts lint",
+    "test": "just-scripts test",
     "just": "just-scripts",
-    "code-style": "just-scripts code-style",
     "clean": "just-scripts clean",
-    "start": "just-scripts dev:storybook"
+    "code-style": "just-scripts code-style"
   },
   "devDependencies": {
     "@fluentui/eslint-plugin": "^1.0.0-beta.0",
+    "@types/react": "16.8.25",
+    "@types/webpack-env": "1.16.0",
     "@fluentui/scripts": "^1.0.0",
-    "react": "16.8.6"
+    "react": "16.8.6",
+    "react-app-polyfill": "~1.0.1"
   },
   "dependencies": {
+    "@fluentui/set-version": "^8.0.0-beta.0",
+    "@fluentui/style-utilities": "^8.0.0-beta.10",
     "tslib": "^1.10.0"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.8.0 <17.0.0",
+    "react": ">=16.8.0 <17.0.0"
   }
 }

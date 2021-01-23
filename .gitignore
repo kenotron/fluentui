@@ -14,6 +14,8 @@ packages/fluentui/docs/dist/
 packages/fluentui/ability-attributes/src/schema.ts
 stats/
 
+!ladingTypes/**/*.d.ts
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

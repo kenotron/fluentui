@@ -1355,6 +1355,14 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
+"@fluentui/dom-utilities@^2.0.0-beta.0":
+  version "2.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@fluentui/dom-utilities/-/dom-utilities-2.0.0-beta.0.tgz#d019cb3bb2314cff386986a4dd4cbc7323272a5f"
+  integrity sha512-hmuKf6ghmWxrh7c3AMo2Hd4burmpt3zvl7GB3jdtu6Lze1GZxz0ePkNlN+kgUpZiYttAdjMgj7J/eaZBJsOJLQ==
+  dependencies:
+    "@fluentui/set-version" "^8.0.0-beta.0"
+    tslib "^1.10.0"
+
 "@fluentui/react-avatar@^0.8.2-15":
   version "0.8.2-15"
   resolved "https://registry.yarnpkg.com/@fluentui/react-avatar/-/react-avatar-0.8.2-15.tgz#dcd1e695b790fbf57609d16957ea4c7bd5082ab8"
@@ -1384,6 +1392,47 @@
     "@fluentui/theme" "^2.0.0-beta.12"
     "@fluentui/utilities" "^8.0.0-beta.9"
     "@microsoft/load-themed-styles" "^1.10.26"
+    tslib "^1.10.0"
+
+"@fluentui/react-cards@^1.0.0-beta.38":
+  version "1.0.0-beta.39"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-cards/-/react-cards-1.0.0-beta.39.tgz#4634afcda0bcfa22ae02590beb73600fb892d344"
+  integrity sha512-oDhyQgg8oH/OBSPwRhJzLKbtE4v5e1XeYPVr4R9Hp+KF1a4Th0YwaoKYrva3yaD19+Bf79VqvkKFDijCcvsI5g==
+  dependencies:
+    "@fluentui/foundation-legacy" "^8.0.0-beta.12"
+    "@fluentui/keyboard-key" "^0.2.12"
+    "@fluentui/react" "^8.0.0-beta.40"
+    "@fluentui/react-compose" "^1.0.0-beta.10"
+    "@fluentui/react-hooks" "^8.0.0-beta.9"
+    "@fluentui/react-theme-provider" "^1.0.0-beta.16"
+    "@fluentui/set-version" "^8.0.0-beta.0"
+    "@fluentui/theme" "^2.0.0-beta.12"
+    "@fluentui/utilities" "^8.0.0-beta.9"
+    "@microsoft/load-themed-styles" "^1.10.26"
+    tslib "^1.10.0"
+
+"@fluentui/react-charting@^5.0.0-beta.39":
+  version "5.0.0-beta.40"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-charting/-/react-charting-5.0.0-beta.40.tgz#c5142de761c789736d9e79f04a062ddd20694ff6"
+  integrity sha512-FMeqx2fxpds860xqWNDZId0ZDvHSTjq9rloK/JIS33IGrnBkaoQ3BvdxUMIvBZfMJSzJhIdkXHCAI47A3CiA/A==
+  dependencies:
+    "@fluentui/react-focus" "^8.0.0-beta.15"
+    "@fluentui/set-version" "^8.0.0-beta.0"
+    "@microsoft/load-themed-styles" "^1.10.26"
+    "@types/d3-array" "1.2.1"
+    "@types/d3-axis" "1.0.10"
+    "@types/d3-format" "^1.3.1"
+    "@types/d3-scale" "2.0.0"
+    "@types/d3-selection" "1.4.1"
+    "@types/d3-shape" "^1.2.3"
+    "@types/d3-time-format" "^2.1.0"
+    d3-array "1.2.1"
+    d3-axis "1.0.8"
+    d3-format "^1.4.4"
+    d3-scale "2.0.0"
+    d3-selection "1.3.0"
+    d3-shape "^1.2.0"
+    d3-time-format "^2.1.3"
     tslib "^1.10.0"
 
 "@fluentui/react-checkbox@^1.0.0-beta.33", "@fluentui/react-checkbox@^1.0.0-beta.34":
@@ -1524,7 +1573,7 @@
     "@fluentui/utilities" "^8.0.0-beta.9"
     tslib "^1.10.0"
 
-"@fluentui/react@^8.0.0-beta.39":
+"@fluentui/react@^8.0.0-beta.39", "@fluentui/react@^8.0.0-beta.40":
   version "8.0.0-beta.40"
   resolved "https://registry.yarnpkg.com/@fluentui/react/-/react-8.0.0-beta.40.tgz#955c43214f4604e1b1250dfe843b5799ce2d461f"
   integrity sha512-EghAmqh6AiVYPnSekxIT+50rxeU5lI5fzc9D45yNAf60YFBt3vnWAUAHcSnSuMWysDdc2QYMZY0N7Obo5DNXzQ==
@@ -1541,6 +1590,17 @@
     "@fluentui/set-version" "^8.0.0-beta.0"
     "@fluentui/utilities" "^8.0.0-beta.9"
     "@microsoft/load-themed-styles" "^1.10.26"
+    tslib "^1.10.0"
+
+"@fluentui/utilities@^8.0.0-beta.9":
+  version "8.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/@fluentui/utilities/-/utilities-8.0.0-beta.9.tgz#ebc1f3ebd5fcc7b2984cbd3106c9a626b4ca79c1"
+  integrity sha512-VYuLfR11pKOAO8CJ4ACGY+t7dnIDTGNxeTTVeHOtZjSFmeYBTuB+WqL3VLBc1IiPZ/OqyIoCpaaNljjFw2ai0A==
+  dependencies:
+    "@fluentui/dom-utilities" "^2.0.0-beta.0"
+    "@fluentui/merge-styles" "^8.0.0-beta.3"
+    "@fluentui/set-version" "^8.0.0-beta.0"
+    prop-types "^15.7.2"
     tslib "^1.10.0"
 
 "@gulp-sourcemaps/identity-map@1.X":
@@ -3774,11 +3834,6 @@
   dependencies:
     "@types/cheerio" "*"
     "@types/react" "*"
-
-"@types/es6-promise@0.0.32":
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/@types/es6-promise/-/es6-promise-0.0.32.tgz#3bcf44fb1e429f3df76188c8c6d874463ba371fd"
-  integrity sha1-O89E+x5Cnz33YYjIxth0Rjujcf0=
 
 "@types/eslint-scope@^3.7.0":
   version "3.7.0"
@@ -6754,7 +6809,7 @@ ccount@^1.0.3:
   resolved "https://registry.yarnpkg.com/ccount/-/ccount-1.0.5.tgz#ac82a944905a65ce204eb03023157edf29425c17"
   integrity sha512-MOli1W+nfbPLlKEhInaxhRdp7KVLFxLN5ykwzHgLsLI3H3gs5jjFAK4Eoj3OzzcxCtumDaI8onoVDeQyWaNTkw==
 
-chalk@*, chalk@2.4.2, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.2.0, chalk@^2.3.0, chalk@^2.3.1, chalk@^2.4.0, chalk@^2.4.1, chalk@^2.4.2:
+chalk@*, chalk@2.4.2, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.2.0, chalk@^2.3.0, chalk@^2.3.1, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
@@ -9113,7 +9168,7 @@ es6-object-assign@^1.1.0:
   resolved "https://registry.yarnpkg.com/es6-object-assign/-/es6-object-assign-1.1.0.tgz#c2c3582656247c39ea107cb1e6652b6f9f24523c"
   integrity sha1-wsNYJlYkfDnqEHyx5mUrb58kUjw=
 
-es6-promise@^4.0.3, es6-promise@^4.1.0:
+es6-promise@^4.0.3:
   version "4.2.8"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
   integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
@@ -9960,7 +10015,7 @@ filenamify@^4.1.0:
     strip-outer "^1.0.1"
     trim-repeated "^1.0.0"
 
-filesize@3.6.1, filesize@^3.6.1:
+filesize@3.6.1:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/filesize/-/filesize-3.6.1.tgz#090bb3ee01b6f801a8a8be99d31710b3422bb317"
   integrity sha512-7KjR1vv6qnicaPMi1iiTcI85CyYwRO/PSFCu6SvqL8jN2Wjt/NIYQTFtFs7fSDCYOstUkEWIQGFUg5YZQfjlcg==
@@ -11671,13 +11726,6 @@ immer@1.10.0:
   resolved "https://registry.yarnpkg.com/immer/-/immer-1.10.0.tgz#bad67605ba9c810275d91e1c2a47d4582e98286d"
   integrity sha512-O3sR1/opvCDGLEVcvrGTMtLac8GJ5IwZC4puPrLuRj3l7ICKvkmA0vGuU9OW8mV9WIBRnaxp5GJh9IEAaNOoYg==
 
-immutability-helper@~2.8.1:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/immutability-helper/-/immutability-helper-2.8.1.tgz#3c5ec05fcd83676bfae7146f319595243ad904f4"
-  integrity sha512-8AVB5EUpRBUdXqfe4cFsFECsOIZ9hX/Arl8B8S9/tmwpYv3UWvOsXUPOjkuZIMaVxfSWkxCzkng1rjmEoSWrxQ==
-  dependencies:
-    invariant "^2.2.0"
-
 import-cwd@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/import-cwd/-/import-cwd-2.1.0.tgz#aa6cf36e722761285cb371ec6519f53e2435b0a9"
@@ -11901,7 +11949,7 @@ interpret@^2.2.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-2.2.0.tgz#1a78a0b5965c40a5416d007ad6f50ad27c417df9"
   integrity sha512-Ju0Bz/cEia55xDwUWEa8+olFpCiQoypjnQySseKtmjNrnps3P+xfpUmGr90T7yjlVJmOtybRvPXhKMbHr+fWnw==
 
-invariant@^2.2.0, invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
+invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -14717,7 +14765,7 @@ modify-values@^1.0.0:
   resolved "https://registry.yarnpkg.com/modify-values/-/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
   integrity sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
 
-moment@^2.18.1, moment@^2.22.1:
+moment@^2.18.1:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
   integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
@@ -21541,11 +21589,6 @@ whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3:
   dependencies:
     iconv-lite "0.4.24"
 
-whatwg-fetch@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz#dde6a5df315f9d39991aa17621853d720b85566f"
-  integrity sha512-dcQ1GWpOD/eEQ97k66aiEVpNnapVj90/+R+SXTPYGHpYBBypfKJEQjLrvMZ7YXbKm21gXd4NcuxUTjiv1YtLng==
-
 whatwg-fetch@>=0.10.0, whatwg-fetch@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
@@ -21760,19 +21803,6 @@ write-file-atomic@^2.0.0, write-file-atomic@^2.3.0, write-file-atomic@^2.4.3:
     graceful-fs "^4.1.11"
     imurmurhash "^0.1.4"
     signal-exit "^3.0.2"
-
-write-file-webpack-plugin@^4.1.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/write-file-webpack-plugin/-/write-file-webpack-plugin-4.5.0.tgz#b53ccf01c346342a131c73a2ddd27049e90c5b44"
-  integrity sha512-k46VeERtaezbmjpDcMWATjKUWBrVe/ZEEm0cyvUm8FFP8A/r+dw5x3psRvkUOhqh9bqBLUlGYYbtr6luI+HeAg==
-  dependencies:
-    chalk "^2.4.0"
-    debug "^3.1.0"
-    filesize "^3.6.1"
-    lodash "^4.17.5"
-    mkdirp "^0.5.1"
-    moment "^2.22.1"
-    write-file-atomic "^2.3.0"
 
 write-json-file@^2.2.0, write-json-file@^2.3.0:
   version "2.3.0"
