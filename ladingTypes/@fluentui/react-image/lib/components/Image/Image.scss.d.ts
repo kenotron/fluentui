@@ -1,0 +1,9 @@
+export declare const root = "root_a1295607";
+export declare const _bordered = "_bordered_a1295607";
+export declare const _circular = "_circular_a1295607";
+export declare const _fit_none = "_fit_none_a1295607";
+export declare const _fit_center = "_fit_center_a1295607";
+export declare const _fit_contain = "_fit_contain_a1295607";
+export declare const _fit_cover = "_fit_cover_a1295607";
+export declare const _fluid = "_fluid_a1295607";
+export declare const _rounded = "_rounded_a1295607";

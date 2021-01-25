@@ -1,0 +1,10 @@
+import { SourceFile, JsxOpeningElement, JsxSelfClosingElement } from 'ts-morph';
+import { CodeMod } from '../../types';
+export declare function renameProperty(elements: (JsxOpeningElement | JsxSelfClosingElement)[], attributeName: string, attributeReplacement: string): void;
+export declare function replacePersonaImport(file: SourceFile): void;
+export declare function replaceIPersonaPropsImport(file: SourceFile): void;
+export declare function replacePersonaSizeImport(file: SourceFile): void;
+export declare function renamePrimaryTextProp(file: SourceFile): void;
+export declare function renameRenderCoin(file: SourceFile): void;
+declare const PersonaToAvatarMod: CodeMod;
+export default PersonaToAvatarMod;

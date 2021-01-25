@@ -1,0 +1,2 @@
+import { IPersonaProps } from '@fluentui/react/lib/Persona';
+export declare const UnifiedPeoplePicker: (props: Pick<import("..").IUnifiedPickerProps<IPersonaProps>, "className" | "onPaste" | "onFocus" | "onBlur" | "onKeyDown" | "componentRef" | "dragDropEvents" | "selectedItemsListProps" | "floatingSuggestionProps" | "currentRenderedQuerystring" | "onQueryStringChange" | "focusZoneProps" | "inputProps" | "headerComponent" | "onInputChange" | "customClipboardType" | "defaultDragDropEnabled" | "autofillDragDropEnabled" | "onDropAutoFill">) => JSX.Element;

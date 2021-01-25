@@ -1,0 +1,13 @@
+export declare const borderWidth = "1px";
+export declare const borderWidthError = "2px";
+export declare const borderSolid = "solid";
+export declare const borderNone = "none";
+export declare const dropDownItemHeight = "32px";
+export declare const fontFamily = "Segoe UI, \"Segoe UI Web (West European)\", \"Segoe UI\", -apple-system, BlinkMacSystemFont, Roboto, \"Helvetica Neue\",sans-serif";
+export declare const fontWeightBold = "700";
+export declare const inputControlHeight = "24px";
+export declare const inputControlHeightInner = "20px";
+export declare const textAlignCenter = "center";
+export declare const transparent = "transparent";
+export declare const MinimumScreenSelector: string;
+export declare const MediumScreenSelector: string;
