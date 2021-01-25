@@ -1,0 +1,1527 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/react-tabs!",
+  "docComment": "",
+  "name": "@fluentui/react-tabs",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/react-tabs!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-tabs!IPivot:interface",
+          "docComment": "/**\n * {@docCategory Pivot}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IPivot "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IPivot",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivot#focus:member(1)",
+              "docComment": "/**\n * Sets focus to the first pivot tab.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "focus(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "focus"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-tabs!IPivotItemProps:interface",
+          "docComment": "/**\n * {@docCategory Pivot}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IPivotItemProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.HTMLAttributes",
+              "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLDivElement",
+              "canonicalReference": "!HTMLDivElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IPivotItemProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotItemProps#alwaysRender:member",
+              "docComment": "/**\n * Defines whether to always render the pivot item (regardless of whether it is selected or not). Useful if you're rendering content that is expensive to mount.\n *\n * @defaultvalue\n *\n * false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "alwaysRender?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "alwaysRender",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotItemProps#ariaLabel:member",
+              "docComment": "/**\n * The aria label of each pivot link which will read by screen reader instead of linkText.\n *\n * Note that unless you have compelling requirements you should not override aria-label.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ariaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ariaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotItemProps#componentRef:member",
+              "docComment": "/**\n * Gets the component ref.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentRef?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRefObject",
+                  "canonicalReference": "@fluentui/utilities!IRefObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<{}>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "componentRef",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotItemProps#headerButtonProps:member",
+              "docComment": "/**\n * Props for the header command button. This provides a way to pass in native props, such as data-* and aria-*, for each pivot header/link element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "headerButtonProps?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | {\n        [key: string]: string | number | boolean;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "headerButtonProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotItemProps#headerText:member",
+              "docComment": "/**\n * The text displayed of each pivot link.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "headerText?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "headerText",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotItemProps#itemCount:member",
+              "docComment": "/**\n * Defines an optional item count displayed in parentheses just after the `linkText`.\n *\n * Examples: completed (4), Unread (99+)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "itemCount?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "itemCount",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotItemProps#itemIcon:member",
+              "docComment": "/**\n * An optional icon to show next to the pivot link.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "itemIcon?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "itemIcon",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotItemProps#itemKey:member",
+              "docComment": "/**\n * An required key to uniquely identify a pivot item.\n *\n * Note: The 'key' from react props cannot be used inside component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "itemKey?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "itemKey",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotItemProps#keytipProps:member",
+              "docComment": "/**\n * Optional keytip for this PivotItem\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "keytipProps?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IKeytipProps",
+                  "canonicalReference": "@fluentui/react-internal!IKeytipProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "keytipProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotItemProps#linkText:member",
+              "docComment": "/**\n * The text displayed of each pivot link - renaming to `headerText`.\n *\n * @deprecated\n *\n * Use `headerText` instead.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "linkText?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "linkText",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotItemProps#onRenderItemLink:member",
+              "docComment": "/**\n * Optional custom renderer for the pivot item link\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onRenderItemLink?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRenderFunction",
+                  "canonicalReference": "@fluentui/utilities!IRenderFunction:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IPivotItemProps",
+                  "canonicalReference": "@fluentui/react-tabs!IPivotItemProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onRenderItemLink",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-tabs!IPivotProps:interface",
+          "docComment": "/**\n * {@docCategory Pivot}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IPivotProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.HTMLAttributes",
+              "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLDivElement",
+              "canonicalReference": "!HTMLDivElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.RefAttributes",
+              "canonicalReference": "@types/react!~React.RefAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLDivElement",
+              "canonicalReference": "!HTMLDivElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IPivotProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps#className:member",
+              "docComment": "/**\n * Additional css class to apply to the Pivot\n *\n * @defaultvalue\n *\n * undefined\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "className?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "className",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps#componentRef:member",
+              "docComment": "/**\n * Optional callback to access the IPivot interface. Use this instead of ref for accessing the public methods and properties of the component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentRef?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.RefObject",
+                  "canonicalReference": "@types/react!~React.RefObject:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IPivot",
+                  "canonicalReference": "@fluentui/react-tabs!IPivot:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "componentRef",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps#defaultSelectedKey:member",
+              "docComment": "/**\n * Default selected key for the pivot. Only provide this if the pivot is an uncontrolled component; otherwise, use the `selectedKey` property.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "defaultSelectedKey?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "defaultSelectedKey",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps#getTabId:member",
+              "docComment": "/**\n * Callback to customize how IDs are generated for each tab header. Useful if you're rendering content outside and need to connect aria-labelledby.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getTabId?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(itemKey: string, index: number) => string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "getTabId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps#headersOnly:member",
+              "docComment": "/**\n * Whether to skip rendering the tabpanel with the content of the selected tab. Use this prop if you plan to separately render the tab content and don't want to leave an empty tabpanel in the page that may confuse Screen Readers.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "headersOnly?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "headersOnly",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps#linkFormat:member",
+              "docComment": "/**\n * Link format (links, tabs)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "linkFormat?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "PivotLinkFormatType",
+                  "canonicalReference": "@fluentui/react-tabs!PivotLinkFormatType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "linkFormat",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps#linkSize:member",
+              "docComment": "/**\n * Link size (normal, large)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "linkSize?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "PivotLinkSizeType",
+                  "canonicalReference": "@fluentui/react-tabs!PivotLinkSizeType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "linkSize",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps#onLinkClick:member",
+              "docComment": "/**\n * Callback for when the selected pivot item is changed.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onLinkClick?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(item?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "PivotItem",
+                  "canonicalReference": "@fluentui/react-tabs!PivotItem:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", ev?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.MouseEvent",
+                  "canonicalReference": "@types/react!~React.MouseEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onLinkClick",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 8
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps#overflowBehavior:member",
+              "docComment": "/**\n * Overflow behavior when there is not enough room to display all of the links/tabs * none: Pivot links will overflow the container and may not be visible * menu: Display an overflow menu that contains the tabs that don't fit\n *\n * @default none\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "overflowBehavior?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'none' | 'menu'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "overflowBehavior",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps#selectedKey:member",
+              "docComment": "/**\n * Key of the selected pivot item. Updating this will override the Pivot's selected item state. Only provide this if the pivot is a controlled component where you are maintaining the current state; otherwise, use `defaultSelectedKey`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "selectedKey?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "selectedKey",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps#styles:member",
+              "docComment": "/**\n * Call to provide customized styling that will layer on top of the variant rules.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "styles?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyleFunctionOrObject",
+                  "canonicalReference": "@fluentui/merge-styles!IStyleFunctionOrObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IPivotStyleProps",
+                  "canonicalReference": "@fluentui/react-tabs!IPivotStyleProps:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IPivotStyles",
+                  "canonicalReference": "@fluentui/react-tabs!IPivotStyles:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "styles",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 7
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps#theme:member",
+              "docComment": "/**\n * Theme provided by High-Order Component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "theme?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITheme",
+                  "canonicalReference": "@fluentui/theme!ITheme:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "theme",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 5
+            },
+            {
+              "startIndex": 6,
+              "endIndex": 10
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-tabs!IPivotStyleProps:type",
+          "docComment": "/**\n * {@docCategory Pivot}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IPivotStyleProps = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Required",
+              "canonicalReference": "!Required:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IPivotProps",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", 'theme'>> & "
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IPivotProps",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", 'className'> & {\n    linkSize?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PivotLinkSizeType",
+              "canonicalReference": "@fluentui/react-tabs!PivotLinkSizeType:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    linkFormat?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PivotLinkFormatType",
+              "canonicalReference": "@fluentui/react-tabs!PivotLinkFormatType:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IPivotStyleProps",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 15
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-tabs!IPivotStyles:interface",
+          "docComment": "/**\n * {@docCategory Pivot}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IPivotStyles "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IPivotStyles",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotStyles#count:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "count: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "count",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotStyles#icon:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "icon: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "icon",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotStyles#itemContainer:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "itemContainer?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "itemContainer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotStyles#link:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "link: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "link",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotStyles#linkContent:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "linkContent: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "linkContent",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotStyles#linkInMenu:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "linkInMenu: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "linkInMenu",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotStyles#linkIsSelected:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "linkIsSelected: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "linkIsSelected",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotStyles#overflowMenuButton:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "overflowMenuButton: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "overflowMenuButton",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotStyles#root:member",
+              "docComment": "/**\n * Style for the root element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "root: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "root",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-tabs!IPivotStyles#text:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "text: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "text",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-tabs!Pivot:var",
+          "docComment": "/**\n * The Pivot control and related tabs pattern are used for navigating frequently accessed, distinct content categories. Pivots allow for navigation between two or more content views and relies on text headers to articulate the different sections of content.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "Pivot: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IPivotProps",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Pivot",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-tabs!PivotBase:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "PivotBase: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IPivotProps",
+              "canonicalReference": "@fluentui/react-tabs!IPivotProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PivotBase",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluentui/react-tabs!PivotItem:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class PivotItem extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IPivotItemProps",
+              "canonicalReference": "@fluentui/react-tabs!IPivotItemProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", {}> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PivotItem",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluentui/react-tabs!PivotItem:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `PivotItem` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(props: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IPivotItemProps",
+                  "canonicalReference": "@fluentui/react-tabs!IPivotItemProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-tabs!PivotItem#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JSX.Element",
+                  "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluentui/react-tabs!PivotLinkFormat:enum",
+          "docComment": "/**\n * {@docCategory Pivot}\n *\n * @deprecated\n *\n * Use strings 'links' or 'tabs' instead of this enum\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare const enum PivotLinkFormat "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PivotLinkFormat",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-tabs!PivotLinkFormat.links:member",
+              "docComment": "/**\n * Display Pivot Links as links\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "links = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"links\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "links",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-tabs!PivotLinkFormat.tabs:member",
+              "docComment": "/**\n * Display Pivot Links as Tabs\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tabs = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"tabs\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "tabs",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-tabs!PivotLinkFormatType:type",
+          "docComment": "/**\n * {@docCategory Pivot} Display mode for the pivot links/tabs\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type PivotLinkFormatType = "
+            },
+            {
+              "kind": "Content",
+              "text": "'links' | 'tabs'"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PivotLinkFormatType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluentui/react-tabs!PivotLinkSize:enum",
+          "docComment": "/**\n * {@docCategory Pivot}\n *\n * @deprecated\n *\n * Use strings 'normal' or 'large' instead of this enum\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare const enum PivotLinkSize "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PivotLinkSize",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-tabs!PivotLinkSize.large:member",
+              "docComment": "/**\n * Display links using large font size\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "large = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"large\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "large",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-tabs!PivotLinkSize.normal:member",
+              "docComment": "/**\n * Display Link using normal font size\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "normal = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"normal\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "normal",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-tabs!PivotLinkSizeType:type",
+          "docComment": "/**\n * {@docCategory Pivot} Size of the pivot links/tabs\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type PivotLinkSizeType = "
+            },
+            {
+              "kind": "Content",
+              "text": "'normal' | 'large'"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PivotLinkSizeType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,8 @@
 import { ButtonState } from './Button.types';
+export declare const GlobalClassNames: {
+    root: string;
+    icon: string;
+};
 export declare const ButtonSizeVariants: {
     size_smallest: {
         height: string;

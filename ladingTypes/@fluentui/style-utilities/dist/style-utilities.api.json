@@ -1,0 +1,2521 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/style-utilities!",
+  "docComment": "",
+  "name": "@fluentui/style-utilities",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/style-utilities!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!AnimationClassNames:var",
+          "docComment": "/**\n * {@docCategory AnimationClassNames}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "AnimationClassNames: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [key in keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "IAnimationStyles",
+              "canonicalReference": "@fluentui/theme!IAnimationStyles:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "]?: string;\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AnimationClassNames",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!buildClassMap:function(1)",
+          "docComment": "/**\n * Builds a class names object from a given map.\n *\n * @param styles - Map of unprocessed styles.\n *\n * @returns Map of property name to class name.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function buildClassMap<T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Object",
+              "canonicalReference": "!Object:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">(styles: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [key in keyof T]?: string;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "styles",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "buildClassMap"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ColorClassNames:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ColorClassNames: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IColorClassNames",
+              "canonicalReference": "@fluentui/style-utilities!IColorClassNames:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ColorClassNames",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!EdgeChromiumHighContrastSelector:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "EdgeChromiumHighContrastSelector = \"@media screen and (forced-colors: active)\""
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "EdgeChromiumHighContrastSelector",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!focusClear:function(1)",
+          "docComment": "/**\n * Generates style to clear browser specific focus styles.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function focusClear(): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRawStyle",
+              "canonicalReference": "@fluentui/merge-styles!IRawStyle:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "focusClear"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!FontClassNames:var",
+          "docComment": "/**\n * {@docCategory FontClassNames}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "FontClassNames: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [key in keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFontStyles",
+              "canonicalReference": "@fluentui/theme!IFontStyles:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "]?: string;\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FontClassNames",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!getEdgeChromiumNoHighContrastAdjustSelector:function(1)",
+          "docComment": "/**\n * The style which turns off high contrast adjustment in (only) Edge Chromium browser.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getEdgeChromiumNoHighContrastAdjustSelector(): "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    ["
+            },
+            {
+              "kind": "Reference",
+              "text": "EdgeChromiumHighContrastSelector",
+              "canonicalReference": "@fluentui/style-utilities!EdgeChromiumHighContrastSelector"
+            },
+            {
+              "kind": "Content",
+              "text": "]: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRawStyle",
+              "canonicalReference": "@fluentui/merge-styles!IRawStyle:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "getEdgeChromiumNoHighContrastAdjustSelector"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!getFadedOverflowStyle:function(1)",
+          "docComment": "/**\n * - Generates a style used to fade out an overflowing content by defining a style for an :after pseudo element. - Apply it to the :after selector for all combination of states the parent of content might have (normal, hover, selected, focus). - Requires the target to have position set to relative and overflow set to hidden.\n *\n * @param theme - The theme object to use.\n *\n * @param color - The background color to fade out to. Accepts only keys of ISemanticColors or IPalette. Defaults to 'bodyBackground'.\n *\n * @param direction - The direction of the overflow. Defaults to horizontal.\n *\n * @param width - The width of the fading overflow. Vertical direction defaults it to 100% vs 20px when horizontal.\n *\n * @param height - The Height of the fading overflow. Vertical direction defaults it to 50% vs 100% when horizontal.\n *\n * @returns The style object.\n *\n * @example\n * ```tsx\n * // Assuming the following DOM structure and the different background colors coming from\n * // the parent holding the content.\n * <div className={classNames.parent}>\n *   <span className={classNames.content}>Overflown Content</span>\n * </div>\n * ```\n *\n * ```ts\n * // This is how the style set would look in Component.styles.ts\n * const { bodyBackground } = theme.semanticColors;\n * const { neutralLighter } = theme.palette;\n *\n * // The second argument of getFadedOverflowStyle function is a string representing a key of\n * // ISemanticColors or IPalette.\n *\n * const styles = {\n *   parent: [\n *     backgroundColor: bodyBackground,\n *     selectors: {\n *       '&:hover: {\n *         backgroundColor: neutralLighter\n *       },\n *       '$content:after': {\n *         ...getFadedOverflowStyle(theme, 'bodyBackground')\n *       },\n *       '&:hover $content:after': {\n *         ...getFadedOverflowStyle(theme, 'neutralLighter')\n *       }\n *     }\n *   ],\n *   content: [\n *     width: '100%',\n *     display: 'inline-block',\n *     position: 'relative',\n *     overflow: 'hidden'\n *   ]\n * }\n * ```\n *\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getFadedOverflowStyle(theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITheme",
+              "canonicalReference": "@fluentui/theme!ITheme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", color?: "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISemanticColors",
+              "canonicalReference": "@fluentui/theme!ISemanticColors:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "IPalette",
+              "canonicalReference": "@fluentui/theme!IPalette:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", direction?: "
+            },
+            {
+              "kind": "Content",
+              "text": "'horizontal' | 'vertical'"
+            },
+            {
+              "kind": "Content",
+              "text": ", width?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string | number"
+            },
+            {
+              "kind": "Content",
+              "text": ", height?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string | number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRawStyle",
+              "canonicalReference": "@fluentui/merge-styles!IRawStyle:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 14,
+            "endIndex": 15
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "theme",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "color",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              }
+            },
+            {
+              "parameterName": "direction",
+              "parameterTypeTokenRange": {
+                "startIndex": 8,
+                "endIndex": 9
+              }
+            },
+            {
+              "parameterName": "width",
+              "parameterTypeTokenRange": {
+                "startIndex": 10,
+                "endIndex": 11
+              }
+            },
+            {
+              "parameterName": "height",
+              "parameterTypeTokenRange": {
+                "startIndex": 12,
+                "endIndex": 13
+              }
+            }
+          ],
+          "name": "getFadedOverflowStyle"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!getFocusOutlineStyle:function(1)",
+          "docComment": "/**\n * Generates a style which can be used to set a border on focus.\n *\n * @param theme - The theme object to use.\n *\n * @param inset - The number of pixels to inset the border (default 0)\n *\n * @param width - The border width in pixels (default 1)\n *\n * @param color - Color of the outline (default `theme.palette.neutralSecondary`)\n *\n * @returns The style object.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getFocusOutlineStyle(theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITheme",
+              "canonicalReference": "@fluentui/theme!ITheme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", inset?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", width?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", color?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRawStyle",
+              "canonicalReference": "@fluentui/merge-styles!IRawStyle:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 9,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "theme",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "inset",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "width",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            },
+            {
+              "parameterName": "color",
+              "parameterTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              }
+            }
+          ],
+          "name": "getFocusOutlineStyle"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!getFocusStyle:function(1)",
+          "docComment": "/**\n * Generates a focus style which can be used to define an :after focus border.\n *\n * @param theme - The theme object to use.\n *\n * @param options - Options to customize the focus border.\n *\n * @returns The style object.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getFocusStyle(theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITheme",
+              "canonicalReference": "@fluentui/theme!ITheme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", options?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IGetFocusStylesOptions",
+              "canonicalReference": "@fluentui/style-utilities!IGetFocusStylesOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRawStyle",
+              "canonicalReference": "@fluentui/merge-styles!IRawStyle:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "theme",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "options",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "getFocusStyle"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!getFocusStyle:function(2)",
+          "docComment": "/**\n * Generates a focus style which can be used to define an :after focus border.\n *\n * @deprecated\n *\n * Use the object parameter version instead.\n *\n * @param theme - The theme object to use.\n *\n * @param inset - The number of pixels to inset the border.\n *\n * @param position - The positioning applied to the container. Must be 'relative' or 'absolute' so that the focus border can live around it.\n *\n * @param highContrastStyle - Style for high contrast mode.\n *\n * @param borderColor - Color of the border.\n *\n * @param outlineColor - Color of the outline.\n *\n * @param isFocusedOnly - If the styles should apply on focus or not.\n *\n * @returns The style object.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getFocusStyle(theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITheme",
+              "canonicalReference": "@fluentui/theme!ITheme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", inset?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", position?: "
+            },
+            {
+              "kind": "Content",
+              "text": "'relative' | 'absolute'"
+            },
+            {
+              "kind": "Content",
+              "text": ", highContrastStyle?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRawStyle",
+              "canonicalReference": "@fluentui/merge-styles!IRawStyle:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ", borderColor?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", outlineColor?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", isFocusedOnly?: "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRawStyle",
+              "canonicalReference": "@fluentui/merge-styles!IRawStyle:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 16,
+            "endIndex": 17
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 2,
+          "parameters": [
+            {
+              "parameterName": "theme",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "inset",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "position",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            },
+            {
+              "parameterName": "highContrastStyle",
+              "parameterTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 9
+              }
+            },
+            {
+              "parameterName": "borderColor",
+              "parameterTypeTokenRange": {
+                "startIndex": 10,
+                "endIndex": 11
+              }
+            },
+            {
+              "parameterName": "outlineColor",
+              "parameterTypeTokenRange": {
+                "startIndex": 12,
+                "endIndex": 13
+              }
+            },
+            {
+              "parameterName": "isFocusedOnly",
+              "parameterTypeTokenRange": {
+                "startIndex": 14,
+                "endIndex": 15
+              }
+            }
+          ],
+          "name": "getFocusStyle"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!getGlobalClassNames:function(1)",
+          "docComment": "/**\n * Checks for the `disableGlobalClassNames` property on the `theme` to determine if it should return `classNames` Note that calls to this function are memoized.\n *\n * @param classNames - The collection of global class names that apply when the flag is false. Make sure to pass in the same instance on each call to benefit from memoization.\n *\n * @param theme - The theme to check the flag on\n *\n * @param disableGlobalClassNames - Optional. Explicitly opt in/out of disabling global classnames. Defaults to false.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getGlobalClassNames<T>(classNames: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GlobalClassNames",
+              "canonicalReference": "@fluentui/style-utilities!GlobalClassNames:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ", theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITheme",
+              "canonicalReference": "@fluentui/theme!ITheme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", disableGlobalClassNames?: "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "GlobalClassNames",
+              "canonicalReference": "@fluentui/style-utilities!GlobalClassNames:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 8,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "classNames",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "parameterName": "theme",
+              "parameterTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            },
+            {
+              "parameterName": "disableGlobalClassNames",
+              "parameterTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "getGlobalClassNames"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!getIcon:function(1)",
+          "docComment": "/**\n * Gets an icon definition. If an icon is requested but the subset has yet to be registered, it will get registered immediately.\n *\n * @param name - Name of icon.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getIcon(name?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IIconRecord",
+              "canonicalReference": "@fluentui/style-utilities!IIconRecord:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "name",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "getIcon"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!getIconClassName:function(1)",
+          "docComment": "/**\n * Gets an icon classname. You should be able to add this classname to an I tag with no additional classnames, and render the icon.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getIconClassName(name: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "name",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "getIconClassName"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!getInputFocusStyle:var",
+          "docComment": "/**\n * Generates text input border styles on focus.\n *\n * @param borderColor - Color of the border.\n *\n * @param borderRadius - Radius of the border.\n *\n * @param borderType - Type of the border.\n *\n * @param borderPosition - Position of the border relative to the input element (default to -1 as it's the most common border width of the input element)\n *\n * @returns The style object.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getInputFocusStyle: "
+            },
+            {
+              "kind": "Content",
+              "text": "(borderColor: string, borderRadius: string | number, borderType?: \"border\" | \"borderBottom\", borderPosition?: number) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRawStyle",
+              "canonicalReference": "@fluentui/merge-styles!IRawStyle:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "getInputFocusStyle",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!getPlaceholderStyles:function(1)",
+          "docComment": "/**\n * Generates placeholder style for each of the browsers supported by `@fluentui/react`.\n *\n * @param styles - The style to use.\n *\n * @returns The placeholder style object for each browser depending on the placeholder directive it uses.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getPlaceholderStyles(styles: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyle",
+              "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyle",
+              "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "styles",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "getPlaceholderStyles"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!getScreenSelector:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getScreenSelector(min: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", max: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "min",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "max",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "getScreenSelector"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!getTheme:function(1)",
+          "docComment": "/**\n * Gets the theme object\n *\n * @param depComments - Whether to include deprecated tags as comments for deprecated slots.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getTheme(depComments?: "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITheme",
+              "canonicalReference": "@fluentui/theme!ITheme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "depComments",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "getTheme"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/style-utilities!GlobalClassNames:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type GlobalClassNames<IStyles> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<keyof IStyles, string>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "GlobalClassNames",
+          "typeParameters": [
+            {
+              "typeParameterName": "IStyles",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!hiddenContentStyle:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "hiddenContentStyle: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRawStyle",
+              "canonicalReference": "@fluentui/merge-styles!IRawStyle:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "hiddenContentStyle",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!HighContrastSelector:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "HighContrastSelector = \"@media screen and (-ms-high-contrast: active)\""
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "HighContrastSelector",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!HighContrastSelectorBlack:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "HighContrastSelectorBlack = \"@media screen and (-ms-high-contrast: white-on-black)\""
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "HighContrastSelectorBlack",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!HighContrastSelectorWhite:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "HighContrastSelectorWhite = \"@media screen and (-ms-high-contrast: black-on-white)\""
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "HighContrastSelectorWhite",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/style-utilities!IGetFocusStylesOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IGetFocusStylesOptions "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IGetFocusStylesOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IGetFocusStylesOptions#borderColor:member",
+              "docComment": "/**\n * Color of the border.\n *\n * @defaultvalue\n *\n * theme.palette.white\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "borderColor?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "borderColor",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IGetFocusStylesOptions#highContrastStyle:member",
+              "docComment": "/**\n * Style for high contrast mode.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "highContrastStyle?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRawStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IRawStyle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "highContrastStyle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IGetFocusStylesOptions#inset:member",
+              "docComment": "/**\n * The number of pixels to inset the border.\n *\n * @defaultvalue\n *\n * 0\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "inset?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "inset",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IGetFocusStylesOptions#isFocusedOnly:member",
+              "docComment": "/**\n * If the styles should apply on `:focus` pseudo element.\n *\n * @defaultvalue\n *\n * true\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isFocusedOnly?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "isFocusedOnly",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IGetFocusStylesOptions#outlineColor:member",
+              "docComment": "/**\n * Color of the outline.\n *\n * @defaultvalue\n *\n * theme.palette.neutralSecondary\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "outlineColor?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "outlineColor",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IGetFocusStylesOptions#position:member",
+              "docComment": "/**\n * The positioning applied to the container. Must be 'relative' or 'absolute' so that the focus border can live around it.\n *\n * @defaultvalue\n *\n * 'relative'\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "position?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'relative' | 'absolute'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "position",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IGetFocusStylesOptions#width:member",
+              "docComment": "/**\n * The width of the border in pixels.\n *\n * @defaultvalue\n *\n * 1\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "width?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "width",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/style-utilities!IIconOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IIconOptions "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IIconOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IIconOptions#disableWarnings:member",
+              "docComment": "/**\n * By default, registering the same set of icons will generate a console warning per duplicate icon registered, because this scenario can create unexpected consequences.\n *\n * Some scenarios include:\n *\n * Icon set was previously registered using a different base url. Icon set was previously registered but a different version was provided. Icons in a previous registered set overlap with a new set.\n *\n * To simply ignore previously registered icons, you can specify to disable warnings. This means that if an icon which was previous registered is registered again, it will be silently ignored. However, consider whether the problems listed above will cause issues.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "disableWarnings: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "disableWarnings",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IIconOptions#warnOnMissingIcons:member",
+              "docComment": "/**\n * @deprecated\n *\n * Use 'disableWarnings' instead.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "warnOnMissingIcons?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "warnOnMissingIcons",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/style-utilities!IIconRecord:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IIconRecord "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IIconRecord",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IIconRecord#code:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "code: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "code",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IIconRecord#subset:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "subset: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IIconSubsetRecord",
+                  "canonicalReference": "@fluentui/style-utilities!IIconSubsetRecord:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "subset",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/style-utilities!IIconSubset:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IIconSubset "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IIconSubset",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IIconSubset#fontFace:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fontFace?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFontFace",
+                  "canonicalReference": "@fluentui/merge-styles!IFontFace:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fontFace",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IIconSubset#icons:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "icons: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        [key: string]: string | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JSX.Element",
+                  "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "icons",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IIconSubset#style:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "style?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRawStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IRawStyle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "style",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/style-utilities!IIconSubsetRecord:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IIconSubsetRecord extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IIconSubset",
+              "canonicalReference": "@fluentui/style-utilities!IIconSubset:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IIconSubsetRecord",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IIconSubsetRecord#className:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "className?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "className",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/style-utilities!IIconSubsetRecord#isRegistered:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isRegistered?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "isRegistered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!loadTheme:function(1)",
+          "docComment": "/**\n * Applies the theme, while filling in missing slots.\n *\n * @param theme - Partial theme object.\n *\n * @param depComments - Whether to include deprecated tags as comments for deprecated slots.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function loadTheme(theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IPartialTheme",
+              "canonicalReference": "@fluentui/theme!IPartialTheme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", depComments?: "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITheme",
+              "canonicalReference": "@fluentui/theme!ITheme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "theme",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "depComments",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "loadTheme"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!normalize:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "normalize: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRawStyle",
+              "canonicalReference": "@fluentui/merge-styles!IRawStyle:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "normalize",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!noWrap:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "noWrap: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRawStyle",
+              "canonicalReference": "@fluentui/merge-styles!IRawStyle:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "noWrap",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!PulsingBeaconAnimationStyles:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "PulsingBeaconAnimationStyles: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    continuousPulseAnimationDouble: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "_continuousPulseAnimationDouble",
+              "canonicalReference": "@fluentui/style-utilities!~_continuousPulseAnimationDouble:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    continuousPulseAnimationSingle: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "_continuousPulseAnimationSingle",
+              "canonicalReference": "@fluentui/style-utilities!~_continuousPulseAnimationSingle:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    createDefaultAnimation: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "_createDefaultAnimation",
+              "canonicalReference": "@fluentui/style-utilities!~_createDefaultAnimation:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PulsingBeaconAnimationStyles",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!registerIconAlias:function(1)",
+          "docComment": "/**\n * Remaps one icon name to another.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function registerIconAlias(iconName: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", mappedToName: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "iconName",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "mappedToName",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "registerIconAlias"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!registerIcons:function(1)",
+          "docComment": "/**\n * Registers a given subset of icons.\n *\n * @param iconSubset - the icon subset definition.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function registerIcons(iconSubset: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IIconSubset",
+              "canonicalReference": "@fluentui/style-utilities!IIconSubset:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", options?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Partial",
+              "canonicalReference": "!Partial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IIconOptions",
+              "canonicalReference": "@fluentui/style-utilities!IIconOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 8,
+            "endIndex": 9
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "iconSubset",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "options",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              }
+            }
+          ],
+          "name": "registerIcons"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!registerOnThemeChangeCallback:function(1)",
+          "docComment": "/**\n * Registers a callback that gets called whenever the theme changes. This should only be used when the component cannot automatically get theme changes through its state. This will not register duplicate callbacks.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function registerOnThemeChangeCallback(callback: "
+            },
+            {
+              "kind": "Content",
+              "text": "(theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITheme",
+              "canonicalReference": "@fluentui/theme!ITheme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => void"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "callback",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "registerOnThemeChangeCallback"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!removeOnThemeChangeCallback:function(1)",
+          "docComment": "/**\n * See registerOnThemeChangeCallback(). Removes previously registered callbacks.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function removeOnThemeChangeCallback(callback: "
+            },
+            {
+              "kind": "Content",
+              "text": "(theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITheme",
+              "canonicalReference": "@fluentui/theme!ITheme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => void"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "callback",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "removeOnThemeChangeCallback"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ScreenWidthMaxLarge:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ScreenWidthMaxLarge: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ScreenWidthMaxLarge",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ScreenWidthMaxMedium:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ScreenWidthMaxMedium: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ScreenWidthMaxMedium",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ScreenWidthMaxSmall:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ScreenWidthMaxSmall: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ScreenWidthMaxSmall",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ScreenWidthMaxXLarge:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ScreenWidthMaxXLarge: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ScreenWidthMaxXLarge",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ScreenWidthMaxXXLarge:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ScreenWidthMaxXXLarge: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ScreenWidthMaxXXLarge",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ScreenWidthMinLarge:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ScreenWidthMinLarge = 640"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ScreenWidthMinLarge",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ScreenWidthMinMedium:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ScreenWidthMinMedium = 480"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ScreenWidthMinMedium",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ScreenWidthMinSmall:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ScreenWidthMinSmall = 320"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ScreenWidthMinSmall",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ScreenWidthMinUhfMobile:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ScreenWidthMinUhfMobile = 768"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ScreenWidthMinUhfMobile",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ScreenWidthMinXLarge:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ScreenWidthMinXLarge = 1024"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ScreenWidthMinXLarge",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ScreenWidthMinXXLarge:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ScreenWidthMinXXLarge = 1366"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ScreenWidthMinXXLarge",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ScreenWidthMinXXXLarge:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ScreenWidthMinXXXLarge = 1920"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ScreenWidthMinXXXLarge",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!setIconOptions:function(1)",
+          "docComment": "/**\n * Sets the icon options.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function setIconOptions(options: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Partial",
+              "canonicalReference": "!Partial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IIconOptions",
+              "canonicalReference": "@fluentui/style-utilities!IIconOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 6,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "options",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "setIconOptions"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/style-utilities!ThemeSettingName:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ThemeSettingName = \"theme\""
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ThemeSettingName",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/style-utilities!unregisterIcons:function(1)",
+          "docComment": "/**\n * Unregisters icons by name.\n *\n * @param iconNames - List of icons to unregister.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function unregisterIcons(iconNames: "
+            },
+            {
+              "kind": "Content",
+              "text": "string[]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "iconNames",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "unregisterIcons"
+        },
+        {
+          "kind": "Namespace",
+          "canonicalReference": "@fluentui/style-utilities!ZIndexes:namespace",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare namespace ZIndexes "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ZIndexes",
+          "members": [
+            {
+              "kind": "Variable",
+              "canonicalReference": "@fluentui/style-utilities!ZIndexes.Coachmark:var",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Coachmark: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Coachmark",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "@fluentui/style-utilities!ZIndexes.FocusStyle:var",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "FocusStyle: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "FocusStyle",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "@fluentui/style-utilities!ZIndexes.KeytipLayer:var",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "KeytipLayer: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "KeytipLayer",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "@fluentui/style-utilities!ZIndexes.Layer:var",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Layer: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Layer",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "@fluentui/style-utilities!ZIndexes.Nav:var",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Nav: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Nav",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "@fluentui/style-utilities!ZIndexes.ScrollablePane:var",
+              "docComment": "/**\n * @deprecated\n *\n * ScrollablePane\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ScrollablePane: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ScrollablePane",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

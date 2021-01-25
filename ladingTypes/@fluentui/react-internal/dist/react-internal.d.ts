@@ -1000,7 +1000,7 @@ export declare function getContrastRatio(color1: IColor, color2: IColor): number
  * @param ariaLabel - Label for the icon for the benefit of screen readers.
  * {@docCategory Icon}
  */
-export declare const getFontIcon: (iconName: string, className?: string | undefined, ariaLabel?: string | undefined) => React.ReactElement<any, string | ((props: any) => React.ReactElement<any, string | any | (new (props: any) => React.Component<any, any, any>)> | null) | (new (props: any) => React.Component<any, any, any>)> | null;
+export declare const getFontIcon: (iconName: string, className?: string | undefined, ariaLabel?: string | undefined) => React.ReactElement<any, any> | null;
 
 /**
  * Converts a color hue to an HTML color string (with # prefix).
@@ -10501,7 +10501,7 @@ export declare interface ISelectableDroppableTextProps<TComponent, TListenerElem
     openOnKeyboardFocus?: boolean;
 }
 
-export declare interface ISelectableOption {
+export declare interface ISelectableOption<T = any> {
     /**
      * Arbitrary string associated with this option.
      */
@@ -10545,7 +10545,7 @@ export declare interface ISelectableOption {
     /**
      * Data available to custom onRender functions.
      */
-    data?: any;
+    data?: T;
 }
 
 export declare interface ISelectedItemProps<T> extends IPickerItemProps<T> {
@@ -15204,6 +15204,13 @@ export declare class TextFieldBase extends React.Component<ITextFieldProps, ITex
      * - If we have done the validation and there is validation error, errorMessage is the validation error message.
      */
     private get _errorMessage();
+    /**
+     * Renders error message based on the type of the message.
+     *
+     * - If error message is string, it will render using the built in styles.
+     * - If error message is an element, user has full control over how it's rendered.
+     */
+    private _renderErrorMessage;
     /**
      * If a custom description render function is supplied then treat description as always available.
      * Otherwise defer to the presence of description or error message text.

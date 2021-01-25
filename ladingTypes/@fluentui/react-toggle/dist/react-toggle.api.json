@@ -1,0 +1,1045 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/react-toggle!",
+  "docComment": "",
+  "name": "@fluentui/react-toggle",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/react-toggle!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-toggle!IToggle:interface",
+          "docComment": "/**\n * {@docCategory Toggle}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IToggle "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IToggle",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggle#focus:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "focus: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "focus",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-toggle!IToggleProps:interface",
+          "docComment": "/**\n * Toggle component props. {@docCategory Toggle}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IToggleProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.HTMLAttributes",
+              "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.RefAttributes",
+              "canonicalReference": "@types/react!~React.RefAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IToggleProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#ariaLabel:member",
+              "docComment": "/**\n * Text for screen-reader to announce as the name of the toggle.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ariaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ariaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#as:member",
+              "docComment": "/**\n * Render the root element as another type.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "as?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IComponentAs",
+                  "canonicalReference": "@fluentui/utilities!IComponentAs:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.HTMLAttributes",
+                  "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "as",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 7
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#checked:member",
+              "docComment": "/**\n * Checked state of the toggle. If you are maintaining state yourself, use this property. Otherwise use `defaultChecked`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "checked?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "checked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#componentRef:member",
+              "docComment": "/**\n * Optional callback to access the IToggle interface. Use this instead of ref for accessing the public methods and properties of the component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentRef?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRefObject",
+                  "canonicalReference": "@fluentui/utilities!IRefObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IToggle",
+                  "canonicalReference": "@fluentui/react-toggle!IToggle:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "componentRef",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#defaultChecked:member",
+              "docComment": "/**\n * Initial state of the toggle. If you want the toggle to maintain its own state, use this. Otherwise use `checked`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "defaultChecked?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "defaultChecked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#disabled:member",
+              "docComment": "/**\n * Optional disabled flag.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "disabled?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "disabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#inlineLabel:member",
+              "docComment": "/**\n * Whether the label (not the onText/offText) should be positioned inline with the toggle control. Left (right in RTL) side when on/off text provided VS right (left in RTL) side when no on/off text. Caution: when not providing on/off text user may get confused in differentiating the on/off states of the toggle.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "inlineLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "inlineLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#label:member",
+              "docComment": "/**\n * A label for the toggle.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "label?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JSX.Element",
+                  "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "label",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#offAriaLabel:member",
+              "docComment": "/**\n * @deprecated\n *\n * Use `ariaLabel` for name, and let the metadata convey state\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "offAriaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "offAriaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#offText:member",
+              "docComment": "/**\n * Text to display when toggle is OFF. Caution: when not providing on/off text user may get confused in differentiating the on/off states of the toggle.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "offText?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "offText",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#onAriaLabel:member",
+              "docComment": "/**\n * @deprecated\n *\n * Use `ariaLabel` for name, and let the metadata convey state\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onAriaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onAriaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#onChange:member",
+              "docComment": "/**\n * Callback issued when the value changes.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onChange?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.MouseEvent",
+                  "canonicalReference": "@types/react!~React.MouseEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">, checked?: boolean) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onChange",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#onChanged:member",
+              "docComment": "/**\n * @deprecated\n *\n * Use `onChange` instead.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onChanged?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(checked: boolean) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onChanged",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#onText:member",
+              "docComment": "/**\n * Text to display when toggle is ON. Caution: when not providing on/off text user may get confused in differentiating the on/off states of the toggle.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onText?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onText",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#role:member",
+              "docComment": "/**\n * (Optional) Specify whether to use the \"switch\" role (ARIA 1.1) or the checkbox role (ARIA 1.0). If unspecified, defaults to \"switch\".\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "role?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'checkbox' | 'switch' | 'menuitemcheckbox'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "role",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#styles:member",
+              "docComment": "/**\n * Optional styles for the component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "styles?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyleFunctionOrObject",
+                  "canonicalReference": "@fluentui/merge-styles!IStyleFunctionOrObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IToggleStyleProps",
+                  "canonicalReference": "@fluentui/react-toggle!IToggleStyleProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IToggleStyles",
+                  "canonicalReference": "@fluentui/react-toggle!IToggleStyles:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "styles",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 7
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps#theme:member",
+              "docComment": "/**\n * Theme provided by HOC.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "theme?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITheme",
+                  "canonicalReference": "@fluentui/theme!ITheme:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "theme",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 5
+            },
+            {
+              "startIndex": 6,
+              "endIndex": 10
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-toggle!IToggleStyleProps:interface",
+          "docComment": "/**\n * Properties required to build the styles for the Toggle component. {@docCategory Toggle}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IToggleStyleProps "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IToggleStyleProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleStyleProps#checked:member",
+              "docComment": "/**\n * Component is checked.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "checked?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "checked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleStyleProps#className:member",
+              "docComment": "/**\n * Root element class name.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "className?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "className",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleStyleProps#disabled:member",
+              "docComment": "/**\n * Component is disabled.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "disabled?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "disabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleStyleProps#inlineLabel:member",
+              "docComment": "/**\n * Whether label should be positioned inline with the toggle.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "inlineLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "inlineLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleStyleProps#onOffMissing:member",
+              "docComment": "/**\n * Whether the user did not specify a on/off text. Influencing only when inlineLabel is used.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onOffMissing?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onOffMissing",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleStyleProps#theme:member",
+              "docComment": "/**\n * Theme values.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "theme: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITheme",
+                  "canonicalReference": "@fluentui/theme!ITheme:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "theme",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-toggle!IToggleStyles:interface",
+          "docComment": "/**\n * Styles for the Toggle component. {@docCategory Toggle}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IToggleStyles "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IToggleStyles",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleStyles#container:member",
+              "docComment": "/**\n * Container for the toggle pill and the text next to it.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "container: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "container",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleStyles#label:member",
+              "docComment": "/**\n * Label element above the toggle.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "label: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "label",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleStyles#pill:member",
+              "docComment": "/**\n * Pill, rendered as a button.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "pill: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "pill",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleStyles#root:member",
+              "docComment": "/**\n * Root element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "root: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "root",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleStyles#text:member",
+              "docComment": "/**\n * Text next to the pill.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "text: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "text",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-toggle!IToggleStyles#thumb:member",
+              "docComment": "/**\n * Thumb inside of the pill.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "thumb: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "thumb",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-toggle!Toggle:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "Toggle: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IToggleProps",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Toggle",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-toggle!ToggleBase:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ToggleBase: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IToggleProps",
+              "canonicalReference": "@fluentui/react-toggle!IToggleProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ToggleBase",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        }
+      ]
+    }
+  ]
+}

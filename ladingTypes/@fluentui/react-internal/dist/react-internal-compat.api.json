@@ -1,0 +1,4764 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/react-internal!",
+  "docComment": "",
+  "name": "@fluentui/react-internal",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/react-internal!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluentui/react-internal!ActionButton:class",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class ActionButton extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IButtonProps",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", {}> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ActionButton",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!ActionButton#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JSX.Element",
+                  "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluentui/react-internal!BaseButton:class",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class BaseButton extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IBaseButtonProps",
+              "canonicalReference": "@fluentui/react-internal!IBaseButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IBaseButtonState",
+              "canonicalReference": "@fluentui/react-internal!IBaseButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IButton",
+              "canonicalReference": "@fluentui/react-internal!IButton:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "BaseButton",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluentui/react-internal!BaseButton:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `BaseButton` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(props: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IBaseButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IBaseButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!BaseButton#componentDidMount:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentDidMount(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "componentDidMount"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!BaseButton#componentDidUpdate:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentDidUpdate(prevProps: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IBaseButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IBaseButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", prevState: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IBaseButtonState",
+                  "canonicalReference": "@fluentui/react-internal!IBaseButtonState:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "prevProps",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "prevState",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "componentDidUpdate"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!BaseButton#componentWillUnmount:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentWillUnmount(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "componentWillUnmount"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluentui/react-internal!BaseButton.defaultProps:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static defaultProps: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Partial",
+                  "canonicalReference": "!Partial:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IBaseButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IBaseButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "defaultProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "isStatic": true
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!BaseButton#dismissMenu:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dismissMenu(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "dismissMenu"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!BaseButton#focus:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "focus(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "focus"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!BaseButton#openMenu:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "openMenu(shouldFocusOnContainer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", shouldFocusOnMount?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "shouldFocusOnContainer",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "shouldFocusOnMount",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "openMenu"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!BaseButton#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JSX.Element",
+                  "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 7
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 8,
+              "endIndex": 10
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluentui/react-internal!Button:class",
+          "docComment": "/**\n * This class is deprecated. Use the individual *Button components instead.\n *\n * @deprecated\n *\n * Use the individual *Button components instead. {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class Button extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IButtonProps",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", {}> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Button",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluentui/react-internal!Button:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `Button` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(props: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!Button#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JSX.Element",
+                  "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluentui/react-internal!ButtonType:enum",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum ButtonType "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ButtonType",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-internal!ButtonType.command:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "command = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "4"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "command",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-internal!ButtonType.compound:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "compound = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "3"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "compound",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-internal!ButtonType.default:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "default = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "6"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "default",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-internal!ButtonType.hero:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "hero = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "2"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "hero",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-internal!ButtonType.icon:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "icon = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "5"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "icon",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-internal!ButtonType.normal:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "normal = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "0"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "normal",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-internal!ButtonType.primary:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "primary = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "primary",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluentui/react-internal!CommandBarButton:class",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class CommandBarButton extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IButtonProps",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", {}> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CommandBarButton",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!CommandBarButton#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JSX.Element",
+                  "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-internal!CommandButton:var",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "CommandButton: "
+            },
+            {
+              "kind": "Content",
+              "text": "typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "ActionButton",
+              "canonicalReference": "@fluentui/react-internal!ActionButton:class"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CommandButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluentui/react-internal!CompoundButton:class",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class CompoundButton extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IButtonProps",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", {}> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CompoundButton",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!CompoundButton#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JSX.Element",
+                  "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluentui/react-internal!DefaultButton:class",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class DefaultButton extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IButtonProps",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", {}> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DefaultButton",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!DefaultButton#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JSX.Element",
+                  "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluentui/react-internal!ElementType:enum",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum ElementType "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ElementType",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-internal!ElementType.anchor:member",
+              "docComment": "/**\n * <a> element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "anchor = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "anchor",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-internal!ElementType.button:member",
+              "docComment": "/**\n * <button> element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "button = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "0"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "button",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-internal!getSplitButtonClassNames:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getSplitButtonClassNames: "
+            },
+            {
+              "kind": "Content",
+              "text": "(styles: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IButtonStyles",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", disabled: boolean, expanded: boolean, checked: boolean, primaryDisabled?: boolean | undefined) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISplitButtonClassNames",
+              "canonicalReference": "@fluentui/react-internal!ISplitButtonClassNames:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "getSplitButtonClassNames",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-internal!IBaseButtonProps:interface",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IBaseButtonProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IButtonProps",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IBaseButtonProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IBaseButtonProps#baseClassName:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "baseClassName?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "baseClassName",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IBaseButtonProps#variantClassName:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "variantClassName?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "variantClassName",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-internal!IBaseButtonState:interface",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IBaseButtonState "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IBaseButtonState",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IBaseButtonState#menuHidden:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuHidden: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuHidden",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-internal!IButton:interface",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IButton "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IButton",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButton#dismissMenu:member",
+              "docComment": "/**\n * If there is a menu associated with this button and it is visible, this will dismiss the menu\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dismissMenu: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "dismissMenu",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButton#focus:member",
+              "docComment": "/**\n * Sets focus to the button.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "focus: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "focus",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButton#openMenu:member",
+              "docComment": "/**\n * If there is a menu associated with this button and it is visible, this will open the menu. Params are optional overrides to the ones defined in `menuProps` to apply to just this instance of opening the menu.\n *\n * @param shouldFocusOnContainer - override to the ContextualMenu shouldFocusOnContainer prop. BaseButton implementation defaults to 'undefined'.\n *\n * @param shouldFocusOnMount - override to the ContextualMenu shouldFocusOnMount prop. BaseButton implementation defaults to `true`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "openMenu: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(shouldFocusOnContainer?: boolean, shouldFocusOnMount?: boolean) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "openMenu",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-internal!IButtonClassNames:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IButtonClassNames "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IButtonClassNames",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonClassNames#description:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "description?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "description",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonClassNames#flexContainer:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "flexContainer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "flexContainer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonClassNames#icon:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "icon?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "icon",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonClassNames#label:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "label?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "label",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonClassNames#menuIcon:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuIcon?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuIcon",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonClassNames#root:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "root?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "root",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonClassNames#screenReaderText:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "screenReaderText?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "screenReaderText",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonClassNames#textContainer:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "textContainer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "textContainer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-internal!IButtonProps:interface",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IButtonProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.AllHTMLAttributes",
+              "canonicalReference": "@types/react!~React.AllHTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLAnchorElement",
+              "canonicalReference": "!HTMLAnchorElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLButtonElement",
+              "canonicalReference": "!HTMLButtonElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLDivElement",
+              "canonicalReference": "!HTMLDivElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "BaseButton",
+              "canonicalReference": "@fluentui/react-internal!BaseButton:class"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "Button",
+              "canonicalReference": "@fluentui/react-internal!Button:class"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLSpanElement",
+              "canonicalReference": "!HTMLSpanElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IButtonProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#allowDisabledFocus:member",
+              "docComment": "/**\n * Whether the button can have focus in disabled mode\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "allowDisabledFocus?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "allowDisabledFocus",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#ariaDescription:member",
+              "docComment": "/**\n * Detailed description of the button for the benefit of screen readers.\n *\n * Besides the compound button, other button types will need more information provided to screen reader.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ariaDescription?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ariaDescription",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#ariaHidden:member",
+              "docComment": "/**\n * If provided and is true it adds an 'aria-hidden' attribute instructing screen readers to ignore the element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ariaHidden?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ariaHidden",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#ariaLabel:member",
+              "docComment": "/**\n * The aria label of the button for the benefit of screen readers.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ariaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ariaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#buttonType:member",
+              "docComment": "/**\n * Deprecated at v1.2.3, to be removed at \\>= v2.0.0. Use specific button component instead.\n *\n * @deprecated\n *\n * Use specific button component instead.\n *\n * @defaultvalue\n *\n * ButtonType.default\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "buttonType?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ButtonType",
+                  "canonicalReference": "@fluentui/react-internal!ButtonType:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "buttonType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#checked:member",
+              "docComment": "/**\n * Whether the button is checked\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "checked?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "checked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#className:member",
+              "docComment": "/**\n * If provided, additional class name to provide on the root element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "className?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "className",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#componentRef:member",
+              "docComment": "/**\n * Optional callback to access the IButton interface. Use this instead of ref for accessing the public methods and properties of the component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentRef?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRefObject",
+                  "canonicalReference": "@fluentui/utilities!IRefObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButton",
+                  "canonicalReference": "@fluentui/react-internal!IButton:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "componentRef",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#data:member",
+              "docComment": "/**\n * Any custom data the developer wishes to associate with the menu item.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "data?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "data",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#defaultRender:member",
+              "docComment": "/**\n * yet unknown docs\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "defaultRender?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "defaultRender",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#description:member",
+              "docComment": "/**\n * Style for the description text if applicable (for compound buttons.) Deprecated, use `secondaryText` instead.\n *\n * @deprecated\n *\n * Use `secondaryText` instead.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "description?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "description",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#disabled:member",
+              "docComment": "/**\n * Whether the button is disabled\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "disabled?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "disabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#elementRef:member",
+              "docComment": "/**\n * Optional callback to access the root DOM element.\n *\n * @deprecated\n *\n * Temporary solution which will be replaced with ref in the V8 release.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "elementRef?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.Ref",
+                  "canonicalReference": "@types/react!~React.Ref:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "elementRef",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#getClassNames:member",
+              "docComment": "/**\n * Method to provide the classnames to style a button. The default value for this prop is the getClassnames func defined in BaseButton.classnames.\n *\n * @defaultvalue\n *\n * getBaseButtonClassNames\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getClassNames?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(theme: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITheme",
+                  "canonicalReference": "@fluentui/theme!ITheme:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", className: string, variantClassName: string, iconClassName: string | undefined, menuIconClassName: string | undefined, disabled: boolean, checked: boolean, expanded: boolean, hasMenu: boolean, isSplit: boolean | undefined, allowDisabledFocus: boolean) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButtonClassNames",
+                  "canonicalReference": "@fluentui/react-internal!IButtonClassNames:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "getClassNames",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#getSplitButtonClassNames:member",
+              "docComment": "/**\n * Method to provide the classnames to style a button. The default value for this prop is the getClassnames func defined in BaseButton.classnames.\n *\n * @defaultvalue\n *\n * getBaseSplitButtonClassNames\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getSplitButtonClassNames?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(disabled: boolean, expanded: boolean, checked: boolean, allowDisabledFocus: boolean) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISplitButtonClassNames",
+                  "canonicalReference": "@fluentui/react-internal!ISplitButtonClassNames:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "getSplitButtonClassNames",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#href:member",
+              "docComment": "/**\n * If provided, this component will be rendered as an anchor.\n *\n * @defaultvalue\n *\n * ElementType.anchor\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "href?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "href",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#iconProps:member",
+              "docComment": "/**\n * The props for the icon shown in the button.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "iconProps?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IIconProps",
+                  "canonicalReference": "@fluentui/react-internal!IIconProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "iconProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#keytipProps:member",
+              "docComment": "/**\n * Optional keytip for this button\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "keytipProps?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IKeytipProps",
+                  "canonicalReference": "@fluentui/react-internal!IKeytipProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "keytipProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#menuAs:member",
+              "docComment": "/**\n * Render a custom menu in place of the normal one.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuAs?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IComponentAs",
+                  "canonicalReference": "@fluentui/utilities!IComponentAs:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContextualMenuProps",
+                  "canonicalReference": "@fluentui/react-internal!IContextualMenuProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuAs",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#menuIconProps:member",
+              "docComment": "/**\n * The props for the icon shown when providing a menu dropdown.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuIconProps?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IIconProps",
+                  "canonicalReference": "@fluentui/react-internal!IIconProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuIconProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#menuProps:member",
+              "docComment": "/**\n * Props for button menu. Providing this will default to showing the menu icon. See menuIconProps for overriding how the default icon looks. Providing this in addition of onClick and setting the split property to true will render a SplitButton.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuProps?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContextualMenuProps",
+                  "canonicalReference": "@fluentui/react-internal!IContextualMenuProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#menuTriggerKeyCode:member",
+              "docComment": "/**\n * Provides a custom KeyCode that can be used to open the button menu. The default KeyCode is the down arrow. A value of null can be provided to disable the key codes for opening the button menu.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuTriggerKeyCode?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "KeyCodes",
+                  "canonicalReference": "@fluentui/utilities!KeyCodes:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuTriggerKeyCode",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#onAfterMenuDismiss:member",
+              "docComment": "/**\n * Callback that runs after Button's contextual menu was closed (removed from the DOM)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onAfterMenuDismiss?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onAfterMenuDismiss",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#onMenuClick:member",
+              "docComment": "/**\n * Optional callback when menu is clicked.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onMenuClick?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(ev?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.MouseEvent",
+                  "canonicalReference": "@types/react!~React.MouseEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "> | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.KeyboardEvent",
+                  "canonicalReference": "@types/react!~React.KeyboardEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">, button?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onMenuClick",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 12
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#onRenderAriaDescription:member",
+              "docComment": "/**\n * Custom render function for the aria description element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onRenderAriaDescription?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRenderFunction",
+                  "canonicalReference": "@fluentui/utilities!IRenderFunction:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onRenderAriaDescription",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#onRenderChildren:member",
+              "docComment": "/**\n * Custom render function for rendering the button children.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onRenderChildren?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRenderFunction",
+                  "canonicalReference": "@fluentui/utilities!IRenderFunction:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onRenderChildren",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#onRenderDescription:member",
+              "docComment": "/**\n * Custom render function for the desciption text.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onRenderDescription?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRenderFunction",
+                  "canonicalReference": "@fluentui/utilities!IRenderFunction:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onRenderDescription",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#onRenderIcon:member",
+              "docComment": "/**\n * Custom render function for the icon\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onRenderIcon?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRenderFunction",
+                  "canonicalReference": "@fluentui/utilities!IRenderFunction:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onRenderIcon",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#onRenderMenu:member",
+              "docComment": "/**\n * Deprecated at v6.3.2, to be removed at \\>= v7.0.0. Use `menuAs` instead.\n *\n * @deprecated\n *\n * Use `menuAs` instead.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onRenderMenu?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRenderFunction",
+                  "canonicalReference": "@fluentui/utilities!IRenderFunction:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IContextualMenuProps",
+                  "canonicalReference": "@fluentui/react-internal!IContextualMenuProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onRenderMenu",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#onRenderMenuIcon:member",
+              "docComment": "/**\n * Custom render function for button menu icon\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onRenderMenuIcon?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRenderFunction",
+                  "canonicalReference": "@fluentui/utilities!IRenderFunction:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onRenderMenuIcon",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#onRenderText:member",
+              "docComment": "/**\n * Custom render function for the label text.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onRenderText?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRenderFunction",
+                  "canonicalReference": "@fluentui/utilities!IRenderFunction:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onRenderText",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#persistMenu:member",
+              "docComment": "/**\n * Menu will not be created or destroyed when opened or closed, instead it will be hidden. This will improve perf of the menu opening but could potentially impact overall perf by having more elements in the dom. Should only be used when perf is important. Note: This may increase the amount of time it takes for the button itself to mount.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "persistMenu?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "persistMenu",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#primary:member",
+              "docComment": "/**\n * Changes the visual presentation of the button to be emphasized (if defined)\n *\n * @defaultvalue\n *\n * false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "primary?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "primary",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#primaryActionButtonProps:member",
+              "docComment": "/**\n * Optional props to be applied only to the primary action button of SplitButton and not to the overall SplitButton container\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "primaryActionButtonProps?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "primaryActionButtonProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#primaryDisabled:member",
+              "docComment": "/**\n * If set to true and if this is a splitButton (split == true) then the primary action of a split button is disabled.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "primaryDisabled?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "primaryDisabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#renderPersistedMenuHiddenOnMount:member",
+              "docComment": "/**\n * If true, the persisted menu is rendered hidden when the button initially mounts. Non-persisted menus will not be in the component tree unless they are being shown\n *\n * Note: This increases the time the button will take to mount, but can improve perceived menu open perf. when the user opens the menu.\n *\n * @deprecated\n *\n * There is known bug in Edge when this prop is true where scrollbars overlap with the content when a menu is first rendered hidden. See: https://github.com/microsoft/fluentui/issues/9034 Please do not start using this. If you are already using this, please make sure that you are doing so only in non-Edge browsers\n *\n * @defaultvalue\n *\n * undefined, equivalent to false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "renderPersistedMenuHiddenOnMount?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "renderPersistedMenuHiddenOnMount",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#rootProps:member",
+              "docComment": "/**\n * Deprecated at v0.56.2, to be removed at \\>= v1.0.0. Just pass in button props instead. they will be mixed into the button/anchor element rendered by the component.\n *\n * @deprecated\n *\n * Use button props instead.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rootProps?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.ButtonHTMLAttributes",
+                  "canonicalReference": "@types/react!~React.ButtonHTMLAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLButtonElement",
+                  "canonicalReference": "!HTMLButtonElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "> | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.AnchorHTMLAttributes",
+                  "canonicalReference": "@types/react!~React.AnchorHTMLAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLAnchorElement",
+                  "canonicalReference": "!HTMLAnchorElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "rootProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 9
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#secondaryText:member",
+              "docComment": "/**\n * Description of the action this button takes. Only used for compound buttons\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "secondaryText?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "secondaryText",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#split:member",
+              "docComment": "/**\n * If set to true, and if menuProps and onClick are provided, the button will render as a SplitButton.\n *\n * @defaultvalue\n *\n * false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "split?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "split",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#splitButtonAriaLabel:member",
+              "docComment": "/**\n * Accessible label for the dropdown chevron button if this button is split.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonAriaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonAriaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#splitButtonMenuProps:member",
+              "docComment": "/**\n * Experimental prop that get passed into the menuButton that's rendered as part of split button. Anything passed in will likely need to have accompanying style changes.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonMenuProps?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButtonProps",
+                  "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonMenuProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#styles:member",
+              "docComment": "/**\n * Custom styling for individual elements within the button DOM.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "styles?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IButtonStyles",
+                  "canonicalReference": "@fluentui/react-internal!IButtonStyles:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "styles",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#text:member",
+              "docComment": "/**\n * Text to render button label. If text is supplied, it will override any string in button children. Other children components will be passed through after the text.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "text?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "text",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#theme:member",
+              "docComment": "/**\n * Theme provided by HOC.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "theme?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITheme",
+                  "canonicalReference": "@fluentui/theme!ITheme:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "theme",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#toggle:member",
+              "docComment": "/**\n * Whether button is a toggle button with distinct on and off states. This should be true for buttons that permanently change state when a press event finishes, such as a volume mute button.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "toggle?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "toggle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#toggled:member",
+              "docComment": "/**\n * Any custom data the developer wishes to associate with the menu item. Deprecated, use `checked` if setting state.\n *\n * @deprecated\n *\n * unused, use `checked` if setting state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "toggled?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "toggled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps#uniqueId:member",
+              "docComment": "/**\n * Unique id to identify the item. Typically a duplicate of key value.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "uniqueId?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "uniqueId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 15
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-internal!IButtonStyles:interface",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IButtonStyles "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IButtonStyles",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#description:member",
+              "docComment": "/**\n * Style for the description text if applicable (for compound buttons.)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "description?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "description",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#descriptionChecked:member",
+              "docComment": "/**\n * Style override for the description text when the button is checked.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "descriptionChecked?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "descriptionChecked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#descriptionDisabled:member",
+              "docComment": "/**\n * Style override for the description text when the button is disabled.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "descriptionDisabled?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "descriptionDisabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#descriptionHovered:member",
+              "docComment": "/**\n * Style override for the description text when the button is hovered.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "descriptionHovered?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "descriptionHovered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#descriptionPressed:member",
+              "docComment": "/**\n * Style for the description text when the button is pressed.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "descriptionPressed?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "descriptionPressed",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#flexContainer:member",
+              "docComment": "/**\n * Style for the flexbox container within the root element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "flexContainer?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "flexContainer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#icon:member",
+              "docComment": "/**\n * Style for the icon on the near side of the label.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "icon?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "icon",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#iconChecked:member",
+              "docComment": "/**\n * Style override for the icon when the button is checked.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "iconChecked?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "iconChecked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#iconDisabled:member",
+              "docComment": "/**\n * Style override for the icon when the button is disabled.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "iconDisabled?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "iconDisabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#iconExpanded:member",
+              "docComment": "/**\n * Style for the icon on the near side of the label when expanded.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "iconExpanded?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "iconExpanded",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#iconExpandedHovered:member",
+              "docComment": "/**\n * Style for the icon on the near side of the label when expanded and hovered.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "iconExpandedHovered?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "iconExpandedHovered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#iconHovered:member",
+              "docComment": "/**\n * Style for the icon on the near side of the label on hover.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "iconHovered?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "iconHovered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#iconPressed:member",
+              "docComment": "/**\n * Style for the icon on the near side of the label when pressed.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "iconPressed?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "iconPressed",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#label:member",
+              "docComment": "/**\n * Style for the text content of the button.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "label?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "label",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#labelChecked:member",
+              "docComment": "/**\n * Style override for the text content when the button is checked.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "labelChecked?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "labelChecked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#labelDisabled:member",
+              "docComment": "/**\n * Style override for the text content when the button is disabled.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "labelDisabled?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "labelDisabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#labelHovered:member",
+              "docComment": "/**\n * Style override for the text content when the button is hovered.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "labelHovered?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "labelHovered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#menuIcon:member",
+              "docComment": "/**\n * Style for the menu chevron.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuIcon?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuIcon",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#menuIconChecked:member",
+              "docComment": "/**\n * Style override for the menu chevron when the button is checked.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuIconChecked?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuIconChecked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#menuIconDisabled:member",
+              "docComment": "/**\n * Style override for the menu chevron when the button is disabled.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuIconDisabled?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuIconDisabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#menuIconExpanded:member",
+              "docComment": "/**\n * Style for the menu chevron when expanded.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuIconExpanded?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuIconExpanded",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#menuIconExpandedHovered:member",
+              "docComment": "/**\n * Style for the menu chevron when expanded and hovered.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuIconExpandedHovered?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuIconExpandedHovered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#menuIconHovered:member",
+              "docComment": "/**\n * Style for the menu chevron on hover.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuIconHovered?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuIconHovered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#menuIconPressed:member",
+              "docComment": "/**\n * Style for the menu chevron when pressed.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuIconPressed?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuIconPressed",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#root:member",
+              "docComment": "/**\n * Style for the root element in the default enabled, non-toggled state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "root?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "root",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#rootChecked:member",
+              "docComment": "/**\n * Style override for the root element in a checked state, layered on top of the root style.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rootChecked?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "rootChecked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#rootCheckedDisabled:member",
+              "docComment": "/**\n * Style override applied to the root on hover in a checked, disabled state\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rootCheckedDisabled?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "rootCheckedDisabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#rootCheckedHovered:member",
+              "docComment": "/**\n * Style override applied to the root on hover in a checked, enabled state\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rootCheckedHovered?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "rootCheckedHovered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#rootCheckedPressed:member",
+              "docComment": "/**\n * Style override applied to the root on pressed in a checked, enabled state\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rootCheckedPressed?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "rootCheckedPressed",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#rootDisabled:member",
+              "docComment": "/**\n * Style override for the root element in a disabled state, layered on top of the root style.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rootDisabled?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "rootDisabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#rootExpanded:member",
+              "docComment": "/**\n * Style override applied to the root on when menu is expanded in the default, enabled, non-toggled state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rootExpanded?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "rootExpanded",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#rootExpandedHovered:member",
+              "docComment": "/**\n * Style override applied to the root on hover in a expanded state on hover\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rootExpandedHovered?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "rootExpandedHovered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#rootFocused:member",
+              "docComment": "/**\n * Style override applied to the root on focus in the default, enabled, non-toggled state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rootFocused?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "rootFocused",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#rootHasMenu:member",
+              "docComment": "/**\n * Style override for the root element when it has a menu button, layered on top of the root style.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rootHasMenu?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "rootHasMenu",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#rootHovered:member",
+              "docComment": "/**\n * Style override applied to the root on hover in the default, enabled, non-toggled state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rootHovered?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "rootHovered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#rootPressed:member",
+              "docComment": "/**\n * Style override applied to the root on pressed in the default, enabled, non-toggled state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rootPressed?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "rootPressed",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#screenReaderText:member",
+              "docComment": "/**\n * Style override for the screen reader text.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "screenReaderText?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "screenReaderText",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#secondaryText:member",
+              "docComment": "/**\n * Style for the description text if applicable (for compound buttons.)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "secondaryText?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "secondaryText",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonContainer:member",
+              "docComment": "/**\n * Style override for the container div around a SplitButton element\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonContainer?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonContainer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonContainerChecked:member",
+              "docComment": "/**\n * Style for container div around a SplitButton element when the button is checked.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonContainerChecked?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonContainerChecked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonContainerCheckedHovered:member",
+              "docComment": "/**\n * Style for container div around a SplitButton element when the button is checked and hovered.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonContainerCheckedHovered?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonContainerCheckedHovered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonContainerDisabled:member",
+              "docComment": "/**\n * Style override for the container div around a SplitButton element in a disabled state\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonContainerDisabled?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonContainerDisabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonContainerFocused:member",
+              "docComment": "/**\n * Style for container div around a SplitButton element when the button is focused.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonContainerFocused?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonContainerFocused",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonContainerHovered:member",
+              "docComment": "/**\n * Style for container div around a SplitButton element when the button is hovered.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonContainerHovered?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonContainerHovered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonDivider:member",
+              "docComment": "/**\n * Style override for the divider element that appears between the button and menu button for a split button.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonDivider?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonDivider",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonDividerDisabled:member",
+              "docComment": "/**\n * Style override for the divider element that appears between the button and menu button for a split button in a disabled state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonDividerDisabled?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonDividerDisabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonFlexContainer:member",
+              "docComment": "/**\n * Style override for the SplitButton FlexContainer.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonFlexContainer?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonFlexContainer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonMenuButton:member",
+              "docComment": "/**\n * Style override for the SplitButton menu button\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonMenuButton?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonMenuButton",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonMenuButtonChecked:member",
+              "docComment": "/**\n * Style override for the SplitButton menu button element in a checked state\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonMenuButtonChecked?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonMenuButtonChecked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonMenuButtonDisabled:member",
+              "docComment": "/**\n * Style override for the SplitButton menu button element in a disabled state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonMenuButtonDisabled?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonMenuButtonDisabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonMenuButtonExpanded:member",
+              "docComment": "/**\n * Style override for the SplitButton menu button element in an expanded state\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonMenuButtonExpanded?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonMenuButtonExpanded",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonMenuIcon:member",
+              "docComment": "/**\n * Style override for the SplitButton menu icon element\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonMenuIcon?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonMenuIcon",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#splitButtonMenuIconDisabled:member",
+              "docComment": "/**\n * Style override for the SplitButton menu icon element in a disabled state\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonMenuIconDisabled?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonMenuIconDisabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!IButtonStyles#textContainer:member",
+              "docComment": "/**\n * Style for the text container within the flexbox container element (and contains the text and description).\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "textContainer?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "textContainer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluentui/react-internal!IconButton:class",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class IconButton extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IButtonProps",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", {}> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IconButton",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!IconButton#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JSX.Element",
+                  "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-internal!ISplitButtonClassNames:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISplitButtonClassNames "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISplitButtonClassNames",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!ISplitButtonClassNames#divider:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "divider?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "divider",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!ISplitButtonClassNames#flexContainer:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "flexContainer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "flexContainer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!ISplitButtonClassNames#icon:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "icon?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "icon",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!ISplitButtonClassNames#root:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "root?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "root",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-internal!ISplitButtonClassNames#splitButtonContainer:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "splitButtonContainer?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "splitButtonContainer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluentui/react-internal!MessageBarButton:class",
+          "docComment": "/**\n * {@docCategory MessageBar}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class MessageBarButton extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IButtonProps",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", {}> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "MessageBarButton",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!MessageBarButton#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JSX.Element",
+                  "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluentui/react-internal!PrimaryButton:class",
+          "docComment": "/**\n * {@docCategory CompatButton}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class PrimaryButton extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IButtonProps",
+              "canonicalReference": "@fluentui/react-internal!IButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", {}> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PrimaryButton",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-internal!PrimaryButton#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JSX.Element",
+                  "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}

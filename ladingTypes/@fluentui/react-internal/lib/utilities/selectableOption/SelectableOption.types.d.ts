@@ -1,4 +1,4 @@
-export interface ISelectableOption {
+export interface ISelectableOption<T = any> {
     /**
      * Arbitrary string associated with this option.
      */
@@ -42,7 +42,7 @@ export interface ISelectableOption {
     /**
      * Data available to custom onRender functions.
      */
-    data?: any;
+    data?: T;
 }
 export declare enum SelectableOptionMenuItemType {
     Normal = 0,

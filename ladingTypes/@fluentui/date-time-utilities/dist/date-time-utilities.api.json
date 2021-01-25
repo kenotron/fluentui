@@ -1,0 +1,3736 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/date-time-utilities!",
+  "docComment": "",
+  "name": "@fluentui/date-time-utilities",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/date-time-utilities!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!addDays:function(1)",
+          "docComment": "/**\n * Returns a date offset from the given date by the specified number of days.\n *\n * @param date - The origin date\n *\n * @param days - The number of days to offset. 'days' can be negative.\n *\n * @returns A new Date object offset from the origin date by the given number of days\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function addDays(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", days: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "days",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "addDays"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!addMonths:function(1)",
+          "docComment": "/**\n * Returns a date offset from the given date by the specified number of months. The method tries to preserve the day-of-month; however, if the new month does not have enough days to contain the original day-of-month, we'll use the last day of the new month.\n *\n * @param date - The origin date\n *\n * @param months - The number of months to offset. 'months' can be negative.\n *\n * @returns A new Date object offset from the origin date by the given number of months\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function addMonths(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", months: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "months",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "addMonths"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!addWeeks:function(1)",
+          "docComment": "/**\n * Returns a date offset from the given date by the specified number of weeks.\n *\n * @param date - The origin date\n *\n * @param weeks - The number of weeks to offset. 'weeks' can be negative.\n *\n * @returns A new Date object offset from the origin date by the given number of weeks\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function addWeeks(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", weeks: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "weeks",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "addWeeks"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!addYears:function(1)",
+          "docComment": "/**\n * Returns a date offset from the given date by the specified number of years. The method tries to preserve the day-of-month; however, if the new month does not have enough days to contain the original day-of-month, we'll use the last day of the new month.\n *\n * @param date - The origin date\n *\n * @param years - The number of years to offset. 'years' can be negative.\n *\n * @returns A new Date object offset from the origin date by the given number of years\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function addYears(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", years: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "years",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "addYears"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!compareDatePart:function(1)",
+          "docComment": "/**\n * Compare the date parts of two dates\n *\n * @param date1 - The first date to compare\n *\n * @param date2 - The second date to compare\n *\n * @returns A negative value if date1 is earlier than date2, 0 if the dates are equal, or a positive value if date1 is later than date2.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function compareDatePart(date1: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", date2: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Number",
+              "canonicalReference": "!Number:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date1",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "date2",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "compareDatePart"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!compareDates:function(1)",
+          "docComment": "/**\n * Compares two dates, and returns true if the two dates (not accounting for time-of-day) are equal.\n *\n * @returns True if the two dates represent the same date (regardless of time-of-day), false otherwise.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function compareDates(date1: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", date2: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date1",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "date2",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "compareDates"
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluentui/date-time-utilities!DateRangeType:enum",
+          "docComment": "/**\n * The supported date range types {@docCategory DateTimeUtilities}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum DateRangeType "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DateRangeType",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!DateRangeType.Day:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Day = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "0"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Day",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!DateRangeType.Month:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Month = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "2"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Month",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!DateRangeType.Week:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Week = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Week",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!DateRangeType.WorkWeek:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "WorkWeek = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "3"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "WorkWeek",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek:enum",
+          "docComment": "/**\n * The days of the week {@docCategory DateTimeUtilities}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum DayOfWeek "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DayOfWeek",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek.Friday:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Friday = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "5"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Friday",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek.Monday:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Monday = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Monday",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek.Saturday:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Saturday = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "6"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Saturday",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek.Sunday:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Sunday = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "0"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Sunday",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek.Thursday:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Thursday = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "4"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Thursday",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek.Tuesday:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Tuesday = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "2"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Tuesday",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek.Wednesday:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "Wednesday = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "3"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Wednesday",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!DAYS_IN_WEEK:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "DAYS_IN_WEEK = 7"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DAYS_IN_WEEK",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!DEFAULT_CALENDAR_STRINGS:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "DEFAULT_CALENDAR_STRINGS: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICalendarStrings",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DEFAULT_CALENDAR_STRINGS",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!DEFAULT_DATE_FORMATTING:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "DEFAULT_DATE_FORMATTING: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDateFormatting",
+              "canonicalReference": "@fluentui/date-time-utilities!IDateFormatting:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DEFAULT_DATE_FORMATTING",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!DEFAULT_DATE_GRID_STRINGS:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "DEFAULT_DATE_GRID_STRINGS: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDateGridStrings",
+              "canonicalReference": "@fluentui/date-time-utilities!IDateGridStrings:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DEFAULT_DATE_GRID_STRINGS",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!findAvailableDate:var",
+          "docComment": "/**\n * Returns closest available date given the restriction `options`, or undefined otherwise\n *\n * @param options - list of search options\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "findAvailableDate: "
+            },
+            {
+              "kind": "Content",
+              "text": "(options: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IAvailableDateOptions",
+              "canonicalReference": "@fluentui/date-time-utilities!IAvailableDateOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "findAvailableDate",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluentui/date-time-utilities!FirstWeekOfYear:enum",
+          "docComment": "/**\n * First week of the year settings types {@docCategory DateTimeUtilities}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum FirstWeekOfYear "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FirstWeekOfYear",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!FirstWeekOfYear.FirstDay:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "FirstDay = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "0"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "FirstDay",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!FirstWeekOfYear.FirstFourDayWeek:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "FirstFourDayWeek = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "2"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "FirstFourDayWeek",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!FirstWeekOfYear.FirstFullWeek:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "FirstFullWeek = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "FirstFullWeek",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!formatDay:var",
+          "docComment": "/**\n * Format date to a day string representation\n *\n * @param date - input date to format\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "formatDay: "
+            },
+            {
+              "kind": "Content",
+              "text": "(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "formatDay",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!formatMonthDayYear:var",
+          "docComment": "/**\n * Format date to a month-day-year string\n *\n * @param date - input date to format\n *\n * @param strings - localized strings\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "formatMonthDayYear: "
+            },
+            {
+              "kind": "Content",
+              "text": "(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", strings: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDateGridStrings",
+              "canonicalReference": "@fluentui/date-time-utilities!IDateGridStrings:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "formatMonthDayYear",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!formatMonthYear:var",
+          "docComment": "/**\n * Format date to a month-year string\n *\n * @param date - input date to format\n *\n * @param strings - localized strings\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "formatMonthYear: "
+            },
+            {
+              "kind": "Content",
+              "text": "(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", strings: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDateGridStrings",
+              "canonicalReference": "@fluentui/date-time-utilities!IDateGridStrings:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "formatMonthYear",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!formatYear:var",
+          "docComment": "/**\n * Format date to a year string representation\n *\n * @param date - input date to format\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "formatYear: "
+            },
+            {
+              "kind": "Content",
+              "text": "(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "formatYear",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!getBoundedDateRange:var",
+          "docComment": "/**\n * Generates a list of dates, bounded by min and max dates\n *\n * @param dateRange - input date range\n *\n * @param minDate - min date to limit the range\n *\n * @param maxDate - max date to limit the range\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getBoundedDateRange: "
+            },
+            {
+              "kind": "Content",
+              "text": "(dateRange: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[], minDate?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined, maxDate?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "getBoundedDateRange",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 10
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!getDatePartHashValue:function(1)",
+          "docComment": "/**\n * Helper function to assist in date comparisons\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getDatePartHashValue(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "getDatePartHashValue"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!getDateRangeArray:function(1)",
+          "docComment": "/**\n * Gets the date range array including the specified date. The date range array is calculated as the list of dates accounting for the specified first day of the week and date range type.\n *\n * @param date - The input date\n *\n * @param dateRangeType - The desired date range type, i.e., day, week, month, etc.\n *\n * @param firstDayOfWeek - The first day of the week.\n *\n * @param workWeekDays - The allowed days in work week. If not provided, assumes all days are allowed.\n *\n * @param daysToSelectInDayView - The number of days to include when using dateRangeType === DateRangeType.Day for multiday view. Defaults to 1\n *\n * @returns An array of dates representing the date range containing the specified date.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getDateRangeArray(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", dateRangeType: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DateRangeType",
+              "canonicalReference": "@fluentui/date-time-utilities!DateRangeType:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ", firstDayOfWeek: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DayOfWeek",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ", workWeekDays?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DayOfWeek",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek:enum"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            },
+            {
+              "kind": "Content",
+              "text": ", daysToSelectInDayView?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 12,
+            "endIndex": 14
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "dateRangeType",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "firstDayOfWeek",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            },
+            {
+              "parameterName": "workWeekDays",
+              "parameterTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 9
+              }
+            },
+            {
+              "parameterName": "daysToSelectInDayView",
+              "parameterTypeTokenRange": {
+                "startIndex": 10,
+                "endIndex": 11
+              }
+            }
+          ],
+          "name": "getDateRangeArray"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!getDateRangeTypeToUse:var",
+          "docComment": "/**\n * Return corrected date range type, given `dateRangeType` and list of working days. For non-contiguous working days and working week range type, returns general week range type. For other cases returns input date range type.\n *\n * @param dateRangeType - input type of range\n *\n * @param workWeekDays - list of working days in a week\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getDateRangeTypeToUse: "
+            },
+            {
+              "kind": "Content",
+              "text": "(dateRangeType: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DateRangeType",
+              "canonicalReference": "@fluentui/date-time-utilities!DateRangeType:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ", workWeekDays: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DayOfWeek",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek:enum"
+            },
+            {
+              "kind": "Content",
+              "text": "[] | undefined, firstDayOfWeek: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DayOfWeek",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "DateRangeType",
+              "canonicalReference": "@fluentui/date-time-utilities!DateRangeType:enum"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "getDateRangeTypeToUse",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!getDayGrid:var",
+          "docComment": "/**\n * Generates a grid of days, given the `options`. Returns one additional week at the begining from the previous range and one at the end from the future range\n *\n * @param options - parameters to specify date related restrictions for the resulting grid\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getDayGrid: "
+            },
+            {
+              "kind": "Content",
+              "text": "(options: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDayGridOptions",
+              "canonicalReference": "@fluentui/date-time-utilities!IDayGridOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDay",
+              "canonicalReference": "@fluentui/date-time-utilities!IDay:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[][]"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "getDayGrid",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!getEndDateOfWeek:function(1)",
+          "docComment": "/**\n * Gets the date for the last day of the week based on the given date assuming the specified first day of the week.\n *\n * @param date - The date to find the beginning of the week date for.\n *\n * @returns A new date object representing the first day of the week containing the input date.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getEndDateOfWeek(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", firstDayOfWeek: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DayOfWeek",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek:enum"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "firstDayOfWeek",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "getEndDateOfWeek"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!getMonthEnd:function(1)",
+          "docComment": "/**\n * Returns a date that is the last day of the month of the provided date.\n *\n * @param date - The origin date\n *\n * @returns A new Date object with the day set to the last day of the month.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getMonthEnd(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "getMonthEnd"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!getMonthStart:function(1)",
+          "docComment": "/**\n * Returns a date that is the first day of the month of the provided date.\n *\n * @param date - The origin date\n *\n * @returns A new Date object with the day set to the first day of the month.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getMonthStart(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "getMonthStart"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!getStartDateOfWeek:function(1)",
+          "docComment": "/**\n * Gets the date for the first day of the week based on the given date assuming the specified first day of the week.\n *\n * @param date - The date to find the beginning of the week date for.\n *\n * @returns A new date object representing the first day of the week containing the input date.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getStartDateOfWeek(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", firstDayOfWeek: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DayOfWeek",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek:enum"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "firstDayOfWeek",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "getStartDateOfWeek"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!getWeekNumber:function(1)",
+          "docComment": "/**\n * Returns the week number for a date. Week numbers are 1 - 52 (53) in a year\n *\n * @param date - A date to find the week number for.\n *\n * @param firstDayOfWeek - The first day of the week (0-6, Sunday = 0)\n *\n * @param firstWeekOfYear - The first week of the year (1-2)\n *\n * @returns The week's number in the year.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getWeekNumber(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", firstDayOfWeek: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DayOfWeek",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ", firstWeekOfYear: "
+            },
+            {
+              "kind": "Reference",
+              "text": "FirstWeekOfYear",
+              "canonicalReference": "@fluentui/date-time-utilities!FirstWeekOfYear:enum"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "firstDayOfWeek",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "firstWeekOfYear",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "name": "getWeekNumber"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!getWeekNumbersInMonth:function(1)",
+          "docComment": "/**\n * Returns the week number for a date. Week numbers are 1 - 52 (53) in a year\n *\n * @param navigatedDate - A date to find the week number for.\n *\n * @param firstDayOfWeek - The first day of the week (0-6, Sunday = 0)\n *\n * @param firstWeekOfYear - The first week of the year (1-2)\n *\n * @returns The weeks number array for the current month.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getWeekNumbersInMonth(weeksInMonth: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", firstDayOfWeek: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DayOfWeek",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ", firstWeekOfYear: "
+            },
+            {
+              "kind": "Reference",
+              "text": "FirstWeekOfYear",
+              "canonicalReference": "@fluentui/date-time-utilities!FirstWeekOfYear:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ", navigatedDate: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "number[]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 9,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "weeksInMonth",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "firstDayOfWeek",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "firstWeekOfYear",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            },
+            {
+              "parameterName": "navigatedDate",
+              "parameterTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              }
+            }
+          ],
+          "name": "getWeekNumbersInMonth"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!getYearEnd:function(1)",
+          "docComment": "/**\n * Returns a date that is the last day of the year of the provided date.\n *\n * @param date - The origin date\n *\n * @returns A new Date object with the day set to the last day of the year.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getYearEnd(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "getYearEnd"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!getYearStart:function(1)",
+          "docComment": "/**\n * Returns a date that is the first day of the year of the provided date.\n *\n * @param date - The origin date\n *\n * @returns A new Date object with the day set to the first day of the year.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getYearStart(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "getYearStart"
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/date-time-utilities!IAvailableDateOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IAvailableDateOptions extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRestrictedDatesOptions",
+              "canonicalReference": "@fluentui/date-time-utilities!IRestrictedDatesOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IAvailableDateOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IAvailableDateOptions#direction:member",
+              "docComment": "/**\n * Direction of search (`1` - search in future / `-1` search in past)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "direction: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "direction",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IAvailableDateOptions#initialDate:member",
+              "docComment": "/**\n * Date from which we start the search\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "initialDate: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "initialDate",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IAvailableDateOptions#targetDate:member",
+              "docComment": "/**\n * Ideal available date\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "targetDate: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "targetDate",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings:interface",
+          "docComment": "/**\n * {@docCategory DateTimeUtilities}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICalendarStrings extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IDateGridStrings",
+              "canonicalReference": "@fluentui/date-time-utilities!IDateGridStrings:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICalendarStrings",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#closeButtonAriaLabel:member",
+              "docComment": "/**\n * Aria-label for the \"close\" button.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "closeButtonAriaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "closeButtonAriaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#dayMarkedAriaLabel:member",
+              "docComment": "/**\n * Aria-label for when a date is marked\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dayMarkedAriaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "dayMarkedAriaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#goToToday:member",
+              "docComment": "/**\n * String to render for button to direct the user to today's date.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "goToToday: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "goToToday",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#monthPickerHeaderAriaLabel:member",
+              "docComment": "/**\n * Aria-label format string for the header button in the month picker. Should have 1 string param, e.g. \"`{0}`, select to change the year\". This aria-label will only be applied if the year picker is enabled; otherwise the label will default to the header string, e.g. \"2019\".\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "monthPickerHeaderAriaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "monthPickerHeaderAriaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#nextMonthAriaLabel:member",
+              "docComment": "/**\n * Aria-label for the \"next month\" button in day picker.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "nextMonthAriaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "nextMonthAriaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#nextYearAriaLabel:member",
+              "docComment": "/**\n * Aria-label for the \"next year\" button in month picker.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "nextYearAriaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "nextYearAriaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#nextYearRangeAriaLabel:member",
+              "docComment": "/**\n * Aria-label for the \"next year range\" button in year picker.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "nextYearRangeAriaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "nextYearRangeAriaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#prevMonthAriaLabel:member",
+              "docComment": "/**\n * Aria-label for the \"previous month\" button in day picker.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "prevMonthAriaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "prevMonthAriaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#prevYearAriaLabel:member",
+              "docComment": "/**\n * Aria-label for the \"previous year\" button in month picker.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "prevYearAriaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "prevYearAriaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#prevYearRangeAriaLabel:member",
+              "docComment": "/**\n * Aria-label for the \"previous year range\" button in year picker.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "prevYearRangeAriaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "prevYearRangeAriaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#selectedDateFormatString:member",
+              "docComment": "/**\n * Aria-label format string for the currently selected date. Should have 1 string param, e.g. \"Selected date `{0}`\"\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "selectedDateFormatString?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "selectedDateFormatString",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#todayDateFormatString:member",
+              "docComment": "/**\n * Aria-label format string for today's date. Should have 1 string param, e.g. \"Today's date `{0}`\"\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "todayDateFormatString?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "todayDateFormatString",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#weekNumberFormatString:member",
+              "docComment": "/**\n * Aria-label format string for the week number header. Should have 1 string param, e.g. \"week number `{0}`\"\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "weekNumberFormatString?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "weekNumberFormatString",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!ICalendarStrings#yearPickerHeaderAriaLabel:member",
+              "docComment": "/**\n * Aria-label format string for the header button in the year picker. Should have 1 string param, e.g. \"`{0}`, select to change the month\"\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "yearPickerHeaderAriaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "yearPickerHeaderAriaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/date-time-utilities!IDateFormatting:interface",
+          "docComment": "/**\n * {@docCategory DateTimeUtilities}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDateFormatting "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDateFormatting",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDateFormatting#formatDay:member",
+              "docComment": "/**\n * Get a localized string for a day.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "formatDay: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(date: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "formatDay",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDateFormatting#formatMonthDayYear:member",
+              "docComment": "/**\n * Get a localized string for a month, day, and year.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "formatMonthDayYear: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(date: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", strings: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDateGridStrings",
+                  "canonicalReference": "@fluentui/date-time-utilities!IDateGridStrings:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "formatMonthDayYear",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDateFormatting#formatMonthYear:member",
+              "docComment": "/**\n * Get a localized string for a month and year.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "formatMonthYear: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(date: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", strings: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IDateGridStrings",
+                  "canonicalReference": "@fluentui/date-time-utilities!IDateGridStrings:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "formatMonthYear",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDateFormatting#formatYear:member",
+              "docComment": "/**\n * Get a localized string for a year.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "formatYear: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(date: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "formatYear",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/date-time-utilities!IDateGridStrings:interface",
+          "docComment": "/**\n * {@docCategory DateTimeUtilities}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDateGridStrings "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDateGridStrings",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDateGridStrings#days:member",
+              "docComment": "/**\n * An array of strings for the full names of days of the week. The array is 0-based, so days[0] should be the full name of Sunday.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "days: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "days",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDateGridStrings#months:member",
+              "docComment": "/**\n * An array of strings for the full names of months. The array is 0-based, so months[0] should be the full name of January.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "months: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "months",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDateGridStrings#shortDays:member",
+              "docComment": "/**\n * An array of strings for the initials of the days of the week. The array is 0-based, so days[0] should be the initial of Sunday.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shortDays: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "shortDays",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDateGridStrings#shortMonths:member",
+              "docComment": "/**\n * An array of strings for the short names of months. The array is 0-based, so shortMonths[0] should be the short name of January.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shortMonths: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "shortMonths",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/date-time-utilities!IDay:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDay "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDay",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDay#date:member",
+              "docComment": "/**\n * `Date.getDate()` value of current date\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "date: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "date",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDay#isInBounds:member",
+              "docComment": "/**\n * Is current date within restriction boundaries\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isInBounds: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "isInBounds",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDay#isInMonth:member",
+              "docComment": "/**\n * Is current date is in the same month as \"today\" date\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isInMonth: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "isInMonth",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDay#isMarked:member",
+              "docComment": "/**\n * Is current date marked\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isMarked: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "isMarked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDay#isSelected:member",
+              "docComment": "/**\n * Is current date is selected\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isSelected: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "isSelected",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDay#isToday:member",
+              "docComment": "/**\n * Is current date is \"today\" date\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isToday: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "isToday",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDay#key:member",
+              "docComment": "/**\n * `Date.toString()` value of current date\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "key",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDay#originalDate:member",
+              "docComment": "/**\n * `Date` object of current date\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "originalDate: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "originalDate",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/date-time-utilities!IDayGridOptions:interface",
+          "docComment": "/**\n * {@docCategory DateTimeUtilities}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDayGridOptions extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRestrictedDatesOptions",
+              "canonicalReference": "@fluentui/date-time-utilities!IRestrictedDatesOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IDayGridOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDayGridOptions#dateRangeType:member",
+              "docComment": "/**\n * The date range type indicating how many days should be selected as the user selects days\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "dateRangeType: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DateRangeType",
+                  "canonicalReference": "@fluentui/date-time-utilities!DateRangeType:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "dateRangeType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDayGridOptions#daysToSelectInDayView:member",
+              "docComment": "/**\n * The number of days to select while dateRangeType === DateRangeType.Day. Used in order to have multi-day views.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "daysToSelectInDayView?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "daysToSelectInDayView",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDayGridOptions#firstDayOfWeek:member",
+              "docComment": "/**\n * The first day of the week for your locale.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "firstDayOfWeek: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DayOfWeek",
+                  "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "firstDayOfWeek",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDayGridOptions#firstWeekOfYear:member",
+              "docComment": "/**\n * Defines when the first week of the year should start, FirstWeekOfYear.FirstDay, FirstWeekOfYear.FirstFullWeek or FirstWeekOfYear.FirstFourDayWeek are the possible values\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "firstWeekOfYear: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FirstWeekOfYear",
+                  "canonicalReference": "@fluentui/date-time-utilities!FirstWeekOfYear:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "firstWeekOfYear",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDayGridOptions#markedDays:member",
+              "docComment": "/**\n * Which days in the generated grid should be marked.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "markedDays?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "markedDays",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDayGridOptions#navigatedDate:member",
+              "docComment": "/**\n * The currently navigated date\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "navigatedDate: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "navigatedDate",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDayGridOptions#selectedDate:member",
+              "docComment": "/**\n * The currently selected date\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "selectedDate: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "selectedDate",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDayGridOptions#showWeekNumbers:member",
+              "docComment": "/**\n * Whether the calendar should show the week number (weeks 1 to 53) before each week row\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "showWeekNumbers?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "showWeekNumbers",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDayGridOptions#today:member",
+              "docComment": "/**\n * Value of today. If unspecified, current time in client machine will be used.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "today?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "today",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDayGridOptions#weeksToShow:member",
+              "docComment": "/**\n * How many weeks to show by default. If not provided, will show enough weeks to display the current month, between 4 and 6 depending\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "weeksToShow?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "weeksToShow",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IDayGridOptions#workWeekDays:member",
+              "docComment": "/**\n * The days that are selectable when `dateRangeType` is WorkWeek. If `dateRangeType` is not WorkWeek this property does nothing.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "workWeekDays?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DayOfWeek",
+                  "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "workWeekDays",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/date-time-utilities!IRestrictedDatesOptions:interface",
+          "docComment": "/**\n * {@docCategory DateTimeUtilities}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IRestrictedDatesOptions "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IRestrictedDatesOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IRestrictedDatesOptions#maxDate:member",
+              "docComment": "/**\n * If set the Calendar will not allow navigation to or selection of a date later than this value.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "maxDate?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "maxDate",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IRestrictedDatesOptions#minDate:member",
+              "docComment": "/**\n * If set the Calendar will not allow navigation to or selection of a date earlier than this value.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "minDate?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "minDate",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/date-time-utilities!IRestrictedDatesOptions#restrictedDates:member",
+              "docComment": "/**\n * If set the Calendar will not allow selection of dates in this array.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "restrictedDates?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "restrictedDates",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!isAfterMaxDate:var",
+          "docComment": "/**\n * Checks if `date` happens later than max date\n *\n * @param date - date to check\n *\n * @param options - object with max date to check against\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isAfterMaxDate: "
+            },
+            {
+              "kind": "Content",
+              "text": "(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", options: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRestrictedDatesOptions",
+              "canonicalReference": "@fluentui/date-time-utilities!IRestrictedDatesOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isAfterMaxDate",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!isBeforeMinDate:var",
+          "docComment": "/**\n * Checks if `date` happens earlier than min date\n *\n * @param date - date to check\n *\n * @param options - object with min date to check against\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isBeforeMinDate: "
+            },
+            {
+              "kind": "Content",
+              "text": "(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", options: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRestrictedDatesOptions",
+              "canonicalReference": "@fluentui/date-time-utilities!IRestrictedDatesOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isBeforeMinDate",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!isContiguous:var",
+          "docComment": "/**\n * Returns whether provided week days are contiguous.\n *\n * @param days - list of days in a week\n *\n * @param isSingleWeek - decides whether the contiguous logic applies across week boundaries or not\n *\n * @param firstDayOfWeek - decides which day of week is the first one in the order.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isContiguous: "
+            },
+            {
+              "kind": "Content",
+              "text": "(days: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DayOfWeek",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek:enum"
+            },
+            {
+              "kind": "Content",
+              "text": "[], isSingleWeek: boolean, firstDayOfWeek: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DayOfWeek",
+              "canonicalReference": "@fluentui/date-time-utilities!DayOfWeek:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ") => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isContiguous",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!isInDateRangeArray:function(1)",
+          "docComment": "/**\n * Checks whether the specified date is in the given date range.\n *\n * @param date - The origin date\n *\n * @param dateRange - An array of dates to do the lookup on\n *\n * @returns True if the date matches one of the dates in the specified array, false otherwise.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function isInDateRangeArray(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", dateRange: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 6,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "dateRange",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "isInDateRangeArray"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!isRestrictedDate:var",
+          "docComment": "/**\n * Checks if `date` falls into the restricted `options`\n *\n * @param date - date to check\n *\n * @param options - restriction options (min date, max date and list of restricted dates)\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isRestrictedDate: "
+            },
+            {
+              "kind": "Content",
+              "text": "(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", options: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IRestrictedDatesOptions",
+              "canonicalReference": "@fluentui/date-time-utilities!IRestrictedDatesOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isRestrictedDate",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluentui/date-time-utilities!MonthOfYear:enum",
+          "docComment": "/**\n * The months {@docCategory DateTimeUtilities}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum MonthOfYear "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "MonthOfYear",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!MonthOfYear.April:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "April = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "3"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "April",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!MonthOfYear.August:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "August = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "7"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "August",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!MonthOfYear.December:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "December = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "11"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "December",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!MonthOfYear.February:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "February = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "February",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!MonthOfYear.January:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "January = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "0"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "January",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!MonthOfYear.July:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "July = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "6"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "July",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!MonthOfYear.June:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "June = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "5"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "June",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!MonthOfYear.March:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "March = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "2"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "March",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!MonthOfYear.May:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "May = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "4"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "May",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!MonthOfYear.November:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "November = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "10"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "November",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!MonthOfYear.October:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "October = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "9"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "October",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/date-time-utilities!MonthOfYear.September:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "September = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "8"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "September",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/date-time-utilities!setMonth:function(1)",
+          "docComment": "/**\n * Returns a date that is a copy of the given date, aside from the month changing to the given month. The method tries to preserve the day-of-month; however, if the new month does not have enough days to contain the original day-of-month, we'll use the last day of the new month.\n *\n * @param date - The origin date\n *\n * @param month - The 0-based index of the month to set on the date.\n *\n * @returns A new Date object with the given month set.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function setMonth(date: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", month: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "date",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "month",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "setMonth"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/date-time-utilities!TimeConstants:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "TimeConstants: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    MillisecondsInOneDay: number;\n    MillisecondsIn1Sec: number;\n    MillisecondsIn1Min: number;\n    MillisecondsIn30Mins: number;\n    MillisecondsIn1Hour: number;\n    MinutesInOneDay: number;\n    MinutesInOneHour: number;\n    DaysInOneWeek: number;\n    MonthInOneYear: number;\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TimeConstants",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        }
+      ]
+    }
+  ]
+}

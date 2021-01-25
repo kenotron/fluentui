@@ -1,0 +1,459 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/react-text!",
+  "docComment": "",
+  "name": "@fluentui/react-text",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/react-text!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-text!renderText:var",
+          "docComment": "/**\n * Define the render function. Given the state of a text, renders it.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "renderText: "
+            },
+            {
+              "kind": "Content",
+              "text": "(state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TextProps",
+              "canonicalReference": "@fluentui/react-text!TextProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.Element",
+              "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "renderText",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-text!Text:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "Text: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ForwardRefExoticComponent",
+              "canonicalReference": "@types/react!~React.ForwardRefExoticComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "TextProps",
+              "canonicalReference": "@fluentui/react-text!TextProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.RefAttributes",
+              "canonicalReference": "@types/react!~React.RefAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Text",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-text!TextProps:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface TextProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComponentProps",
+              "canonicalReference": "@fluentui/react-compose!ComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.HTMLAttributes",
+              "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLSpanElement",
+              "canonicalReference": "!HTMLSpanElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TextProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-text!TextProps#tokens:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tokens?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RecursivePartial",
+                  "canonicalReference": "@fluentui/theme!RecursivePartial:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TextTokenSet",
+                  "canonicalReference": "@fluentui/react-text!TextTokenSet:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "tokens",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-text!TextProps#variant:member",
+              "docComment": "/**\n * A text can define its look via defined variants.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "variant?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'caption' | 'body' | 'subHeadline' | 'headline' | 'title1' | 'title2' | 'title3' | 'largeTitle' | 'display'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "variant",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            },
+            {
+              "startIndex": 3,
+              "endIndex": 7
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-text!TextSlotProps:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type TextSlotProps = "
+            },
+            {
+              "kind": "Reference",
+              "text": "SlotProps",
+              "canonicalReference": "@fluentui/react-compose!SlotProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "TextSlots",
+              "canonicalReference": "@fluentui/react-text!TextSlots:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "TextProps",
+              "canonicalReference": "@fluentui/react-text!TextProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.HTMLAttributes",
+              "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLSpanElement",
+              "canonicalReference": "!HTMLSpanElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TextSlotProps",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-text!TextSlots:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface TextSlots extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "BaseSlots",
+              "canonicalReference": "@fluentui/react-compose!BaseSlots:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TextSlots",
+          "members": [],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-text!TextTokenSet:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type TextTokenSet = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TextTokenSet",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-text!useText:var",
+          "docComment": "/**\n * Given user props, returns state and render function for a Text.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useText: "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TextProps",
+              "canonicalReference": "@fluentui/react-text!TextProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Ref",
+              "canonicalReference": "@types/react!~React.Ref:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">, defaultProps?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TextProps",
+              "canonicalReference": "@fluentui/react-text!TextProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined) => {\n    state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, any>;\n    render: (state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TextProps",
+              "canonicalReference": "@fluentui/react-text!TextProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.Element",
+              "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useText",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 16
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-text!useTextClasses:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useTextClasses: "
+            },
+            {
+              "kind": "Content",
+              "text": "(state: {}, options?: import(\"@fluentui/react-theme-provider\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "UseStylesOptions",
+              "canonicalReference": "@fluentui/react-theme-provider!UseStylesOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined) => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useTextClasses",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        }
+      ]
+    }
+  ]
+}

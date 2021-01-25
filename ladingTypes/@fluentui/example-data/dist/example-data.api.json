@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/example-data!",
+  "docComment": "/**\n * This package is for use in Fabric examples and tests only. It's considered internal, so APIs are subject to change without notice. (The only reason it uses api-extractor is so the types can easily be added to the live example editor.)\n *\n * @packageDocumentation\n */\n",
+  "name": "@fluentui/example-data",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/example-data!",
+      "name": "",
+      "members": []
+    }
+  ]
+}

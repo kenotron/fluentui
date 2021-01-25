@@ -1,0 +1,185 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/react-window-provider!",
+  "docComment": "",
+  "name": "@fluentui/react-window-provider",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/react-window-provider!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-window-provider!useDocument:var",
+          "docComment": "/**\n * Hook to access the document object. This can be overridden contextually using the `WindowProvider`.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useDocument: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Document",
+              "canonicalReference": "!Document:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useDocument",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-window-provider!useWindow:var",
+          "docComment": "/**\n * Hook to access the window object. This can be overridden contextually using the `WindowProvider`.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useWindow: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Window",
+              "canonicalReference": "!Window:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useWindow",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-window-provider!WindowContext:var",
+          "docComment": "/**\n * Context for providing the window.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "WindowContext: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Context",
+              "canonicalReference": "@types/react!~React.Context:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "WindowProviderProps",
+              "canonicalReference": "@fluentui/react-window-provider!WindowProviderProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "WindowContext",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-window-provider!WindowProvider:var",
+          "docComment": "/**\n * Component to provide the window object contextually. This is useful when rendering content to an element contained within a child window or iframe element, where event handlers and styling must be projected to an alternative window or document.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "WindowProvider: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "WindowProviderProps",
+              "canonicalReference": "@fluentui/react-window-provider!WindowProviderProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "WindowProvider",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-window-provider!WindowProviderProps:type",
+          "docComment": "/**\n * Props for the WindowProvider component.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type WindowProviderProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    window: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Window",
+              "canonicalReference": "!Window:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "WindowProviderProps",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2587 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/react-button!",
+  "docComment": "",
+  "name": "@fluentui/react-button",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/react-button!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!Button:var",
+          "docComment": "/**\n * Define a styled Button, using the `useButton` hook. {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "Button: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ForwardRefExoticComponent",
+              "canonicalReference": "@types/react!~React.ForwardRefExoticComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonProps",
+              "canonicalReference": "@fluentui/react-button!ButtonProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", string | number> & "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.RefAttributes",
+              "canonicalReference": "@types/react!~React.RefAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Button",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-button!ButtonProps:type",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ButtonProps = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComponentProps",
+              "canonicalReference": "@fluentui/react-compose!ComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.HTMLAttributes",
+              "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> & {\n    icon?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ShorthandProps",
+              "canonicalReference": "@fluentui/react-compose!ShorthandProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    loader?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ShorthandProps",
+              "canonicalReference": "@fluentui/react-compose!ShorthandProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    content?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ShorthandProps",
+              "canonicalReference": "@fluentui/react-compose!ShorthandProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    href?: string;\n    target?: string;\n    circular?: boolean;\n    disabled?: boolean;\n    disabledFocusable?: boolean;\n    block?: boolean;\n    iconOnly?: boolean;\n    iconPosition?: 'before' | 'after';\n    inverted?: boolean;\n    variant?: string;\n    loading?: boolean;\n    primary?: boolean;\n    secondary?: boolean;\n    ghost?: boolean;\n    transparent?: boolean;\n    size?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SizeValue",
+              "canonicalReference": "@fluentui/theme!SizeValue:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    tokens?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "RecursivePartial",
+              "canonicalReference": "@fluentui/theme!RecursivePartial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonTokens",
+              "canonicalReference": "@fluentui/react-button!ButtonTokens:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ButtonProps",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 19
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!buttonShorthandProps:var",
+          "docComment": "/**\n * Consts listing which props are shorthand props.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "buttonShorthandProps: "
+            },
+            {
+              "kind": "Content",
+              "text": "string[]"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "buttonShorthandProps",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!ButtonSizeVariants:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ButtonSizeVariants: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    size_smallest: {\n        height: string;\n        minHeight: string;\n    };\n    size_smaller: {\n        height: string;\n        minHeight: string;\n    };\n    size_small: {\n        height: string;\n        minHeight: string;\n    };\n    size_large: {\n        height: string;\n        minHeight: string;\n    };\n    size_larger: {\n        height: string;\n        minHeight: string;\n    };\n    size_largest: {\n        height: string;\n        minHeight: string;\n    };\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ButtonSizeVariants",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-button!ButtonState:interface",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ButtonState extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonProps",
+              "canonicalReference": "@fluentui/react-button!ButtonProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ButtonState",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!ButtonState#buttonRef:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "buttonRef?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.RefObject",
+                  "canonicalReference": "@types/react!~React.RefObject:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLButtonElement",
+                  "canonicalReference": "!HTMLButtonElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "buttonRef",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-button!ButtonTokens:type",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ButtonTokens = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColorTokens",
+              "canonicalReference": "@fluentui/theme!ColorTokens:type"
+            },
+            {
+              "kind": "Content",
+              "text": " & "
+            },
+            {
+              "kind": "Reference",
+              "text": "FontTokens",
+              "canonicalReference": "@fluentui/theme!FontTokens:type"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n    paddingLeft?: string;\n    paddingRight?: string;\n    paddingTop?: string;\n    paddingBottom?: string;\n    margin?: string;\n    height?: string;\n    minWidth?: string;\n    maxWidth?: string;\n    minHeight?: string;\n    contentGap?: string;\n    iconSize?: string;\n    borderRadius?: string;\n    borderTopLeftRadius?: string;\n    borderTopRightRadius?: string;\n    borderBottomLeftRadius?: string;\n    borderBottomRightRadius?: string;\n    borderWidth?: string;\n    boxShadow?: string;\n    width?: string;\n    forcedColorAdjust?: string;\n    transform?: string;\n    transition?: string;\n    size?: {\n        smallest?: string;\n        smaller?: string;\n        small?: string;\n        regular?: string;\n        large?: string;\n        larger?: string;\n        largest?: string;\n    };\n    pressed?: {\n        transform?: string;\n        transition?: string;\n    };\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ButtonTokens",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-button!ButtonVariants:type",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ButtonVariants<TTokens = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonTokens",
+              "canonicalReference": "@fluentui/react-button!ButtonTokens:type"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    root?: TTokens;\n    block?: TTokens;\n    circular?: TTokens;\n    iconOnly?: TTokens;\n    ghost?: TTokens;\n    primary?: TTokens;\n    transparent?: TTokens;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ButtonVariants",
+          "typeParameters": [
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-button!CheckedState:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface CheckedState "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CheckedState",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!CheckedState#\"aria-checked\":member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "'aria-checked'?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.AriaAttributes",
+                  "canonicalReference": "@types/react!~React.AriaAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "['aria-pressed']"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "\"aria-checked\"",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!CheckedState#\"aria-pressed\":member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "'aria-pressed'?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.AriaAttributes",
+                  "canonicalReference": "@types/react!~React.AriaAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "['aria-pressed']"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "\"aria-pressed\"",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!CheckedState#checked:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "checked?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "checked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!CheckedState#defaultChecked:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "defaultChecked?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "defaultChecked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!CheckedState#onClick:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onClick?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.DOMAttributes",
+                  "canonicalReference": "@types/react!~React.DOMAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">['onClick']"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onClick",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!CheckedState#role:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "role?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "role",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!CompoundButton:var",
+          "docComment": "/**\n * Define a styled CompoundButton, using the `useCompoundButton` hook. {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "CompoundButton: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ForwardRefExoticComponent",
+              "canonicalReference": "@types/react!~React.ForwardRefExoticComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "CompoundButtonProps",
+              "canonicalReference": "@fluentui/react-button!CompoundButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", string | number> & "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.RefAttributes",
+              "canonicalReference": "@types/react!~React.RefAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CompoundButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-button!CompoundButtonProps:interface",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface CompoundButtonProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonProps",
+              "canonicalReference": "@fluentui/react-button!ButtonProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CompoundButtonProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!CompoundButtonProps#contentContainer:member",
+              "docComment": "/**\n * Container that wraps the children and secondaryContent slots.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "contentContainer?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ShorthandProps",
+                  "canonicalReference": "@fluentui/react-compose!ShorthandProps:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "contentContainer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!CompoundButtonProps#secondaryContent:member",
+              "docComment": "/**\n * Second line of text that describes the action this button takes.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "secondaryContent?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ShorthandProps",
+                  "canonicalReference": "@fluentui/react-compose!ShorthandProps:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "secondaryContent",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!compoundButtonShorthandProps:var",
+          "docComment": "/**\n * Consts listing which props are shorthand props.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "compoundButtonShorthandProps: "
+            },
+            {
+              "kind": "Content",
+              "text": "string[]"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "compoundButtonShorthandProps",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-button!CompoundButtonState:interface",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface CompoundButtonState extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "CompoundButtonProps",
+              "canonicalReference": "@fluentui/react-button!CompoundButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CompoundButtonState",
+          "members": [],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-button!CompoundButtonTokens:type",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type CompoundButtonTokens = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonTokens",
+              "canonicalReference": "@fluentui/react-button!ButtonTokens:type"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n    secondaryContentColor?: string;\n    secondaryContentFontSize?: string;\n    secondaryContentFontWeight?: string;\n    secondaryContentGap?: string;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CompoundButtonTokens",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-button!CompoundButtonVariants:type",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type CompoundButtonVariants = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonVariants",
+              "canonicalReference": "@fluentui/react-button!ButtonVariants:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "CompoundButtonTokens",
+              "canonicalReference": "@fluentui/react-button!CompoundButtonTokens:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CompoundButtonVariants",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-button!ExpandedState:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ExpandedState = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    ref?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Ref",
+              "canonicalReference": "@types/react!~React.Ref:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<unknown>;\n    expanded?: boolean;\n    defaultExpanded?: boolean;\n    onClick?: (ev: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.MouseEvent",
+              "canonicalReference": "@types/react!~React.MouseEvent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => void;\n    onMenuDismiss?: () => void;\n    onKeyDown?: (ev: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.KeyboardEvent",
+              "canonicalReference": "@types/react!~React.KeyboardEvent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => void;\n    'aria-expanded'?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.HTMLAttributes",
+              "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">['aria-expanded'];\n    'aria-haspopup'?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.HTMLAttributes",
+              "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">['aria-haspopup'];\n    menu?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuButtonState",
+              "canonicalReference": "@fluentui/react-button!MenuButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "['menu'];\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ExpandedState",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 18
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!MenuButton:var",
+          "docComment": "/**\n * Define a styled MenuButton, using the `useMenuButton` hook. {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "MenuButton: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ForwardRefExoticComponent",
+              "canonicalReference": "@types/react!~React.ForwardRefExoticComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuButtonProps",
+              "canonicalReference": "@fluentui/react-button!MenuButtonProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", string | number> & "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.RefAttributes",
+              "canonicalReference": "@types/react!~React.RefAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "MenuButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-button!MenuButtonProps:type",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type MenuButtonProps = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Omit",
+              "canonicalReference": "!Omit:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonProps",
+              "canonicalReference": "@fluentui/react-button!ButtonProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", 'iconPosition' | 'loader'> & {\n    menu?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ShorthandProps",
+              "canonicalReference": "@fluentui/react-compose!ShorthandProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    menuIcon?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ShorthandProps",
+              "canonicalReference": "@fluentui/react-compose!ShorthandProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    defaultExpanded?: boolean;\n    expanded?: boolean;\n    onMenuDismiss?: () => void;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "MenuButtonProps",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!menuButtonShorthandProps:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "menuButtonShorthandProps: "
+            },
+            {
+              "kind": "Content",
+              "text": "string[]"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "menuButtonShorthandProps",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-button!MenuButtonState:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface MenuButtonState extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Omit",
+              "canonicalReference": "!Omit:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuButtonProps",
+              "canonicalReference": "@fluentui/react-button!MenuButtonProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", 'menu'>"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "Omit",
+              "canonicalReference": "!Omit:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonState",
+              "canonicalReference": "@fluentui/react-button!ButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", 'iconPosition' | 'loader'> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "MenuButtonState",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!MenuButtonState#menu:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menu?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.PropsWithChildren",
+                  "canonicalReference": "@types/react!~React.PropsWithChildren:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "MinimalMenuProps",
+                  "canonicalReference": "@fluentui/react-shared-contexts!MinimalMenuProps:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menu",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 5
+            },
+            {
+              "startIndex": 6,
+              "endIndex": 10
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-button!MenuButtonTokens:type",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type MenuButtonTokens = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonTokens",
+              "canonicalReference": "@fluentui/react-button!ButtonTokens:type"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n    menuIconColor?: string;\n    menuIconSize?: string;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "MenuButtonTokens",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-button!MenuButtonVariants:type",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type MenuButtonVariants = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonVariants",
+              "canonicalReference": "@fluentui/react-button!ButtonVariants:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuButtonTokens",
+              "canonicalReference": "@fluentui/react-button!MenuButtonTokens:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "MenuButtonVariants",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!renderButton:var",
+          "docComment": "/**\n * Define the render function. Given the state of a button, renders it.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "renderButton: "
+            },
+            {
+              "kind": "Content",
+              "text": "(state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonState",
+              "canonicalReference": "@fluentui/react-button!ButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.Element",
+              "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "renderButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!renderCompoundButton:var",
+          "docComment": "/**\n * Define the render function. Given the state of a button, renders it.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "renderCompoundButton: "
+            },
+            {
+              "kind": "Content",
+              "text": "(state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "CompoundButtonState",
+              "canonicalReference": "@fluentui/react-button!CompoundButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.Element",
+              "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "renderCompoundButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!renderMenuButton:var",
+          "docComment": "/**\n * Redefine the render function to add slots. Reuse the button structure but add slots to children.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "renderMenuButton: "
+            },
+            {
+              "kind": "Content",
+              "text": "(state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuButtonState",
+              "canonicalReference": "@fluentui/react-button!MenuButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.Element",
+              "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "renderMenuButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!renderSplitButton:var",
+          "docComment": "/**\n * Redefine the render function to add slots. Reuse the button structure but add slots to children.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "renderSplitButton: "
+            },
+            {
+              "kind": "Content",
+              "text": "(state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SplitButtonState",
+              "canonicalReference": "@fluentui/react-button!SplitButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.Element",
+              "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "renderSplitButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!SplitButton:var",
+          "docComment": "/**\n * Define a styled SplitButton, using the `useSplitButton` hook. {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "SplitButton: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ForwardRefExoticComponent",
+              "canonicalReference": "@types/react!~React.ForwardRefExoticComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "SplitButtonProps",
+              "canonicalReference": "@fluentui/react-button!SplitButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", string | number> & "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.RefAttributes",
+              "canonicalReference": "@types/react!~React.RefAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SplitButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-button!SplitButtonProps:interface",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface SplitButtonProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonProps",
+              "canonicalReference": "@fluentui/react-button!ButtonProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuButtonProps",
+              "canonicalReference": "@fluentui/react-button!MenuButtonProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SplitButtonProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!SplitButtonProps#button:member",
+              "docComment": "/**\n * Button to perform primary action in SplitButton.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "button?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ShorthandProps",
+                  "canonicalReference": "@fluentui/react-compose!ShorthandProps:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "button",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!SplitButtonProps#divider:member",
+              "docComment": "/**\n * Divider that separates the primary action button and the menu button parts of the SplitButton\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "divider?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ShorthandProps",
+                  "canonicalReference": "@fluentui/react-compose!ShorthandProps:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "divider",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!SplitButtonProps#menuButton:member",
+              "docComment": "/**\n * Button that opens menu with secondary actions in SplitButton.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuButton?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ShorthandProps",
+                  "canonicalReference": "@fluentui/react-compose!ShorthandProps:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuButton",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            },
+            {
+              "startIndex": 3,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!splitButtonShorthandProps:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "splitButtonShorthandProps: "
+            },
+            {
+              "kind": "Content",
+              "text": "string[]"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "splitButtonShorthandProps",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-button!SplitButtonState:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface SplitButtonState extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Omit",
+              "canonicalReference": "!Omit:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "SplitButtonProps",
+              "canonicalReference": "@fluentui/react-button!SplitButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", 'menu'>"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuButtonState",
+              "canonicalReference": "@fluentui/react-button!MenuButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SplitButtonState",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!SplitButtonState#menuButtonRef:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "menuButtonRef?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.RefObject",
+                  "canonicalReference": "@types/react!~React.RefObject:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLButtonElement",
+                  "canonicalReference": "!HTMLButtonElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "menuButtonRef",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 5
+            },
+            {
+              "startIndex": 6,
+              "endIndex": 8
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-button!SplitButtonTokens:type",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type SplitButtonTokens = "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuButtonTokens",
+              "canonicalReference": "@fluentui/react-button!MenuButtonTokens:type"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n    dividerColor?: string;\n    dividerThickness?: string;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SplitButtonTokens",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-button!SplitButtonVariants:type",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type SplitButtonVariants = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonVariants",
+              "canonicalReference": "@fluentui/react-button!ButtonVariants:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "SplitButtonTokens",
+              "canonicalReference": "@fluentui/react-button!SplitButtonTokens:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SplitButtonVariants",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!ToggleButton:var",
+          "docComment": "/**\n * Define a styled ToggleButton, using the `useToggleButton` hook. {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ToggleButton: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ForwardRefExoticComponent",
+              "canonicalReference": "@types/react!~React.ForwardRefExoticComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ToggleButtonProps",
+              "canonicalReference": "@fluentui/react-button!ToggleButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", string | number> & "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.RefAttributes",
+              "canonicalReference": "@types/react!~React.RefAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ToggleButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-button!ToggleButtonProps:interface",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ToggleButtonProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonProps",
+              "canonicalReference": "@fluentui/react-button!ButtonProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ToggleButtonProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!ToggleButtonProps#checked:member",
+              "docComment": "/**\n * Defines the controlled checked state of the `ToggleButton`. Mutually exclusive to `defaultChecked`. This should only be used if the checked state is to be controlled at a higher level and there is a plan to pass the correct value based on handling `onClick` events and re-rendering.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "checked?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "checked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-button!ToggleButtonProps#defaultChecked:member",
+              "docComment": "/**\n * Defines whether the `ToggleButton` is inititally in a checked state or not when rendered. Mutually exclusive to `checked`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "defaultChecked?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "defaultChecked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-button!ToggleButtonState:interface",
+          "docComment": "/**\n * {@docCategory Button}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ToggleButtonState extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ToggleButtonProps",
+              "canonicalReference": "@fluentui/react-button!ToggleButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ToggleButtonState",
+          "members": [],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-button!ToggleButtonTokens:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ToggleButtonTokens = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonTokens",
+              "canonicalReference": "@fluentui/react-button!ButtonTokens:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ToggleButtonTokens",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-button!ToggleButtonVariants:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ToggleButtonVariants = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonVariants",
+              "canonicalReference": "@fluentui/react-button!ButtonVariants:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ToggleButtonTokens",
+              "canonicalReference": "@fluentui/react-button!ToggleButtonTokens:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ToggleButtonVariants",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useButton:var",
+          "docComment": "/**\n * Given user props, returns state and render function for a Button.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useButton: "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonProps",
+              "canonicalReference": "@fluentui/react-button!ButtonProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Ref",
+              "canonicalReference": "@types/react!~React.Ref:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">, defaultProps?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonProps",
+              "canonicalReference": "@fluentui/react-button!ButtonProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonState",
+              "canonicalReference": "@fluentui/react-button!ButtonState:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useButtonClasses:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useButtonClasses: "
+            },
+            {
+              "kind": "Content",
+              "text": "(state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonState",
+              "canonicalReference": "@fluentui/react-button!ButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", options?: import(\"@fluentui/react-theme-provider\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "UseStylesOptions",
+              "canonicalReference": "@fluentui/react-theme-provider!UseStylesOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined) => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useButtonClasses",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useButtonState:var",
+          "docComment": "/**\n * The useButton hook processes the Button draft state.\n *\n * @param draftState - Button draft state to mutate.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useButtonState: "
+            },
+            {
+              "kind": "Content",
+              "text": "(draftState: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ButtonState",
+              "canonicalReference": "@fluentui/react-button!ButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useButtonState",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useChecked:var",
+          "docComment": "/**\n * The useToggle hook processes adds the correct toggled state and acccessibility as needed.\n *\n * @param draftState - state to read and augment.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useChecked: "
+            },
+            {
+              "kind": "Content",
+              "text": "<TDraftState extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "CheckedState",
+              "canonicalReference": "@fluentui/react-button!CheckedState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">(draftState: TDraftState) => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useChecked",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useCompoundButton:var",
+          "docComment": "/**\n * Given user props, returns state and render function for a Button.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useCompoundButton: "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "CompoundButtonProps",
+              "canonicalReference": "@fluentui/react-button!CompoundButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Ref",
+              "canonicalReference": "@types/react!~React.Ref:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">, defaultProps?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "CompoundButtonProps",
+              "canonicalReference": "@fluentui/react-button!CompoundButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "CompoundButtonState",
+              "canonicalReference": "@fluentui/react-button!CompoundButtonState:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useCompoundButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useCompoundButtonClasses:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useCompoundButtonClasses: "
+            },
+            {
+              "kind": "Content",
+              "text": "(state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "CompoundButtonState",
+              "canonicalReference": "@fluentui/react-button!CompoundButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useCompoundButtonClasses",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useExpanded:var",
+          "docComment": "/**\n * @param draftState - mutable state object to update to add expanded behavior.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useExpanded: "
+            },
+            {
+              "kind": "Content",
+              "text": "<TDraftState extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ExpandedState",
+              "canonicalReference": "@fluentui/react-button!ExpandedState:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">(draftState: TDraftState) => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useExpanded",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useMenuButton:var",
+          "docComment": "/**\n * Redefine the component factory, reusing button factory.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useMenuButton: "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuButtonProps",
+              "canonicalReference": "@fluentui/react-button!MenuButtonProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Ref",
+              "canonicalReference": "@types/react!~React.Ref:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">, defaultProps?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuButtonProps",
+              "canonicalReference": "@fluentui/react-button!MenuButtonProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuButtonState",
+              "canonicalReference": "@fluentui/react-button!MenuButtonState:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useMenuButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useMenuButtonClasses:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useMenuButtonClasses: "
+            },
+            {
+              "kind": "Content",
+              "text": "(state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuButtonState",
+              "canonicalReference": "@fluentui/react-button!MenuButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useMenuButtonClasses",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useMenuButtonState:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useMenuButtonState: "
+            },
+            {
+              "kind": "Content",
+              "text": "(state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "MenuButtonState",
+              "canonicalReference": "@fluentui/react-button!MenuButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useMenuButtonState",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useSplitButton:var",
+          "docComment": "/**\n * Redefine the component factory, reusing button factory.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useSplitButton: "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SplitButtonProps",
+              "canonicalReference": "@fluentui/react-button!SplitButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Ref",
+              "canonicalReference": "@types/react!~React.Ref:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">, defaultProps?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SplitButtonProps",
+              "canonicalReference": "@fluentui/react-button!SplitButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "SplitButtonState",
+              "canonicalReference": "@fluentui/react-button!SplitButtonState:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useSplitButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useSplitButtonClasses:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useSplitButtonClasses: "
+            },
+            {
+              "kind": "Content",
+              "text": "(state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SplitButtonState",
+              "canonicalReference": "@fluentui/react-button!SplitButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", options?: import(\"@fluentui/react-theme-provider\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "UseStylesOptions",
+              "canonicalReference": "@fluentui/react-theme-provider!UseStylesOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined) => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useSplitButtonClasses",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useToggleButton:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useToggleButton: "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ToggleButtonProps",
+              "canonicalReference": "@fluentui/react-button!ToggleButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Ref",
+              "canonicalReference": "@types/react!~React.Ref:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">, defaultProps?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ToggleButtonProps",
+              "canonicalReference": "@fluentui/react-button!ToggleButtonProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ToggleButtonState",
+              "canonicalReference": "@fluentui/react-button!ToggleButtonState:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useToggleButton",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-button!useToggleButtonClasses:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useToggleButtonClasses: "
+            },
+            {
+              "kind": "Content",
+              "text": "(state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ToggleButtonState",
+              "canonicalReference": "@fluentui/react-button!ToggleButtonState:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useToggleButtonClasses",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        }
+      ]
+    }
+  ]
+}

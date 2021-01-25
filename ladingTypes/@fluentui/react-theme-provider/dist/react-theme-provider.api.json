@@ -1,0 +1,1694 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/react-theme-provider!",
+  "docComment": "",
+  "name": "@fluentui/react-theme-provider",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/react-theme-provider!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!applyClasses:var",
+          "docComment": "/**\n * The `applyClasses` takes in a mutable state and a class map and, given the class map follows the a naming convention described below, auto-applies classes to the appropriate places in the state.\n *\n * Usage:\n * ```tsx\n * const useButtonClasses = makeClasses(theme => {\n *   root: { ... },\n *   _primary: { ... },\n *   _size_small: { ... }\n * });\n * ```\n *\n * The class naming convention is broken down as follows:\n *\n * * No underscores - a slot class name. (E.g. \"root\", \"icon\", etc) * Prefixed with underscore - a modifier. (E.g. \"_primary\", \"_fluid\") * Contains 2 underscores - a name/value matcher. (E.g. \"_size_small\")\n *\n * Modifier classnames are added to the root className when the state contains a truthy value of the same name. For example, when the primary flag is present, the \"_primary\" modifier class will be appended to the root className prop.\n *\n * Enum classnames are also added to the root className when teh state contains an enum value which matches the value in the className. for example, when the `size` enum value is `small`, the \"_size_small\" enum class will be appended to the root className prop.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "applyClasses: "
+            },
+            {
+              "kind": "Content",
+              "text": "<TState extends {}>(state: TState, classMap: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, string>) => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "applyClasses",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-theme-provider!FontFace:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type FontFace = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFontFace",
+              "canonicalReference": "@fluentui/merge-styles!IFontFace:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FontFace",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!getStyleFromPropsAndOptions:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getStyleFromPropsAndOptions: "
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "StyleProps",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<import(\"@fluentui/theme\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ColorTokenSet",
+              "canonicalReference": "@fluentui/theme!ColorTokenSet:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">, TOptions extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "StyleOptions",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>>(props: TProps, options: TOptions, prefix?: string | undefined) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.CSSProperties",
+              "canonicalReference": "@types/react!~React.CSSProperties:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "getStyleFromPropsAndOptions",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-theme-provider!KeyFrames:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type KeyFrames = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IKeyframes",
+              "canonicalReference": "@fluentui/merge-styles!IKeyframes:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "KeyFrames",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!makeClasses:var",
+          "docComment": "/**\n * The `makeClasses` helper encapsulates `makeStyles`, and given a style map which follows a specific naming convention, produces a hook function which takes in the component draft state and auto distributes classes into the draft state. This removes a lot of boilerplate code using `classnames` helpers to manage distributing classnames manually.\n *\n * Usage:\n * ```tsx\n * const useButtonClasses makeClasses(theme => {\n *   root: { ... },\n *   _primary: { ... },\n *   _size_small: { ... }\n * });\n * ```\n *\n * The class naming convention is broken down as follows:\n *\n * * No underscores - a slot class name. (E.g. \"root\", \"icon\", etc) * Prefixed with underscore - a modifier. (E.g. \"_primary\", \"_fluid\") * Contains 2 underscores - a name/value matcher. (E.g. \"_size_small\")\n *\n * Modifier classnames are added to the root className when the state contains a truthy value of the same name. For example, when the primary flag is present, the \"_primary\" modifier class will be appended to the root className prop.\n *\n * Enum classnames are also added to the root className when teh state contains an enum value which matches the value in the className. for example, when the `size` enum value is `small`, the \"_size_small\" enum class will be appended to the root className prop.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "makeClasses: "
+            },
+            {
+              "kind": "Content",
+              "text": "<TState extends {}>(styleOrFunction: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyle",
+              "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+            },
+            {
+              "kind": "Content",
+              "text": "> | ((theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Theme",
+              "canonicalReference": "@fluentui/theme!Theme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyle",
+              "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">)) => (state: TState, options?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "UseStylesOptions",
+              "canonicalReference": "@fluentui/react-theme-provider!UseStylesOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined) => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "makeClasses",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 14
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/react-theme-provider!makeStyles:function(1)",
+          "docComment": "/**\n * Registers a css object, optionally as a function of the theme.\n *\n * @param styleOrFunction - Either a css javascript object, or a function which takes in `ITheme` and returns a css javascript object.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function makeStyles<TStyleSet extends "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [key: string]: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyle",
+              "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ">(styleOrFunction: "
+            },
+            {
+              "kind": "Content",
+              "text": "TStyleSet | ((theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Theme",
+              "canonicalReference": "@fluentui/theme!Theme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => TStyleSet)"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "(options?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "UseStylesOptions",
+              "canonicalReference": "@fluentui/react-theme-provider!UseStylesOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => {\n    [key in keyof TStyleSet]: string;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 9,
+            "endIndex": 12
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "styleOrFunction",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 8
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "TStyleSet",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "makeStyles"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!makeVariantClasses:var",
+          "docComment": "/**\n * Hook factory for creating a `use*Variants` helper. Variants represent a configuration of token values mapped to modifiers on the component. A variant can also be referenced using a variant string. Variants can be overridden through the theme of the component.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "makeVariantClasses: "
+            },
+            {
+              "kind": "Content",
+              "text": "<TState = {}, TVariants = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, any>>(options: "
+            },
+            {
+              "kind": "Reference",
+              "text": "MakeVariantClassesOptions",
+              "canonicalReference": "@fluentui/react-theme-provider!MakeVariantClassesOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TVariants>) => (state: TState, options?: import(\"./makeStyles\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "UseStylesOptions",
+              "canonicalReference": "@fluentui/react-theme-provider!UseStylesOptions:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined) => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "makeVariantClasses",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-theme-provider!MakeVariantClassesOptions:type",
+          "docComment": "/**\n * Options for makeVariantClasses.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type MakeVariantClassesOptions<TVariants = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Variants",
+              "canonicalReference": "@fluentui/theme!Variants:type"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    name?: string;\n    prefix?: string;\n    styles?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyle",
+              "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+            },
+            {
+              "kind": "Content",
+              "text": "> | ((theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Theme",
+              "canonicalReference": "@fluentui/theme!Theme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyle",
+              "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">);\n    variants?: TVariants | ((theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Theme",
+              "canonicalReference": "@fluentui/theme!Theme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => TVariants);\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "MakeVariantClassesOptions",
+          "typeParameters": [
+            {
+              "typeParameterName": "TVariants",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 16
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!MergeStylesProvider:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "MergeStylesProvider: "
+            },
+            {
+              "kind": "Content",
+              "text": "({ children }: {\n    children?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ReactNode",
+              "canonicalReference": "@types/react!~React.ReactNode:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.Element",
+              "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "MergeStylesProvider",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!mergeStylesRenderer:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "mergeStylesRenderer: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StyleRenderer",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleRenderer:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "mergeStylesRenderer",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-theme-provider!StyleOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface StyleOptions<TProps> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "StyleOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleOptions#slotProps:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "slotProps: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "((props: TProps) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, object>)[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "slotProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-theme-provider!StyleProps:interface",
+          "docComment": "/**\n * Typing containing the definition for the `style` and `tokens` props that will be extended for the calculation of the style prop.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface StyleProps<TTokens extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColorTokenSet",
+              "canonicalReference": "@fluentui/theme!ColorTokenSet:type"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColorTokenSet",
+              "canonicalReference": "@fluentui/theme!ColorTokenSet:type"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "StyleProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleProps#style:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "style?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.CSSProperties",
+                  "canonicalReference": "@types/react!~React.CSSProperties:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "style",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleProps#tokens:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tokens?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "TTokens"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "tokens",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-theme-provider!StyleRenderer:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface StyleRenderer "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "StyleRenderer",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleRenderer#getId:member",
+              "docComment": "/**\n * Returns a unique id for the renderer; used as part of the cache key when determining if new styles need to be rendered.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "getId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleRenderer#renderFontFace:member",
+              "docComment": "/**\n * Renders fontfaces.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "renderFontFace: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(fontFace: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FontFace",
+                  "canonicalReference": "@fluentui/react-theme-provider!FontFace:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "StyleRendererOptions",
+                  "canonicalReference": "@fluentui/react-theme-provider!StyleRendererOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "renderFontFace",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleRenderer#renderKeyframes:member",
+              "docComment": "/**\n * Renders keyframes and returns the keyframe name.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "renderKeyframes: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(keyframes: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "KeyFrames",
+                  "canonicalReference": "@fluentui/react-theme-provider!KeyFrames:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "StyleRendererOptions",
+                  "canonicalReference": "@fluentui/react-theme-provider!StyleRendererOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "renderKeyframes",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleRenderer#renderStyles:member",
+              "docComment": "/**\n * Renders a stylesheet and returns the map of key to class name.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "renderStyles: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TRuleSet>(ruleSet: TRuleSet, options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "StyleRendererOptions",
+                  "canonicalReference": "@fluentui/react-theme-provider!StyleRendererOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => {\n        [key in keyof TRuleSet]: string;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "renderStyles",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleRenderer#reset:member",
+              "docComment": "/**\n * Expected to initialize or re-initialize the renderer. Primarily for testing purposes.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "reset: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "reset",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!StyleRendererContext:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "StyleRendererContext: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Context",
+              "canonicalReference": "@types/react!~React.Context:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "StyleRenderer",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleRenderer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "StyleRendererContext",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-theme-provider!StyleRendererOptions:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type StyleRendererOptions = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    rtl?: boolean;\n    targetWindow: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Window",
+              "canonicalReference": "!Window:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "StyleRendererOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!ThemeContext:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ThemeContext: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Context",
+              "canonicalReference": "@types/react!~React.Context:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Theme",
+              "canonicalReference": "@fluentui/theme!Theme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ThemeContext",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!ThemeProvider:var",
+          "docComment": "/**\n * ThemeProvider, used for providing css variables and registering stylesheets.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ThemeProvider: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ThemeProviderProps",
+              "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ThemeProvider",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderProps:interface",
+          "docComment": "/**\n * {@docCategory ThemeProvider} Props for the ThemeProvider component.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ThemeProviderProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.HTMLAttributes",
+              "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLDivElement",
+              "canonicalReference": "!HTMLDivElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ThemeProviderProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderProps#applyTo:member",
+              "docComment": "/**\n * Defines where body-related theme is applied to. Setting to 'element' will apply body styles to the root element of ThemeProvider. Setting to 'body' will apply body styles to document body. Setting to 'none' will not apply body styles to either element or body.\n *\n * @defaultvalue\n *\n * 'element'\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "applyTo?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'element' | 'body' | 'none'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "applyTo",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderProps#as:member",
+              "docComment": "/**\n * A component that should be used as the root element of the ThemeProvider component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "as?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.ElementType",
+                  "canonicalReference": "@types/react!~React.ElementType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "as",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderProps#ref:member",
+              "docComment": "/**\n * Optional ref to the root element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ref?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.Ref",
+                  "canonicalReference": "@types/react!~React.Ref:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ref",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderProps#renderer:member",
+              "docComment": "/**\n * Optional interface for registering dynamic styles. Defaults to using `merge-styles`. Use this to opt into a particular rendering implementation, such as `emotion`, `styled-components`, or `jss`. Note: performance will differ between all renders. Please measure your scenarios before using an alternative implementation.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "renderer?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "StyleRenderer",
+                  "canonicalReference": "@fluentui/react-theme-provider!StyleRenderer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "renderer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderProps#theme:member",
+              "docComment": "/**\n * Defines the theme provided by the user.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "theme?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "PartialTheme",
+                  "canonicalReference": "@fluentui/theme!PartialTheme:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Theme",
+                  "canonicalReference": "@fluentui/theme!Theme:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "theme",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderState:type",
+          "docComment": "/**\n * State for the ThemeProvider component.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ThemeProviderState = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Omit",
+              "canonicalReference": "!Omit:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ThemeProviderProps",
+              "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", 'theme' | 'ref'> & {\n    theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Theme",
+              "canonicalReference": "@fluentui/theme!Theme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.RefObject",
+              "canonicalReference": "@types/react!~React.RefObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">;\n    customizerContext: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICustomizerContext",
+              "canonicalReference": "@fluentui/utilities!ICustomizerContext:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ThemeProviderState",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 13
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!tokensToStyleObject:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "tokensToStyleObject: "
+            },
+            {
+              "kind": "Content",
+              "text": "(tokens?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.CSSProperties",
+              "canonicalReference": "@types/react!~React.CSSProperties:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "TokenSetType",
+              "canonicalReference": "@fluentui/theme!TokenSetType:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined, prefix?: string | undefined, style?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.CSSProperties",
+              "canonicalReference": "@types/react!~React.CSSProperties:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.CSSProperties",
+              "canonicalReference": "@types/react!~React.CSSProperties:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "tokensToStyleObject",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!useInlineTokens:var",
+          "docComment": "/**\n * Hook which given draftState, will ensure that tokens are spit out to inline styles.\n *\n * @param draftState - state to read and manipulate. Expected to have `tokens` prop, will transform into inline\n *\n * @param prefix - prefix to prepend to variables (e.g. \"--button\")\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useInlineTokens: "
+            },
+            {
+              "kind": "Content",
+              "text": "(draftState: {\n    style?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.CSSProperties",
+              "canonicalReference": "@types/react!~React.CSSProperties:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined;\n    tokens?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TokenSetType",
+              "canonicalReference": "@fluentui/theme!TokenSetType:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined;\n}, prefix: string) => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useInlineTokens",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!useStyleRenderer:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useStyleRenderer: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => "
+            },
+            {
+              "kind": "Reference",
+              "text": "StyleRenderer",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleRenderer:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useStyleRenderer",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-theme-provider!UseStylesOptions:type",
+          "docComment": "/**\n * Options that can be provided to the hook generated by `makeStyles`.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type UseStylesOptions = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    theme?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Theme",
+              "canonicalReference": "@fluentui/theme!Theme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    renderer?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StyleRenderer",
+              "canonicalReference": "@fluentui/react-theme-provider!StyleRenderer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "UseStylesOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!useTheme:var",
+          "docComment": "/**\n * React hook for programmatically accessing the theme.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useTheme: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Theme",
+              "canonicalReference": "@fluentui/theme!Theme:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useTheme",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!useThemeProvider:var",
+          "docComment": "/**\n * Returns the ThemeProvider render function and calculated state, given user input, ref, and a set of default prop values.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useThemeProvider: "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ThemeProviderProps",
+              "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Ref",
+              "canonicalReference": "@types/react!~React.Ref:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">, defaultProps: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ThemeProviderProps",
+              "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => {\n    state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ThemeProviderState",
+              "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderState:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    render: (state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ThemeProviderState",
+              "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderState:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.Element",
+              "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useThemeProvider",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 16
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/react-theme-provider!useThemeProviderClasses:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function useThemeProviderClasses(state: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ThemeProviderState",
+              "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderState:type"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "state",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "useThemeProviderClasses"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!useThemeProviderState:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useThemeProviderState: "
+            },
+            {
+              "kind": "Content",
+              "text": "(draftState: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ThemeProviderState",
+              "canonicalReference": "@fluentui/react-theme-provider!ThemeProviderState:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useThemeProviderState",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-theme-provider!withThemeProvider:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "withThemeProvider: "
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>(Component: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ForwardRefExoticComponent",
+              "canonicalReference": "@types/react!~React.ForwardRefExoticComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "React.PropsWithoutRef",
+              "canonicalReference": "@types/react!~React.PropsWithoutRef:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps> & "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.RefAttributes",
+              "canonicalReference": "@types/react!~React.RefAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLButtonElement",
+              "canonicalReference": "!HTMLButtonElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "withThemeProvider",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 12
+          }
+        }
+      ]
+    }
+  ]
+}

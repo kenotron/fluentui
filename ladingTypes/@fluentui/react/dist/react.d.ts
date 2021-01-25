@@ -34,18 +34,18 @@ import { ITooltipHostProps } from '@fluentui/react-internal/lib/Tooltip';
 import { IViewport } from '@fluentui/react-internal/lib/utilities/decorators/withViewport';
 import { IWithViewportProps } from '@fluentui/react-internal/lib/utilities/decorators/withViewport';
 import { PersonaInitialsColor } from '@fluentui/react-internal/lib/Persona';
-import * as React_2 from 'react';
+import * as React from 'react';
 import { RectangleEdge } from '@fluentui/react-internal/lib/Positioning';
 import { ResponsiveMode } from '@fluentui/react-internal/lib/utilities/decorators/withResponsiveMode';
 import { ScrollToMode } from '@fluentui/react-internal/lib/List';
-import { SelectionMode as SelectionMode_2 } from '@fluentui/react-internal/lib/Selection';
+import { SelectionMode } from '@fluentui/react-internal/lib/Selection';
 
-export declare const Breadcrumb: React_2.FunctionComponent<IBreadcrumbProps>;
+export declare const Breadcrumb: React.FunctionComponent<IBreadcrumbProps>;
 
 /**
  * {@docCategory Breadcrumb}
  */
-export declare class BreadcrumbBase extends React_2.Component<IBreadcrumbProps, any> {
+export declare class BreadcrumbBase extends React.Component<IBreadcrumbProps, any> {
     static defaultProps: IBreadcrumbProps;
     private _classNames;
     private _focusZone;
@@ -74,7 +74,7 @@ export declare class BreadcrumbBase extends React_2.Component<IBreadcrumbProps, 
     private _validateProps;
 }
 
-export declare function buildColumns(items: any[], canResizeColumns?: boolean, onColumnClick?: (ev: React_2.MouseEvent<HTMLElement>, column: IColumn) => void, sortedColumnKey?: string, isSortedDescending?: boolean, groupedColumnKey?: string, isMultiline?: boolean): IColumn[];
+export declare function buildColumns(items: any[], canResizeColumns?: boolean, onColumnClick?: (ev: React.MouseEvent<HTMLElement>, column: IColumn) => void, sortedColumnKey?: string, isSortedDescending?: boolean, groupedColumnKey?: string, isMultiline?: boolean): IColumn[];
 
 /**
  * {@docCategory DetailsList}
@@ -124,7 +124,7 @@ export declare enum ColumnDragEndLocation {
     header = 2
 }
 
-export declare const ComboBox: React_2.FunctionComponent<IComboBoxProps>;
+export declare const ComboBox: React.FunctionComponent<IComboBoxProps>;
 
 /**
  * {@docCategory DetailsList}
@@ -148,7 +148,7 @@ export declare const DEFAULT_ROW_HEIGHTS: {
  *
  * {@docCategory DetailsList}
  */
-export declare class DetailsColumnBase extends React_2.Component<IDetailsColumnProps> {
+export declare class DetailsColumnBase extends React.Component<IDetailsColumnProps> {
     private _async;
     private _events;
     private _root;
@@ -172,9 +172,9 @@ export declare class DetailsColumnBase extends React_2.Component<IDetailsColumnP
     private _addDragDropHandling;
 }
 
-export declare const DetailsHeader: React_2.FunctionComponent<IDetailsHeaderBaseProps>;
+export declare const DetailsHeader: React.FunctionComponent<IDetailsHeaderBaseProps>;
 
-export declare class DetailsHeaderBase extends React_2.Component<IDetailsHeaderBaseProps, IDetailsHeaderState> implements IDetailsHeader {
+export declare class DetailsHeaderBase extends React.Component<IDetailsHeaderBaseProps, IDetailsHeaderState> implements IDetailsHeader {
     static defaultProps: {
         selectAllVisibility: SelectAllVisibility;
         collapseAllVisibility: CollapseAllVisibility;
@@ -261,12 +261,12 @@ export declare class DetailsHeaderBase extends React_2.Component<IDetailsHeaderB
     private _onToggleCollapseAll;
 }
 
-export declare const DetailsList: React_2.FunctionComponent<IDetailsListProps>;
+export declare const DetailsList: React.FunctionComponent<IDetailsListProps>;
 
-export declare class DetailsListBase extends React_2.Component<IDetailsListProps, IDetailsListState> implements IDetailsList {
+export declare class DetailsListBase extends React.Component<IDetailsListProps, IDetailsListState> implements IDetailsList {
     static defaultProps: {
         layoutMode: DetailsListLayoutMode;
-        selectionMode: SelectionMode_2;
+        selectionMode: SelectionMode;
         constrainMode: ConstrainMode;
         checkboxVisibility: CheckboxVisibility;
         isHeaderVisible: boolean;
@@ -355,9 +355,9 @@ export declare enum DetailsListLayoutMode {
     justified = 1
 }
 
-export declare const DetailsRow: React_2.FunctionComponent<IDetailsRowBaseProps>;
+export declare const DetailsRow: React.FunctionComponent<IDetailsRowBaseProps>;
 
-export declare class DetailsRowBase extends React_2.Component<IDetailsRowBaseProps, IDetailsRowState> {
+export declare class DetailsRowBase extends React.Component<IDetailsRowBaseProps, IDetailsRowState> {
     private _events;
     private _root;
     private _cellMeasurer;
@@ -400,14 +400,14 @@ export declare class DetailsRowBase extends React_2.Component<IDetailsRowBasePro
     private _updateDroppingState;
 }
 
-export declare const DetailsRowCheck: React_2.FunctionComponent<IDetailsRowCheckProps>;
+export declare const DetailsRowCheck: React.FunctionComponent<IDetailsRowCheckProps>;
 
 /**
  * Component for rendering a row's cells in a `DetailsList`.
  *
  * {@docCategory DetailsList}
  */
-export declare const DetailsRowFields: React_2.FunctionComponent<IDetailsRowFieldsProps>;
+export declare const DetailsRowFields: React.FunctionComponent<IDetailsRowFieldsProps>;
 
 export declare const DetailsRowGlobalClassNames: {
     root: string;
@@ -425,25 +425,25 @@ export declare const DetailsRowGlobalClassNames: {
     fields: string;
 };
 
-export declare const DocumentCard: React_2.FunctionComponent<IDocumentCardProps>;
+export declare const DocumentCard: React.FunctionComponent<IDocumentCardProps>;
 
-export declare const DocumentCardActions: React_2.FunctionComponent<IDocumentCardActionsProps>;
+export declare const DocumentCardActions: React.FunctionComponent<IDocumentCardActionsProps>;
 
 /**
  * {@docCategory DocumentCard}
  */
-declare class DocumentCardActionsBase extends React_2.Component<IDocumentCardActionsProps, any> {
+declare class DocumentCardActionsBase extends React.Component<IDocumentCardActionsProps, any> {
     private _classNames;
     constructor(props: IDocumentCardActionsProps);
     render(): JSX.Element;
 }
 
-export declare const DocumentCardActivity: React_2.FunctionComponent<IDocumentCardActivityProps>;
+export declare const DocumentCardActivity: React.FunctionComponent<IDocumentCardActivityProps>;
 
 /**
  * {@docCategory DocumentCard}
  */
-declare class DocumentCardActivityBase extends React_2.Component<IDocumentCardActivityProps, any> {
+declare class DocumentCardActivityBase extends React.Component<IDocumentCardActivityProps, any> {
     private _classNames;
     constructor(props: IDocumentCardActivityProps);
     render(): JSX.Element | null;
@@ -452,60 +452,60 @@ declare class DocumentCardActivityBase extends React_2.Component<IDocumentCardAc
     private _getNameString;
 }
 
-export declare const DocumentCardDetails: React_2.FunctionComponent<IDocumentCardDetailsProps>;
+export declare const DocumentCardDetails: React.FunctionComponent<IDocumentCardDetailsProps>;
 
 /**
  * {@docCategory DocumentCard}
  */
-declare class DocumentCardDetailsBase extends React_2.Component<IDocumentCardDetailsProps, any> {
+declare class DocumentCardDetailsBase extends React.Component<IDocumentCardDetailsProps, any> {
     private _classNames;
     constructor(props: IDocumentCardDetailsProps);
     render(): JSX.Element;
 }
 
-export declare const DocumentCardImage: React_2.FunctionComponent<IDocumentCardImageProps>;
+export declare const DocumentCardImage: React.FunctionComponent<IDocumentCardImageProps>;
 
-export declare const DocumentCardLocation: React_2.FunctionComponent<IDocumentCardLocationProps>;
+export declare const DocumentCardLocation: React.FunctionComponent<IDocumentCardLocationProps>;
 
 /**
  * {@docCategory DocumentCard}
  */
-declare class DocumentCardLocationBase extends React_2.Component<IDocumentCardLocationProps, any> {
+declare class DocumentCardLocationBase extends React.Component<IDocumentCardLocationProps, any> {
     private _classNames;
     constructor(props: IDocumentCardLocationProps);
     render(): JSX.Element;
 }
 
-export declare const DocumentCardLogo: React_2.FunctionComponent<IDocumentCardLogoProps>;
+export declare const DocumentCardLogo: React.FunctionComponent<IDocumentCardLogoProps>;
 
 /**
  * {@docCategory DocumentCard}
  */
-declare class DocumentCardLogoBase extends React_2.Component<IDocumentCardLogoProps, any> {
+declare class DocumentCardLogoBase extends React.Component<IDocumentCardLogoProps, any> {
     private _classNames;
     constructor(props: IDocumentCardLogoProps);
     render(): JSX.Element;
 }
 
-export declare const DocumentCardPreview: React_2.FunctionComponent<IDocumentCardPreviewProps>;
+export declare const DocumentCardPreview: React.FunctionComponent<IDocumentCardPreviewProps>;
 
-export declare const DocumentCardStatus: React_2.FunctionComponent<IDocumentCardStatusProps>;
+export declare const DocumentCardStatus: React.FunctionComponent<IDocumentCardStatusProps>;
 
 /**
  * {@docCategory DocumentCard}
  */
-declare class DocumentCardStatusBase extends React_2.Component<IDocumentCardStatusProps, any> {
+declare class DocumentCardStatusBase extends React.Component<IDocumentCardStatusProps, any> {
     private _classNames;
     constructor(props: IDocumentCardStatusProps);
     render(): JSX.Element;
 }
 
-export declare const DocumentCardTitle: React_2.FunctionComponent<IDocumentCardTitleProps>;
+export declare const DocumentCardTitle: React.FunctionComponent<IDocumentCardTitleProps>;
 
 /**
  * {@docCategory DocumentCard}
  */
-declare class DocumentCardTitleBase extends React_2.Component<IDocumentCardTitleProps, IDocumentCardTitleState> {
+declare class DocumentCardTitleBase extends React.Component<IDocumentCardTitleProps, IDocumentCardTitleState> {
     private _titleElement;
     private _measureTitleElement;
     private _titleTruncationTimer;
@@ -537,18 +537,18 @@ export declare enum DocumentCardType {
     compact = 1
 }
 
-export declare const Dropdown: React_2.FunctionComponent<IDropdownProps>;
+export declare const Dropdown: React.FunctionComponent<IDropdownProps>;
 
-export declare const DropdownBase: React_2.FunctionComponent<IDropdownProps>;
+export declare const DropdownBase: React.FunctionComponent<IDropdownProps>;
 export { DropdownMenuItemType }
 
 export declare const getDetailsRowStyles: (props: IDetailsRowStyleProps) => IDetailsRowStyles;
 
-export declare const GroupedList: React_2.FunctionComponent<IGroupedListProps>;
+export declare const GroupedList: React.FunctionComponent<IGroupedListProps>;
 
-export declare class GroupedListBase extends React_2.Component<IGroupedListProps, IGroupedListState> implements IGroupedList {
+export declare class GroupedListBase extends React.Component<IGroupedListProps, IGroupedListState> implements IGroupedList {
     static defaultProps: {
-        selectionMode: SelectionMode_2;
+        selectionMode: SelectionMode;
         isHeaderVisible: boolean;
         groupProps: {};
         compact: boolean;
@@ -583,7 +583,7 @@ export declare class GroupedListBase extends React_2.Component<IGroupedListProps
     private _updateIsSomeGroupExpanded;
 }
 
-export declare class GroupedListSection extends React_2.Component<IGroupedListSectionProps, IGroupedListSectionState> {
+export declare class GroupedListSection extends React.Component<IGroupedListSectionProps, IGroupedListSectionState> {
     private _root;
     private _list;
     private _subGroupRefs;
@@ -628,13 +628,13 @@ export declare class GroupedListSection extends React_2.Component<IGroupedListSe
     private _getDroppingClassName;
 }
 
-export declare const GroupFooter: React_2.FunctionComponent<IGroupFooterProps>;
+export declare const GroupFooter: React.FunctionComponent<IGroupFooterProps>;
 
-export declare const GroupHeader: React_2.FunctionComponent<IGroupHeaderProps>;
+export declare const GroupHeader: React.FunctionComponent<IGroupHeaderProps>;
 
-export declare const GroupShowAll: React_2.FunctionComponent<IGroupShowAllProps>;
+export declare const GroupShowAll: React.FunctionComponent<IGroupShowAllProps>;
 
-export declare const GroupSpacer: React_2.FunctionComponent<IGroupSpacerProps>;
+export declare const GroupSpacer: React.FunctionComponent<IGroupSpacerProps>;
 
 /**
  * {@docCategory Breadcrumb}
@@ -673,7 +673,7 @@ export declare interface IBreadcrumbItem {
     /**
      * Callback issued when the breadcrumb item is selected.
      */
-    onClick?: (ev?: React_2.MouseEvent<HTMLElement>, item?: IBreadcrumbItem) => void;
+    onClick?: (ev?: React.MouseEvent<HTMLElement>, item?: IBreadcrumbItem) => void;
     /**
      * Url to navigate to when this breadcrumb item is clicked.
      */
@@ -700,7 +700,7 @@ export declare interface IBreadcrumbItem {
 /**
  * {@docCategory Breadcrumb}
  */
-export declare interface IBreadcrumbProps extends React_2.HTMLAttributes<HTMLElement> {
+export declare interface IBreadcrumbProps extends React.HTMLAttributes<HTMLElement> {
     /**
      * Optional callback to access the IBreadcrumb interface. Use this instead of ref for accessing
      * the public methods and properties of the component.
@@ -864,9 +864,9 @@ export declare interface IColumn {
     /** Whether the list is filtered by this column. If true, shows a filter icon next to this column's name. */
     isFiltered?: boolean;
     /** Callback for when the user clicks on the column header. */
-    onColumnClick?: (ev: React_2.MouseEvent<HTMLElement>, column: IColumn) => void;
+    onColumnClick?: (ev: React.MouseEvent<HTMLElement>, column: IColumn) => void;
     /** Callback for when the user opens the column header context menu. */
-    onColumnContextMenu?: (column?: IColumn, ev?: React_2.MouseEvent<HTMLElement>) => void;
+    onColumnContextMenu?: (column?: IColumn, ev?: React.MouseEvent<HTMLElement>) => void;
     /**
      * Callback for when the column is resized (`width` is the current width).
      *
@@ -1060,7 +1060,7 @@ export declare interface IComboBoxOptionStyles extends IButtonStyles {
 /**
  * {@docCategory ComboBox}
  */
-export declare interface IComboBoxProps extends ISelectableDroppableTextProps<IComboBox, IComboBox>, React_2.RefAttributes<HTMLDivElement> {
+export declare interface IComboBoxProps extends ISelectableDroppableTextProps<IComboBox, IComboBox>, React.RefAttributes<HTMLDivElement> {
     /**
      * Optional callback to access the IComboBox interface. Use this instead of ref for accessing
      * the public methods and properties of the component.
@@ -1073,14 +1073,14 @@ export declare interface IComboBoxProps extends ISelectableDroppableTextProps<IC
     /**
      * Callback issued when a ComboBox item is clicked.
      */
-    onItemClick?: (event: React_2.FormEvent<IComboBox>, option?: IComboBoxOption, index?: number) => void;
+    onItemClick?: (event: React.FormEvent<IComboBox>, option?: IComboBoxOption, index?: number) => void;
     /**
      * Callback issued when either:
      * 1) The selected option changes.
      * 2) A manually edited value is submitted. In this case there may not be a matched option if allowFreeform
      *    is also true (and hence only value would be true, the other parameter would be null in this case)
      */
-    onChange?: (event: React_2.FormEvent<IComboBox>, option?: IComboBoxOption, index?: number, value?: string) => void;
+    onChange?: (event: React.FormEvent<IComboBox>, option?: IComboBoxOption, index?: number, value?: string) => void;
     /**
      * Callback issued when the user changes the pending value in ComboBox.
      * This will be called any time the component is updated and there is a current
@@ -1338,7 +1338,7 @@ export declare interface IDetailsCheckboxProps {
 /**
  * {@docCategory DetailsList}
  */
-export declare interface IDetailsColumnProps extends React_2.ClassAttributes<DetailsColumnBase> {
+export declare interface IDetailsColumnProps extends React.ClassAttributes<DetailsColumnBase> {
     /**
      * The theme object to respect during render.
      */
@@ -1370,11 +1370,11 @@ export declare interface IDetailsColumnProps extends React_2.ClassAttributes<Det
     /**
      * Callback fired when click event occurs.
      */
-    onColumnClick?: (ev: React_2.MouseEvent<HTMLElement>, column: IColumn) => void;
+    onColumnClick?: (ev: React.MouseEvent<HTMLElement>, column: IColumn) => void;
     /**
      * Callback fired on contextual menu event to provide contextual menu UI.
      */
-    onColumnContextMenu?: (column: IColumn, ev: React_2.MouseEvent<HTMLElement>) => void;
+    onColumnContextMenu?: (column: IColumn, ev: React.MouseEvent<HTMLElement>) => void;
     /**
      * The drag and drop helper for the component instance.
      */
@@ -1545,7 +1545,7 @@ export declare interface IDetailsFooterProps extends IDetailsFooterBaseProps {
     /**
      * Selection mode
      */
-    selectionMode: SelectionMode_2;
+    selectionMode: SelectionMode;
 }
 
 /**
@@ -1573,7 +1573,7 @@ export declare interface IDetailsHeader {
 /**
  * {@docCategory DetailsList}
  */
-export declare interface IDetailsHeaderBaseProps extends React_2.ClassAttributes<DetailsHeaderBase>, IDetailsItemProps {
+export declare interface IDetailsHeaderBaseProps extends React.ClassAttributes<DetailsHeaderBase>, IDetailsItemProps {
     /** Theme from the Higher Order Component */
     theme?: ITheme;
     /** Call to provide customized styling that will layer on top of the variant rules. */
@@ -1589,9 +1589,9 @@ export declare interface IDetailsHeaderBaseProps extends React_2.ClassAttributes
     /** Callback for when column is automatically resized */
     onColumnAutoResized?: (column: IColumn, columnIndex: number) => void;
     /** Callback for when the column is clicked */
-    onColumnClick?: (ev: React_2.MouseEvent<HTMLElement>, column: IColumn) => void;
+    onColumnClick?: (ev: React.MouseEvent<HTMLElement>, column: IColumn) => void;
     /** Callback for when the column needs to show a context menu */
-    onColumnContextMenu?: (column: IColumn, ev: React_2.MouseEvent<HTMLElement>) => void;
+    onColumnContextMenu?: (column: IColumn, ev: React.MouseEvent<HTMLElement>) => void;
     /** Callback to render a tooltip for the column header */
     onRenderColumnHeaderTooltip?: IRenderFunction<IDetailsColumnRenderTooltipProps>;
     /** Whether to collapse for all visibility */
@@ -1643,7 +1643,7 @@ export declare interface IDetailsHeaderProps extends IDetailsHeaderBaseProps {
     /**
      * Selection mode
      */
-    selectionMode: SelectionMode_2;
+    selectionMode: SelectionMode;
 }
 
 /**
@@ -1732,7 +1732,7 @@ export declare interface IDetailsItemProps {
     /**
      * Selection mode
      */
-    selectionMode?: SelectionMode_2 | undefined;
+    selectionMode?: SelectionMode | undefined;
     /**
      * View port of the virtualized list
      *
@@ -1820,7 +1820,7 @@ export declare interface IDetailsListProps extends IBaseProps<IDetailsList>, IWi
     /** Selection model to track selection state.  */
     selection?: ISelection;
     /** Controls how/if the details list manages selection. Options include none, single, multiple */
-    selectionMode?: SelectionMode_2;
+    selectionMode?: SelectionMode;
     /**
      * By default, selection is cleared when clicking on an empty (non-focusable) section of the screen.
      * Setting this value to true overrides that behavior and maintains selection.
@@ -1864,9 +1864,9 @@ export declare interface IDetailsListProps extends IBaseProps<IDetailsList>, IWi
      */
     onRowWillUnmount?: (item?: any, index?: number) => void;
     /** Callback for when the user clicks on the column header. */
-    onColumnHeaderClick?: (ev?: React_2.MouseEvent<HTMLElement>, column?: IColumn) => void;
+    onColumnHeaderClick?: (ev?: React.MouseEvent<HTMLElement>, column?: IColumn) => void;
     /** Callback for when the user asks for a contextual menu (usually via right click) from a column header. */
-    onColumnHeaderContextMenu?: (column?: IColumn, ev?: React_2.MouseEvent<HTMLElement>) => void;
+    onColumnHeaderContextMenu?: (column?: IColumn, ev?: React.MouseEvent<HTMLElement>) => void;
     /** Callback fired on column resize */
     onColumnResize?: (column?: IColumn, newWidth?: number, columnIndex?: number) => void;
     /** Callback for when a given row has been invoked (by pressing enter while it is selected.) */
@@ -1885,7 +1885,7 @@ export declare interface IDetailsListProps extends IBaseProps<IDetailsList>, IWi
      * This affects cells within the rows, not the rows themselves.
      * If a column definition provides its own `onRender` method, that will be used instead of this.
      */
-    onRenderItemColumn?: (item?: any, index?: number, column?: IColumn) => React_2.ReactNode;
+    onRenderItemColumn?: (item?: any, index?: number, column?: IColumn) => React.ReactNode;
     /**
      * If provided, will be the "default" item column cell value return.
      * A column's `getValueKey` can override `getCellValueKey`.
@@ -1894,7 +1894,7 @@ export declare interface IDetailsListProps extends IBaseProps<IDetailsList>, IWi
     /** Map of callback functions related to row drag and drop functionality. */
     dragDropEvents?: IDragDropEvents;
     /** Callback for what to render when the item is missing. */
-    onRenderMissingItem?: (index?: number, rowProps?: IDetailsRowProps) => React_2.ReactNode;
+    onRenderMissingItem?: (index?: number, rowProps?: IDetailsRowProps) => React.ReactNode;
     /** An override to render the details header. */
     onRenderDetailsHeader?: IRenderFunction<IDetailsHeaderProps>;
     /** An override to render the details footer. */
@@ -1907,7 +1907,7 @@ export declare interface IDetailsListProps extends IBaseProps<IDetailsList>, IWi
      * Callback for when an item in the list becomes active by clicking anywhere inside the row or navigating to it
      * with the keyboard.
      */
-    onActiveItemChanged?: (item?: any, index?: number, ev?: React_2.FocusEvent<HTMLElement>) => void;
+    onActiveItemChanged?: (item?: any, index?: number, ev?: React.FocusEvent<HTMLElement>) => void;
     /** Accessible label for the list header. */
     ariaLabelForListHeader?: string;
     /** Accessible label for the select all checkbox. */
@@ -1992,7 +1992,7 @@ export declare interface IDetailsListProps extends IBaseProps<IDetailsList>, IWi
 export declare interface IDetailsListState {
     focusedItemIndex: number;
     lastWidth?: number;
-    lastSelectionMode?: SelectionMode_2;
+    lastSelectionMode?: SelectionMode;
     adjustedColumns: IColumn[];
     isCollapsed?: boolean;
     isSizing?: boolean;
@@ -2114,7 +2114,7 @@ export declare interface IDetailsRowBaseProps extends Pick<IDetailsListProps, 'o
     /**
      * DOM element into which to render row field
      */
-    rowFieldsAs?: React_2.ComponentType<IDetailsRowFieldsProps>;
+    rowFieldsAs?: React.ComponentType<IDetailsRowFieldsProps>;
     /**
      * Overriding class name
      */
@@ -2130,7 +2130,7 @@ export declare interface IDetailsRowBaseProps extends Pick<IDetailsListProps, 'o
      * Optional pre-rendered content per column. Preferred over onRender or onRenderItemColumn if provided.
      */
     cellsByColumn?: {
-        [columnKey: string]: React_2.ReactNode;
+        [columnKey: string]: React.ReactNode;
     };
     /**
      * Whether to use fast icon and check components. The icons can't be targeted by customization
@@ -2143,7 +2143,7 @@ export declare interface IDetailsRowBaseProps extends Pick<IDetailsListProps, 'o
 /**
  * {@docCategory DetailsList}
  */
-export declare interface IDetailsRowCheckProps extends React_2.HTMLAttributes<HTMLElement> {
+export declare interface IDetailsRowCheckProps extends React.HTMLAttributes<HTMLElement> {
     /**
      * Theme provided by High-Order Component.
      */
@@ -2268,7 +2268,7 @@ export declare interface IDetailsRowProps extends IDetailsRowBaseProps {
     /**
      * Selection mode
      */
-    selectionMode: SelectionMode_2;
+    selectionMode: SelectionMode;
 }
 
 export declare interface IDetailsRowSelectionState {
@@ -2361,7 +2361,7 @@ export declare interface IDocumentCardActions {
 /**
  * {@docCategory DocumentCard}
  */
-export declare interface IDocumentCardActionsProps extends React_2.ClassAttributes<DocumentCardActionsBase> {
+export declare interface IDocumentCardActionsProps extends React.ClassAttributes<DocumentCardActionsBase> {
     /**
      * Gets the component ref.
      */
@@ -2450,7 +2450,7 @@ export declare interface IDocumentCardActivityPerson {
 /**
  * {@docCategory DocumentCard}
  */
-export declare interface IDocumentCardActivityProps extends React_2.ClassAttributes<DocumentCardActivityBase> {
+export declare interface IDocumentCardActivityProps extends React.ClassAttributes<DocumentCardActivityBase> {
     /**
      * Gets the component ref.
      */
@@ -2516,7 +2516,7 @@ export declare interface IDocumentCardDetails {
 /**
  * {@docCategory DocumentCard}
  */
-export declare interface IDocumentCardDetailsProps extends React_2.Props<DocumentCardDetailsBase> {
+export declare interface IDocumentCardDetailsProps extends React.Props<DocumentCardDetailsBase> {
     /**
      * Gets the component ref.
      */
@@ -2630,7 +2630,7 @@ export declare interface IDocumentCardLocation {
 /**
  * {@docCategory DocumentCard}
  */
-export declare interface IDocumentCardLocationProps extends React_2.ClassAttributes<DocumentCardLocationBase> {
+export declare interface IDocumentCardLocationProps extends React.ClassAttributes<DocumentCardLocationBase> {
     /**
      * Gets the component ref.
      */
@@ -2646,7 +2646,7 @@ export declare interface IDocumentCardLocationProps extends React_2.ClassAttribu
     /**
      * Function to call when the location is clicked.
      */
-    onClick?: (ev?: React_2.MouseEvent<HTMLElement>) => void;
+    onClick?: (ev?: React.MouseEvent<HTMLElement>) => void;
     /**
      * Aria label for the link to the document location.
      */
@@ -2695,7 +2695,7 @@ export declare interface IDocumentCardLogo {
 /**
  * {@docCategory DocumentCard}
  */
-export declare interface IDocumentCardLogoProps extends React_2.ClassAttributes<DocumentCardLogoBase> {
+export declare interface IDocumentCardLogoProps extends React.ClassAttributes<DocumentCardLogoBase> {
     /**
      * Gets the component ref.
      */
@@ -2881,7 +2881,7 @@ export declare interface IDocumentCardPreviewStyles {
 /**
  * {@docCategory DocumentCard}
  */
-export declare interface IDocumentCardProps extends IBaseProps<IDocumentCard>, React_2.HTMLAttributes<HTMLDivElement> {
+export declare interface IDocumentCardProps extends IBaseProps<IDocumentCard>, React.HTMLAttributes<HTMLDivElement> {
     /**
      * Optional callback to access the IDocumentCard interface. Use this instead of ref for accessing
      * the public methods and properties of the component.
@@ -2895,7 +2895,7 @@ export declare interface IDocumentCardProps extends IBaseProps<IDocumentCard>, R
     /**
      * Function to call when the card is clicked or keyboard Enter/Space is pushed.
      */
-    onClick?: (ev?: React_2.SyntheticEvent<HTMLElement>) => void;
+    onClick?: (ev?: React.SyntheticEvent<HTMLElement>) => void;
     /**
      * A URL to navigate to when the card is clicked. If a function has also been provided,
      * it will be used instead of the URL.
@@ -2923,7 +2923,7 @@ export declare interface IDocumentCardProps extends IBaseProps<IDocumentCard>, R
     /**
      * Child components to render within the card.
      */
-    children?: React_2.ReactNode;
+    children?: React.ReactNode;
     /**
      * Call to provide customized styling that will layer on top of the variant rules
      */
@@ -2947,7 +2947,7 @@ export declare interface IDocumentCardStatus {
 /**
  * {@docCategory DocumentCard}
  */
-export declare interface IDocumentCardStatusProps extends React_2.Props<DocumentCardStatusBase> {
+export declare interface IDocumentCardStatusProps extends React.Props<DocumentCardStatusBase> {
     /**
      * Gets the component ref.
      */
@@ -3033,7 +3033,7 @@ export declare interface IDocumentCardTitle {
 /**
  * {@docCategory DocumentCard}
  */
-export declare interface IDocumentCardTitleProps extends React_2.ClassAttributes<DocumentCardTitleBase> {
+export declare interface IDocumentCardTitleProps extends React.ClassAttributes<DocumentCardTitleBase> {
     /**
      * Gets the component ref.
      */
@@ -3123,7 +3123,7 @@ export declare interface IDropdown {
 /**
  * {@docCategory Dropdown}
  */
-export declare interface IDropdownOption extends ISelectableOption {
+export declare interface IDropdownOption<T = any> extends ISelectableOption<T> {
     /**
      * Deprecated at v.65.1, use `selected` instead.
      * @deprecated Use `selected` instead.
@@ -3134,7 +3134,7 @@ export declare interface IDropdownOption extends ISelectableOption {
 /**
  * {@docCategory Dropdown}
  */
-export declare interface IDropdownProps extends ISelectableDroppableTextProps<IDropdown, HTMLDivElement>, React_2.RefAttributes<HTMLDivElement> {
+export declare interface IDropdownProps extends ISelectableDroppableTextProps<IDropdown, HTMLDivElement>, React.RefAttributes<HTMLDivElement> {
     /**
      * Input placeholder text. Displayed until option is selected.
      * @deprecated Use `placeholder`
@@ -3148,7 +3148,7 @@ export declare interface IDropdownProps extends ISelectableDroppableTextProps<ID
     /**
      * Callback issued when the selected option changes.
      */
-    onChange?: (event: React_2.FormEvent<HTMLDivElement>, option?: IDropdownOption, index?: number) => void;
+    onChange?: (event: React.FormEvent<HTMLDivElement>, option?: IDropdownOption, index?: number) => void;
     /**
      * @deprecated Use `onChange` instead.
      */
@@ -3434,7 +3434,7 @@ export declare interface IGroupDividerProps {
     /** A reference to the viewport in which the header is rendered. */
     viewport?: IViewport;
     /** The selection mode of the list the group lives within. */
-    selectionMode?: SelectionMode_2;
+    selectionMode?: SelectionMode;
     /** Text to display for the group footer. */
     footerText?: string;
     /** Text to display for the group "Show All" link. */
@@ -3444,7 +3444,7 @@ export declare interface IGroupDividerProps {
     /** Callback for when the group header is clicked. */
     onGroupHeaderClick?: (group: IGroup) => void;
     /** Callback for when the "keyup" event is fired on the group header. */
-    onGroupHeaderKeyUp?: (ev: React_2.KeyboardEvent<HTMLElement>, group?: IGroup) => void;
+    onGroupHeaderKeyUp?: (ev: React.KeyboardEvent<HTMLElement>, group?: IGroup) => void;
     /** Callback for when the group is expanded or collapsed. */
     onToggleCollapse?: (group: IGroup) => void;
     /** Callback for when the group is selected. */
@@ -3456,7 +3456,7 @@ export declare interface IGroupDividerProps {
     /** Props for expand/collapse button
      * @deprecated Use {@link IGroupHeaderProps.expandButtonProps} instead.
      */
-    expandButtonProps?: React_2.HTMLAttributes<HTMLButtonElement>;
+    expandButtonProps?: React.HTMLAttributes<HTMLButtonElement>;
     /** Stores parent group's children. */
     groups?: IGroup[];
     /** Custom className */
@@ -3484,7 +3484,7 @@ export declare interface IGroupedList extends IList {
 /**
  * {@docCategory GroupedList}
  */
-export declare interface IGroupedListProps extends React_2.ClassAttributes<GroupedListBase> {
+export declare interface IGroupedListProps extends React.ClassAttributes<GroupedListBase> {
     /**
      * Theme that is passed in from Higher Order Component
      */
@@ -3524,13 +3524,13 @@ export declare interface IGroupedListProps extends React_2.ClassAttributes<Group
     /** Optional properties to pass through to the root list component being rendered. */
     rootListProps?: IListProps;
     /** Rendering callback to render the group items. */
-    onRenderCell: (nestingDepth?: number, item?: any, index?: number) => React_2.ReactNode;
+    onRenderCell: (nestingDepth?: number, item?: any, index?: number) => React.ReactNode;
     /** Override the default role for GroupedList.  */
     role?: string;
     /** Optional selection model to track selection state.  */
     selection?: ISelection;
     /** Controls how/if the list manages selection. */
-    selectionMode?: SelectionMode_2;
+    selectionMode?: SelectionMode;
     /** Optional Viewport, provided by the parent component. */
     viewport?: IViewport;
     /** Optional callback when the group expand state changes between all collapsed and at least one group is expanded. */
@@ -3554,7 +3554,7 @@ export declare interface IGroupedListProps extends React_2.ClassAttributes<Group
     getGroupHeight?: (group: IGroup, groupIndex: number) => number;
 }
 
-export declare interface IGroupedListSectionProps extends React_2.ClassAttributes<GroupedListSection> {
+export declare interface IGroupedListSectionProps extends React.ClassAttributes<GroupedListSection> {
     /** GroupedList resolved class names */
     groupedListClassNames?: IProcessedStyleSet<IGroupedListStyles>;
     /**
@@ -3591,11 +3591,11 @@ export declare interface IGroupedListSectionProps extends React_2.ClassAttribute
     /** Optional list props to pass to list renderer.  */
     listProps?: IListProps;
     /** Rendering callback to render the group items. */
-    onRenderCell: (nestingDepth?: number, item?: any, index?: number) => React_2.ReactNode;
+    onRenderCell: (nestingDepth?: number, item?: any, index?: number) => React.ReactNode;
     /** Optional selection model to track selection state.  */
     selection?: ISelection;
     /** Controls how/if the details list manages selection. */
-    selectionMode?: SelectionMode_2;
+    selectionMode?: SelectionMode;
     /** Information to pass in to the group Show All footer. */
     showAllProps?: IGroupShowAllProps;
     /** Optional Viewport, provided by the parent component. */
@@ -3693,11 +3693,11 @@ export declare interface IGroupHeaderProps extends IGroupDividerProps {
     /** GroupedList id for aria-controls */
     groupedListId?: string;
     /** Native props for the GroupHeader expand and collapse button */
-    expandButtonProps?: React_2.HTMLAttributes<HTMLButtonElement>;
+    expandButtonProps?: React.HTMLAttributes<HTMLButtonElement>;
     /** Defines the name of a custom icon to be used for group headers. If not set, the default icon will be used */
     expandButtonIcon?: string;
     /** Native props for the GroupHeader select all button */
-    selectAllButtonProps?: React_2.HTMLAttributes<HTMLButtonElement>;
+    selectAllButtonProps?: React.HTMLAttributes<HTMLButtonElement>;
     /** Defines the number of items in the current set of listitems or treeitems */
     ariaSetSize?: number;
     /** Defines an element's number or position in the current set of listitems or treeitems */
@@ -3899,7 +3899,7 @@ export declare interface IShimmeredDetailsListProps extends Omit<IDetailsListPro
      * or you can use the optional arguments of item `index` and `defaultRender` to execute additional
      * logic before rendering the default placeholder.
      */
-    onRenderCustomPlaceholder?: (rowProps: IDetailsRowProps, index?: number, defaultRender?: (props: IDetailsRowProps) => React_2.ReactNode) => React_2.ReactNode;
+    onRenderCustomPlaceholder?: (rowProps: IDetailsRowProps, index?: number, defaultRender?: (props: IDetailsRowProps) => React.ReactNode) => React.ReactNode;
     /**
      * Custom styles to override the styles specific to the ShimmeredDetailsList root area.
      * @deprecated Use `styles` prop instead. Any value provided will be ignored.
@@ -3946,9 +3946,9 @@ export declare enum SelectAllVisibility {
     visible = 2
 }
 
-export declare const ShimmeredDetailsList: React_2.FunctionComponent<IShimmeredDetailsListProps>;
+export declare const ShimmeredDetailsList: React.FunctionComponent<IShimmeredDetailsListProps>;
 
-export declare class ShimmeredDetailsListBase extends React_2.Component<IShimmeredDetailsListProps, {}> {
+export declare class ShimmeredDetailsListBase extends React.Component<IShimmeredDetailsListProps, {}> {
     private _shimmerItems;
     private _classNames;
     constructor(props: IShimmeredDetailsListProps);
@@ -3957,7 +3957,7 @@ export declare class ShimmeredDetailsListBase extends React_2.Component<IShimmer
     private _renderDefaultShimmerPlaceholder;
 }
 
-export declare class VirtualizedComboBox extends React_2.Component<IComboBoxProps, {}> implements IComboBox {
+export declare class VirtualizedComboBox extends React.Component<IComboBoxProps, {}> implements IComboBox {
     /** The combo box element */
     private _comboBox;
     /** The virtualized list element */

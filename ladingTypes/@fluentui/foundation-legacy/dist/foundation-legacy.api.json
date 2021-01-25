@@ -1,0 +1,3748 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/foundation-legacy!",
+  "docComment": "",
+  "name": "@fluentui/foundation-legacy",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/foundation-legacy!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/foundation-legacy!createComponent:function(1)",
+          "docComment": "/**\n * Assembles a higher order component based on the following: styles, theme, view, and state. Imposes a separation of concern and centralizes styling processing to increase ease of use and robustness in how components use and apply styling and theming.\n *\n * Automatically merges and applies themes and styles with theme / styleprops having the highest priority. State component, if provided, is passed in props for processing. Props from state / user are automatically processed and styled before finally being passed to view.\n *\n * State components should contain all stateful behavior and should not generate any JSX, but rather simply call the view prop.\n *\n * Views should simply be stateless pure functions that receive all props needed for rendering their output.\n *\n * State component is optional. If state is not provided, created component is essentially a functional stateless component.\n *\n * @param options - component Component options. See IComponentOptions for more detail.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function createComponent<TComponentProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ValidProps",
+              "canonicalReference": "@fluentui/foundation-legacy!ValidProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", TTokens, TStyleSet extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyleSet",
+              "canonicalReference": "@fluentui/merge-styles!IStyleSet:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TStyleSet>"
+            },
+            {
+              "kind": "Content",
+              "text": ", TViewProps extends "
+            },
+            {
+              "kind": "Content",
+              "text": "TComponentProps "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Content",
+              "text": "TComponentProps"
+            },
+            {
+              "kind": "Content",
+              "text": ", TStatics = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": ">(view: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IViewComponent",
+              "canonicalReference": "@fluentui/foundation-legacy!IViewComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TViewProps>"
+            },
+            {
+              "kind": "Content",
+              "text": ", options?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IComponentOptions",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponentOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TComponentProps, TTokens, TStyleSet, TViewProps, TStatics>"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TComponentProps> & TStatics"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 18,
+            "endIndex": 20
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "view",
+              "parameterTypeTokenRange": {
+                "startIndex": 12,
+                "endIndex": 14
+              }
+            },
+            {
+              "parameterName": "options",
+              "parameterTypeTokenRange": {
+                "startIndex": 15,
+                "endIndex": 17
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "TComponentProps",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TStyleSet",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 8,
+                "endIndex": 9
+              }
+            },
+            {
+              "typeParameterName": "TStatics",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 10,
+                "endIndex": 11
+              }
+            }
+          ],
+          "name": "createComponent"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/foundation-legacy!createFactory:function(1)",
+          "docComment": "/**\n * This function creates factories that render ouput depending on the user ISlotProp props passed in.\n *\n * @param DefaultComponent - Base component to render when not overridden by user props.\n *\n * @param options - Factory options, including defaultProp value for shorthand prop mapping.\n *\n * @returns ISlotFactory function used for rendering slots.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function createFactory<TProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ValidProps",
+              "canonicalReference": "@fluentui/foundation-legacy!ValidProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", TShorthandProp extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ValidShorthand",
+              "canonicalReference": "@fluentui/foundation-legacy!ValidShorthand:type"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Content",
+              "text": "never"
+            },
+            {
+              "kind": "Content",
+              "text": ">(DefaultComponent: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ComponentType",
+              "canonicalReference": "@types/react!~React.ComponentType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>"
+            },
+            {
+              "kind": "Content",
+              "text": ", options?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFactoryOptions",
+              "canonicalReference": "@fluentui/foundation-legacy!IFactoryOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlotFactory",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotFactory:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps, TShorthandProp>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 14,
+            "endIndex": 16
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "DefaultComponent",
+              "parameterTypeTokenRange": {
+                "startIndex": 8,
+                "endIndex": 10
+              }
+            },
+            {
+              "parameterName": "options",
+              "parameterTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 13
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TShorthandProp",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              }
+            }
+          ],
+          "name": "createFactory"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ExtractProps:type",
+          "docComment": "/**\n * Extracts props type from ISlotProp definition.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ExtractProps<TUnion> = "
+            },
+            {
+              "kind": "Content",
+              "text": "TUnion extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlotProp",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotProp:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<infer TProps> ? TProps : never"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ExtractProps",
+          "typeParameters": [
+            {
+              "typeParameterName": "TUnion",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ExtractShorthand:type",
+          "docComment": "/**\n * Extracts shorthand type from union of ValidShorthand types.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ExtractShorthand<TUnion> = "
+            },
+            {
+              "kind": "Content",
+              "text": "TUnion extends boolean ? boolean : TUnion extends number ? number : TUnion extends string ? string : never"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ExtractShorthand",
+          "typeParameters": [
+            {
+              "typeParameterName": "TUnion",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/foundation-legacy!getControlledDerivedProps:function(1)",
+          "docComment": "/**\n * Simple controlled helper that gives priority to props value and falls back to derived value.\n *\n * @param props - The props object containing controlled prop values.\n *\n * @param propName - The controlled prop name.\n *\n * @param derivedValue - Derived value. Returned when controlled value is not present.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getControlledDerivedProps<TProps, TProp extends "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof TProps"
+            },
+            {
+              "kind": "Content",
+              "text": ">(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Readonly",
+              "canonicalReference": "!Readonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>"
+            },
+            {
+              "kind": "Content",
+              "text": ", propName: "
+            },
+            {
+              "kind": "Content",
+              "text": "TProp"
+            },
+            {
+              "kind": "Content",
+              "text": ", derivedValue: "
+            },
+            {
+              "kind": "Content",
+              "text": "TProps[TProp]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "TProps[TProp]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 10,
+            "endIndex": 11
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "props",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              }
+            },
+            {
+              "parameterName": "propName",
+              "parameterTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              }
+            },
+            {
+              "parameterName": "derivedValue",
+              "parameterTypeTokenRange": {
+                "startIndex": 8,
+                "endIndex": 9
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TProp",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "getControlledDerivedProps"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/foundation-legacy!getSlots:function(1)",
+          "docComment": "/**\n * This function generates slots that can be used in JSX given a definition of slots and their corresponding types.\n *\n * @param userProps - Props as pass to component.\n *\n * @param slots - Slot definition object defining the default slot component for each slot.\n *\n * @returns A set of created slots that components can render in JSX.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getSlots<TComponentProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlottableProps",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlottableProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TComponentSlots>"
+            },
+            {
+              "kind": "Content",
+              "text": ", TComponentSlots>(userProps: "
+            },
+            {
+              "kind": "Content",
+              "text": "TComponentProps"
+            },
+            {
+              "kind": "Content",
+              "text": ", slots: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlotDefinition",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotDefinition:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Required",
+              "canonicalReference": "!Required:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TComponentSlots>>"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlots",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlots:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Required",
+              "canonicalReference": "!Required:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TComponentSlots>>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 11,
+            "endIndex": 15
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "userProps",
+              "parameterTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            },
+            {
+              "parameterName": "slots",
+              "parameterTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 10
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "TComponentProps",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TComponentSlots",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "getSlots"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!IComponent:type",
+          "docComment": "/**\n * Component helper that defines options as required for ease of use by component consumers.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IComponent<TComponentProps, TTokens, TStyleSet extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyleSet",
+              "canonicalReference": "@fluentui/merge-styles!IStyleSet:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TStyleSet>"
+            },
+            {
+              "kind": "Content",
+              "text": ", TViewProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "TComponentProps"
+            },
+            {
+              "kind": "Content",
+              "text": ", TStatics = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Required",
+              "canonicalReference": "!Required:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IComponentOptions",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponentOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TComponentProps, TTokens, TStyleSet, TViewProps, TStatics>> & {\n    view: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IViewComponent",
+              "canonicalReference": "@fluentui/foundation-legacy!IViewComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TViewProps>;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IComponent",
+          "typeParameters": [
+            {
+              "typeParameterName": "TComponentProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TStyleSet",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            },
+            {
+              "typeParameterName": "TStatics",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 8,
+            "endIndex": 14
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/foundation-legacy!IComponentOptions:interface",
+          "docComment": "/**\n * Component options used by foundation to tie elements together.\n *\n * * TComponentProps: A styleable props interface for the created component. * TTokens: The type for tokens props. * TStyleSet: The type for styles properties. * TViewProps: The props specific to the view, including processed properties outputted by optional state component. If state component is not provided, TComponentProps is the same as TViewProps. * TStatics: Static type for statics applied to created component object.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IComponentOptions<TComponentProps, TTokens, TStyleSet extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyleSet",
+              "canonicalReference": "@fluentui/merge-styles!IStyleSet:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TStyleSet>"
+            },
+            {
+              "kind": "Content",
+              "text": ", TViewProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "TComponentProps"
+            },
+            {
+              "kind": "Content",
+              "text": ", TStatics = "
+            },
+            {
+              "kind": "Content",
+              "text": "{}"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TComponentProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TStyleSet",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            },
+            {
+              "typeParameterName": "TStatics",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              }
+            }
+          ],
+          "name": "IComponentOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponentOptions#displayName:member",
+              "docComment": "/**\n * Display name to identify component in React hierarchy. This parameter is required for targeted component styling via theming.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "displayName?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "displayName",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponentOptions#factoryOptions:member",
+              "docComment": "/**\n * Default prop for which to map primitive values.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "factoryOptions?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFactoryOptions",
+                  "canonicalReference": "@fluentui/foundation-legacy!IFactoryOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TComponentProps>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "factoryOptions",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponentOptions#fields:member",
+              "docComment": "/**\n * List of fields which can be customized.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fields?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fields",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponentOptions#state:member",
+              "docComment": "/**\n * Optional state component that processes TComponentProps into TViewProps.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "state?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStateComponentType",
+                  "canonicalReference": "@fluentui/foundation-legacy!IStateComponentType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TComponentProps, TViewProps>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "state",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponentOptions#statics:member",
+              "docComment": "/**\n * Optional static object to assign to constructed component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "statics?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "TStatics"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "statics",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponentOptions#styles:member",
+              "docComment": "/**\n * Styles prop to pass into component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "styles?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStylesFunctionOrObject",
+                  "canonicalReference": "@fluentui/foundation-legacy!IStylesFunctionOrObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TViewProps, TTokens, TStyleSet>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "styles",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponentOptions#tokens:member",
+              "docComment": "/**\n * Tokens prop to pass into component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tokens?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITokenFunctionOrObject",
+                  "canonicalReference": "@fluentui/foundation-legacy!ITokenFunctionOrObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TViewProps, TTokens>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "tokens",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!IComponentStyles:type",
+          "docComment": "/**\n * Helper type defining style sections, one for each component slot.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IComponentStyles<TSlots> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [key in keyof TSlots]?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyle",
+              "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IComponentStyles",
+          "typeParameters": [
+            {
+              "typeParameterName": "TSlots",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/foundation-legacy!IControlledStateOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IControlledStateOptions<TProps, TProp extends "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof TProps"
+            },
+            {
+              "kind": "Content",
+              "text": ", TDefaultProp extends "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof TProps"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TProp",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TDefaultProp",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "IControlledStateOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IControlledStateOptions#defaultPropName:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "defaultPropName?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "TDefaultProp"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "defaultPropName",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IControlledStateOptions#defaultPropValue:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "defaultPropValue?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "TProps[TProp]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "defaultPropValue",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ICustomizationProps:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICustomizationProps<TViewProps, TTokens, TStyleSet extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyleSet",
+              "canonicalReference": "@fluentui/merge-styles!IStyleSet:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TStyleSet>"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyleableComponentProps",
+              "canonicalReference": "@fluentui/foundation-legacy!IStyleableComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TViewProps, TTokens, TStyleSet> & "
+            },
+            {
+              "kind": "Reference",
+              "text": "Required",
+              "canonicalReference": "!Required:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyleableComponentProps",
+              "canonicalReference": "@fluentui/foundation-legacy!IStyleableComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TViewProps, TTokens, TStyleSet>, 'theme'>>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICustomizationProps",
+          "typeParameters": [
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TStyleSet",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 12
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/foundation-legacy!IDefaultSlotProps:interface",
+          "docComment": "/**\n * Defines user properties that are automatically applied by Slot utilities using slot name.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IDefaultSlotProps<TSlots> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TSlots",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "IDefaultSlotProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IDefaultSlotProps#_defaultStyles:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "_defaultStyles: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IComponentStyles",
+                  "canonicalReference": "@fluentui/foundation-legacy!IComponentStyles:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TSlots>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "_defaultStyles",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/foundation-legacy!IFactoryOptions:interface",
+          "docComment": "/**\n * Factory options for creating component.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFactoryOptions<TProps> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "IFactoryOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IFactoryOptions#defaultProp:member",
+              "docComment": "/**\n * Default prop for which to map primitive values.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "defaultProp?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "keyof TProps | 'children'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "defaultProp",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!IHTMLElementSlot:type",
+          "docComment": "/**\n * Optional HTML element typing to confine or expand HTML attribute usage for an intrinsic slot. Useful for slots that need to allow access to specialized HTML attributes, such as for buttons and inputs. Example usage: root?: IHTMLElementSlot\\<'button'\\>;\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IHTMLElementSlot<TElement extends "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.IntrinsicElements",
+              "canonicalReference": "@types/react!~__global.JSX.IntrinsicElements:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlotProp",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotProp:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.IntrinsicElements",
+              "canonicalReference": "@types/react!~__global.JSX.IntrinsicElements:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[TElement]>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IHTMLElementSlot",
+          "typeParameters": [
+            {
+              "typeParameterName": "TElement",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!IHTMLSlot:type",
+          "docComment": "/**\n * Generic slot definition allowing common HTML attributes. Applicable for most intrinsic slots. Please note certain elements such as buttons and inputs should make use of IHTMLElementSlot to provide access to specialized attributes of those elements.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IHTMLSlot = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlotProp",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotProp:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "React.DetailedHTMLProps",
+              "canonicalReference": "@types/react!~React.DetailedHTMLProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "React.HTMLAttributes",
+              "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<any>, any>>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IHTMLSlot",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 7
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/foundation-legacy!IProcessedSlotProps:interface",
+          "docComment": "/**\n * Props generated by Foundation.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IProcessedSlotProps "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IProcessedSlotProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IProcessedSlotProps#className:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "className?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "className",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!IPropsWithChildren:type",
+          "docComment": "/**\n * Helper interface for accessing user props children.\n *\n * @deprecated\n *\n * Use React.PropsWithChildren.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IPropsWithChildren<TProps> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.PropsWithChildren",
+              "canonicalReference": "@types/react!~React.PropsWithChildren:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IPropsWithChildren",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/foundation-legacy!ISlot:interface",
+          "docComment": "/**\n * Created Slot structure used for rendering by components.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISlot<TProps> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "ISlot",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlot:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(componentProps: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.PropsWithChildren",
+                  "canonicalReference": "@types/react!~React.PropsWithChildren:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TProps> | undefined | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReturnType",
+                  "canonicalReference": "!ReturnType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.FunctionComponent",
+                  "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "componentProps",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlot#isSlot:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isSlot?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "isSlot",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/foundation-legacy!ISlotCreator:interface",
+          "docComment": "/**\n * Signature of components that have component factories.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISlotCreator<TProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ValidProps",
+              "canonicalReference": "@fluentui/foundation-legacy!ValidProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", TShorthandProp extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ValidShorthand",
+              "canonicalReference": "@fluentui/foundation-legacy!ValidShorthand:type"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TShorthandProp",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "ISlotCreator",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotCreator#create:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "create?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISlotFactory",
+                  "canonicalReference": "@fluentui/foundation-legacy!ISlotFactory:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TProps, TShorthandProp>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "create",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ISlotDefinition:type",
+          "docComment": "/**\n * An interface for defining slots. Each key in TSlot must point to an ISlottableType.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ISlotDefinition<TSlots> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [slot in keyof TSlots]: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ElementType",
+              "canonicalReference": "@types/react!~React.ElementType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ExtractProps",
+              "canonicalReference": "@fluentui/foundation-legacy!ExtractProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TSlots[slot]>>;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISlotDefinition",
+          "typeParameters": [
+            {
+              "typeParameterName": "TSlots",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ISlotFactory:type",
+          "docComment": "/**\n * Interface for a slot factory that consumes both component and user slot prop and generates rendered output.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ISlotFactory<TProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ValidProps",
+              "canonicalReference": "@fluentui/foundation-legacy!ValidProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", TShorthandProp extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ValidShorthand",
+              "canonicalReference": "@fluentui/foundation-legacy!ValidShorthand:type"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "(componentProps: TProps & "
+            },
+            {
+              "kind": "Reference",
+              "text": "IProcessedSlotProps",
+              "canonicalReference": "@fluentui/foundation-legacy!IProcessedSlotProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", userProps: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlotProp",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotProp:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps, TShorthandProp>, slotOptions: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlotOptions",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps> | undefined, defaultStyles: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyle",
+              "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", theme?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITheme",
+              "canonicalReference": "@fluentui/theme!ITheme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReturnType",
+              "canonicalReference": "!ReturnType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISlotFactory",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TShorthandProp",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 20
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/foundation-legacy!ISlotOptions:interface",
+          "docComment": "/**\n * Defines the slot options object for all slot props: 1. ISlotRender function. 2. React component with TProps interface.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISlotOptions<TProps> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "ISlotOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotOptions#component:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "component?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.ElementType",
+                  "canonicalReference": "@types/react!~React.ElementType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TProps>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "component",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotOptions#render:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISlotRender",
+                  "canonicalReference": "@fluentui/foundation-legacy!ISlotRender:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TProps>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "render",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ISlotProp:type",
+          "docComment": "/**\n * Defines the primary slot prop interface components should use to define their slot props.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ISlotProp<TProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ValidProps",
+              "canonicalReference": "@fluentui/foundation-legacy!ValidProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", TShorthandProp extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ValidShorthand",
+              "canonicalReference": "@fluentui/foundation-legacy!ValidShorthand:type"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            },
+            {
+              "kind": "Content",
+              "text": "= "
+            },
+            {
+              "kind": "Content",
+              "text": "never"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "TShorthandProp | TProps"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISlotProp",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TShorthandProp",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 8,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ISlotRender:type",
+          "docComment": "/**\n * Content rendering provided by component.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ISlotRender<TProps> = "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.PropsWithChildren",
+              "canonicalReference": "@types/react!~React.PropsWithChildren:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>, defaultComponent: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ComponentType",
+              "canonicalReference": "@types/react!~React.ComponentType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReturnType",
+              "canonicalReference": "!ReturnType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISlotRender",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 10
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ISlots:type",
+          "docComment": "/**\n * Interface for aggregated slots objects used internally by components. Extract the TProps type passed into ISlotProp<TProps> to define the ISlot using TProps.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ISlots<TSlots> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [slot in keyof TSlots]: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlot",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlot:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ExtractProps",
+              "canonicalReference": "@fluentui/foundation-legacy!ExtractProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TSlots[slot]>>;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISlots",
+          "typeParameters": [
+            {
+              "typeParameterName": "TSlots",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ISlottableComponentType:type",
+          "docComment": "/**\n * Slottable version of React.ComponentType.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ISlottableComponentType<TProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ValidProps",
+              "canonicalReference": "@fluentui/foundation-legacy!ValidProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", TShorthandProp extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ValidShorthand",
+              "canonicalReference": "@fluentui/foundation-legacy!ValidShorthand:type"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ComponentType",
+              "canonicalReference": "@types/react!~React.ComponentType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps> & "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlotCreator",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotCreator:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps, TShorthandProp>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISlottableComponentType",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TShorthandProp",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ISlottableProps:type",
+          "docComment": "/**\n * Automatically defines 'slots' prop based on TSlots props.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ISlottableProps<TSlots> = "
+            },
+            {
+              "kind": "Content",
+              "text": "TSlots & {\n    slots?: {\n        [key in keyof TSlots]+?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlotOptions",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ExtractProps",
+              "canonicalReference": "@fluentui/foundation-legacy!ExtractProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TSlots[key]>>;\n    };\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISlottableProps",
+          "typeParameters": [
+            {
+              "typeParameterName": "TSlots",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ISlottableReactType:type",
+          "docComment": "/**\n * Slottable version of React.ReactType.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ISlottableReactType<TProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ValidProps",
+              "canonicalReference": "@fluentui/foundation-legacy!ValidProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", TShorthandProp extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ValidShorthand",
+              "canonicalReference": "@fluentui/foundation-legacy!ValidShorthand:type"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ElementType",
+              "canonicalReference": "@types/react!~React.ElementType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps> & "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlotCreator",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotCreator:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps, TShorthandProp>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISlottableReactType",
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TShorthandProp",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!IStateComponentType:type",
+          "docComment": "/**\n * Defines the contract for state components.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IStateComponentType<TComponentProps, TViewProps> = "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Readonly",
+              "canonicalReference": "!Readonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TComponentProps>) => TViewProps"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IStateComponentType",
+          "typeParameters": [
+            {
+              "typeParameterName": "TComponentProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/foundation-legacy!IStyleableComponentProps:interface",
+          "docComment": "/**\n * Optional props for styleable components. If these props are present, they will automatically be used by Foundation when applying theming and styling.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IStyleableComponentProps<TViewProps, TTokens, TStyleSet extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyleSet",
+              "canonicalReference": "@fluentui/merge-styles!IStyleSet:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TStyleSet>"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TStyleSet",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "IStyleableComponentProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IStyleableComponentProps#className:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "className?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "className",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IStyleableComponentProps#styles:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "styles?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStylesFunctionOrObject",
+                  "canonicalReference": "@fluentui/foundation-legacy!IStylesFunctionOrObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TViewProps, TTokens, TStyleSet>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "styles",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IStyleableComponentProps#theme:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "theme?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITheme",
+                  "canonicalReference": "@fluentui/theme!ITheme:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "theme",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IStyleableComponentProps#tokens:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tokens?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITokenFunctionOrObject",
+                  "canonicalReference": "@fluentui/foundation-legacy!ITokenFunctionOrObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TViewProps, TTokens>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "tokens",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!IStylesFunction:type",
+          "docComment": "/**\n * Function declaration for component styles functions.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IStylesFunction<TViewProps, TTokens, TStyleSet extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyleSet",
+              "canonicalReference": "@fluentui/merge-styles!IStyleSet:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TStyleSet>"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: TViewProps, theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITheme",
+              "canonicalReference": "@fluentui/theme!ITheme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", tokens: TTokens) => TStyleSet"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IStylesFunction",
+          "typeParameters": [
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TStyleSet",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 7
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!IStylesFunctionOrObject:type",
+          "docComment": "/**\n * Composite type for component styles functions and objects.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IStylesFunctionOrObject<TViewProps, TTokens, TStyleSet extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyleSet",
+              "canonicalReference": "@fluentui/merge-styles!IStyleSet:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TStyleSet>"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStylesFunction",
+              "canonicalReference": "@fluentui/foundation-legacy!IStylesFunction:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TViewProps, TTokens, TStyleSet> | TStyleSet"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IStylesFunctionOrObject",
+          "typeParameters": [
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TStyleSet",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/foundation-legacy!IThemeProviderProps:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IThemeProviderProps "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IThemeProviderProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IThemeProviderProps#scheme:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "scheme?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISchemeNames",
+                  "canonicalReference": "@fluentui/theme!ISchemeNames:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "scheme",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/foundation-legacy!IThemeProviderProps#theme:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "theme?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITheme",
+                  "canonicalReference": "@fluentui/theme!ITheme:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "theme",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!IToken:type",
+          "docComment": "/**\n * Tokens can be defined as an object, function, or an array of objects and functions.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IToken<TViewProps, TTokens> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITokenBase",
+              "canonicalReference": "@fluentui/foundation-legacy!ITokenBase:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TViewProps, TTokens> | "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITokenBaseArray",
+              "canonicalReference": "@fluentui/foundation-legacy!ITokenBaseArray:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TViewProps, TTokens>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IToken",
+          "typeParameters": [
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ITokenBase:type",
+          "docComment": "/**\n * Composite base type that includes all possible resolutions of token functions in an array.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ITokenBase<TViewProps, TTokens> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITokenFunctionOrObject",
+              "canonicalReference": "@fluentui/foundation-legacy!ITokenFunctionOrObject:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TViewProps, TTokens> | false | null | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ITokenBase",
+          "typeParameters": [
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/foundation-legacy!ITokenBaseArray:interface",
+          "docComment": "/**\n * Composite token base array type allowing for token objects, functions, and function resolutions.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ITokenBaseArray<TViewProps, TTokens> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Array",
+              "canonicalReference": "!Array:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IToken",
+              "canonicalReference": "@fluentui/foundation-legacy!IToken:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TViewProps, TTokens>> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "ITokenBaseArray",
+          "members": [],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ITokenFunction:type",
+          "docComment": "/**\n * Function declaration for component token functions.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ITokenFunction<TViewProps, TTokens> = "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: TViewProps, theme: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITheme",
+              "canonicalReference": "@fluentui/theme!ITheme:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "IToken",
+              "canonicalReference": "@fluentui/foundation-legacy!IToken:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TViewProps, TTokens>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ITokenFunction",
+          "typeParameters": [
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ITokenFunctionOrObject:type",
+          "docComment": "/**\n * Composite type for component token functions and objects.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ITokenFunctionOrObject<TViewProps, TTokens> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ITokenFunction",
+              "canonicalReference": "@fluentui/foundation-legacy!ITokenFunction:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TViewProps, TTokens> | TTokens"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ITokenFunctionOrObject",
+          "typeParameters": [
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TTokens",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!IViewComponent:type",
+          "docComment": "/**\n * Defines the contract for view components.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IViewComponent<TViewProps> = "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.PropsWithChildren",
+              "canonicalReference": "@types/react!~React.PropsWithChildren:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TViewProps>) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReturnType",
+              "canonicalReference": "!ReturnType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IViewComponent",
+          "typeParameters": [
+            {
+              "typeParameterName": "TViewProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/foundation-legacy!ThemeProvider:var",
+          "docComment": "/**\n * Theme provider is a simplified version of Customizer that activates the appropriate theme data for a given scheme name.\n *\n * @param providers - Injected providers for accessing theme data and providing it via a Customizer component.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ThemeProvider: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IThemeProviderProps",
+              "canonicalReference": "@fluentui/foundation-legacy!IThemeProviderProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ThemeProvider",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/foundation-legacy!useControlledState:function(1)",
+          "docComment": "/**\n * Controlled state helper that gives priority to props value. Useful for components that have props with both controlled and uncontrolled modes. Any props values will override state, but will not update internal state. If prop is defined and then later undefined, state will revert to its previous value.\n *\n * @param props - The props object containing controlled prop values.\n *\n * @param propName - The controlled prop name.\n *\n * @param options - Options. defaultPropValue is only used if defaultPropName (or its value) is undefined.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function useControlledState<TProps, TProp extends "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof TProps"
+            },
+            {
+              "kind": "Content",
+              "text": ", TDefaultProp extends "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof TProps"
+            },
+            {
+              "kind": "Content",
+              "text": ">(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Readonly",
+              "canonicalReference": "!Readonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps>"
+            },
+            {
+              "kind": "Content",
+              "text": ", propName: "
+            },
+            {
+              "kind": "Content",
+              "text": "TProp"
+            },
+            {
+              "kind": "Content",
+              "text": ", options?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IControlledStateOptions",
+              "canonicalReference": "@fluentui/foundation-legacy!IControlledStateOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps, TProp, TDefaultProp>"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "[TProps[TProp] | undefined, "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Dispatch",
+              "canonicalReference": "@types/react!~React.Dispatch:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "React.SetStateAction",
+              "canonicalReference": "@types/react!~React.SetStateAction:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TProps[TProp]>>]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 13,
+            "endIndex": 18
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "props",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              }
+            },
+            {
+              "parameterName": "propName",
+              "parameterTypeTokenRange": {
+                "startIndex": 8,
+                "endIndex": 9
+              }
+            },
+            {
+              "parameterName": "options",
+              "parameterTypeTokenRange": {
+                "startIndex": 10,
+                "endIndex": 12
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "TProps",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TProp",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TDefaultProp",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "useControlledState"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ValidProps:type",
+          "docComment": "/**\n * Defines valid prop types.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ValidProps = "
+            },
+            {
+              "kind": "Content",
+              "text": "object"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ValidProps",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/foundation-legacy!ValidShorthand:type",
+          "docComment": "/**\n * Defines valid shorthand prop types. These should match the defaultProp type provided to createComponent.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ValidShorthand = "
+            },
+            {
+              "kind": "Content",
+              "text": "string | number | boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ValidShorthand",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/foundation-legacy!withSlots:function(1)",
+          "docComment": "/**\n * This function is required for any module that uses slots.\n *\n * This function is a slot resolver that automatically evaluates slot functions to generate React elements. A byproduct of this resolver is that it removes slots from the React hierarchy by bypassing React.createElement.\n *\n * To use this function on a per-file basis, use the jsx directive targeting withSlots. This directive must be the FIRST LINE in the file to work correctly. Usage of this pragma also requires withSlots import statement.\n *\n * See React.createElement\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function withSlots<P>(type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlot",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlot:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<P> | "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<P> | string"
+            },
+            {
+              "kind": "Content",
+              "text": ", props?: "
+            },
+            {
+              "kind": "Content",
+              "text": "("
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Attributes",
+              "canonicalReference": "@types/react!~React.Attributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & P) | null"
+            },
+            {
+              "kind": "Content",
+              "text": ", ...children: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ReactNode",
+              "canonicalReference": "@types/react!~React.ReactNode:type"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReturnType",
+              "canonicalReference": "!ReturnType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<P>>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 13,
+            "endIndex": 17
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "type",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "parameterName": "props",
+              "parameterTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 9
+              }
+            },
+            {
+              "parameterName": "children",
+              "parameterTypeTokenRange": {
+                "startIndex": 10,
+                "endIndex": 12
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "P",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "withSlots"
+        }
+      ]
+    }
+  ]
+}

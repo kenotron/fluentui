@@ -1,0 +1,738 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/dom-utilities!",
+  "docComment": "",
+  "name": "@fluentui/dom-utilities",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/dom-utilities!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/dom-utilities!DATA_PORTAL_ATTRIBUTE:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "DATA_PORTAL_ATTRIBUTE = \"data-portal-element\""
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DATA_PORTAL_ATTRIBUTE",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/dom-utilities!elementContains:function(1)",
+          "docComment": "/**\n * Determines whether or not a parent element contains a given child element. If `allowVirtualParents` is true, this method may return `true` if the child has the parent in its virtual element hierarchy.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function elementContains(parent: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null"
+            },
+            {
+              "kind": "Content",
+              "text": ", child: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null"
+            },
+            {
+              "kind": "Content",
+              "text": ", allowVirtualParents?: "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 9,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "parent",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "parameterName": "child",
+              "parameterTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 6
+              }
+            },
+            {
+              "parameterName": "allowVirtualParents",
+              "parameterTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              }
+            }
+          ],
+          "name": "elementContains"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/dom-utilities!elementContainsAttribute:function(1)",
+          "docComment": "/**\n * Determines if an element, or any of its ancestors, contain the given attribute\n *\n * @param element - element to start searching at\n *\n * @param attribute - the attribute to search for\n *\n * @returns the value of the first instance found\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function elementContainsAttribute(element: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", attribute: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string | null"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "element",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "attribute",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "elementContainsAttribute"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/dom-utilities!findElementRecursive:function(1)",
+          "docComment": "/**\n * Finds the first parent element where the matchFunction returns true\n *\n * @param element - element to start searching at\n *\n * @param matchFunction - the function that determines if the element is a match\n *\n * @returns the matched element or null no match was found\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function findElementRecursive(element: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null"
+            },
+            {
+              "kind": "Content",
+              "text": ", matchFunction: "
+            },
+            {
+              "kind": "Content",
+              "text": "(element: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 8,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "element",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "parameterName": "matchFunction",
+              "parameterTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 7
+              }
+            }
+          ],
+          "name": "findElementRecursive"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/dom-utilities!getChildren:function(1)",
+          "docComment": "/**\n * Gets the elements which are child elements of the given element. If `allowVirtualChildren` is `true`, this method enumerates virtual child elements after the original children.\n *\n * @param parent - The element to get the children of.\n *\n * @param allowVirtualChildren - true if the method should enumerate virtual child elements.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getChildren(parent: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", allowVirtualChildren?: "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "parent",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "allowVirtualChildren",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "getChildren"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/dom-utilities!getParent:function(1)",
+          "docComment": "/**\n * Gets the element which is the parent of a given element. If `allowVirtuaParents` is `true`, this method prefers the virtual parent over real DOM parent when present.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getParent(child: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", allowVirtualParents?: "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "child",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "allowVirtualParents",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "getParent"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/dom-utilities!getVirtualParent:function(1)",
+          "docComment": "/**\n * Gets the virtual parent given the child element, if it exists.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function getVirtualParent(child: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "child",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "getVirtualParent"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/dom-utilities!isVirtualElement:function(1)",
+          "docComment": "/**\n * Determines whether or not an element has the virtual hierarchy extension.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function isVirtualElement(element: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "IVirtualElement",
+              "canonicalReference": "@fluentui/dom-utilities!IVirtualElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "element",
+              "canonicalReference": "@fluentui/dom-utilities!~element"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "IVirtualElement",
+              "canonicalReference": "@fluentui/dom-utilities!IVirtualElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "element",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "isVirtualElement"
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/dom-utilities!IVirtualElement:interface",
+          "docComment": "/**\n * Attached interface for elements which support virtual references. Used internally by the virtual hierarchy methods.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IVirtualElement extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IVirtualElement",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/dom-utilities!IVirtualElement#_virtual:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "_virtual: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        parent?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVirtualElement",
+                  "canonicalReference": "@fluentui/dom-utilities!IVirtualElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n        children: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IVirtualElement",
+                  "canonicalReference": "@fluentui/dom-utilities!IVirtualElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[];\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "_virtual",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/dom-utilities!portalContainsElement:function(1)",
+          "docComment": "/**\n * Determine whether a target is within a portal from perspective of root or optional parent. This function only works against portal components that use the setPortalAttribute function. If both parent and child are within the same portal this function will return false.\n *\n * @param target - Element to query portal containment status of.\n *\n * @param parent - Optional parent perspective. Search for containing portal stops at parent (or root if parent is undefined or invalid.)\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function portalContainsElement(target: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", parent?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "target",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "parent",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "portalContainsElement"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/dom-utilities!setPortalAttribute:function(1)",
+          "docComment": "/**\n * Identify element as a portal by setting an attribute.\n *\n * @param element - Element to mark as a portal.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function setPortalAttribute(element: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "element",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "setPortalAttribute"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@fluentui/dom-utilities!setVirtualParent:function(1)",
+          "docComment": "/**\n * Sets the virtual parent of an element. Pass `undefined` as the `parent` to clear the virtual parent.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function setVirtualParent(child: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", parent: "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 6,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "child",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "parent",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "setVirtualParent"
+        }
+      ]
+    }
+  ]
+}

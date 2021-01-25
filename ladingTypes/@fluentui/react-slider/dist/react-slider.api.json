@@ -1,0 +1,1220 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/react-slider!",
+  "docComment": "",
+  "name": "@fluentui/react-slider",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/react-slider!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-slider!ISlider:interface",
+          "docComment": "/**\n * {@docCategory Slider}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISlider "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISlider",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISlider#focus:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "focus: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "focus",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISlider#value:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "value",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-slider!ISliderProps:interface",
+          "docComment": "/**\n * {@docCategory Slider}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISliderProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Omit",
+              "canonicalReference": "!Omit:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "React.HTMLAttributes",
+              "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLDivElement",
+              "canonicalReference": "!HTMLDivElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">, 'defaultValue' | 'onChange'>"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.RefAttributes",
+              "canonicalReference": "@types/react!~React.RefAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLDivElement",
+              "canonicalReference": "!HTMLDivElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISliderProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#ariaLabel:member",
+              "docComment": "/**\n * A description of the Slider for the benefit of screen readers.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ariaLabel?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ariaLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#ariaValueText:member",
+              "docComment": "/**\n * A text description of the Slider number value for the benefit of screen readers. This should be used when the Slider number value is not accurately represented by a number.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ariaValueText?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(value: number) => string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ariaValueText",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#buttonProps:member",
+              "docComment": "/**\n * Optional mixin for additional props on the thumb button within the slider.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "buttonProps?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.HTMLAttributes",
+                  "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLButtonElement",
+                  "canonicalReference": "!HTMLButtonElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "buttonProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#className:member",
+              "docComment": "/**\n * Optional className to attach to the slider root element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "className?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "className",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#componentRef:member",
+              "docComment": "/**\n * Optional callback to access the ISlider interface. Use this instead of ref for accessing the public methods and properties of the component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentRef?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRefObject",
+                  "canonicalReference": "@fluentui/utilities!IRefObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISlider",
+                  "canonicalReference": "@fluentui/react-slider!ISlider:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "componentRef",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#defaultValue:member",
+              "docComment": "/**\n * The initial value of the Slider. Use this if you intend for the Slider to be an uncontrolled component. This value is mutually exclusive to value. Use one or the other.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "defaultValue?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "defaultValue",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#disabled:member",
+              "docComment": "/**\n * Optional flag to render the Slider as disabled.\n *\n * @defaultvalue\n *\n * false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "disabled?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "disabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#label:member",
+              "docComment": "/**\n * Description label of the Slider\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "label?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "label",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#max:member",
+              "docComment": "/**\n * The max value of the Slider\n *\n * @defaultvalue\n *\n * 10\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "max?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "max",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#min:member",
+              "docComment": "/**\n * The min value of the Slider\n *\n * @defaultvalue\n *\n * 0\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "min?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "min",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#onChange:member",
+              "docComment": "/**\n * Callback when the value has been changed\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onChange?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(value: number) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onChange",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#onChanged:member",
+              "docComment": "/**\n * Callback on mouse up or touch end\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onChanged?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "MouseEvent",
+                  "canonicalReference": "!MouseEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TouchEvent",
+                  "canonicalReference": "!TouchEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "KeyboardEvent",
+                  "canonicalReference": "!KeyboardEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", value: number) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onChanged",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 8
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#originFromZero:member",
+              "docComment": "/**\n * Optional flag to attach the origin of slider to zero. Helpful when the range include negatives.\n *\n * @defaultvalue\n *\n * false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "originFromZero?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "originFromZero",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#showValue:member",
+              "docComment": "/**\n * Whether to show the value on the right of the Slider.\n *\n * @defaultvalue\n *\n * true\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "showValue?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "showValue",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#snapToStep:member",
+              "docComment": "/**\n * Optional flag to decide that thumb will snap to closest value while moving the slider\n *\n * @defaultvalue\n *\n * false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "snapToStep?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "snapToStep",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#step:member",
+              "docComment": "/**\n * The difference between the two adjacent values of the Slider\n *\n * @defaultvalue\n *\n * 1\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "step?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "step",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#styles:member",
+              "docComment": "/**\n * Call to provide customized styling that will layer on top of the variant rules.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "styles?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyleFunctionOrObject",
+                  "canonicalReference": "@fluentui/merge-styles!IStyleFunctionOrObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISliderStyleProps",
+                  "canonicalReference": "@fluentui/react-slider!ISliderStyleProps:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ISliderStyles",
+                  "canonicalReference": "@fluentui/react-slider!ISliderStyles:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "styles",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 7
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#theme:member",
+              "docComment": "/**\n * Theme provided by High-Order Component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "theme?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ITheme",
+                  "canonicalReference": "@fluentui/theme!ITheme:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "theme",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#value:member",
+              "docComment": "/**\n * The initial value of the Slider. Use this if you intend to pass in a new value as a result of onChange events. This value is mutually exclusive to defaultValue. Use one or the other.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "value?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "value",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#valueFormat:member",
+              "docComment": "/**\n * Optional function to format the slider value.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "valueFormat?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(value: number) => string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "valueFormat",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps#vertical:member",
+              "docComment": "/**\n * Optional flag to render the slider vertically. Defaults to rendering horizontal.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "vertical?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "vertical",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 7
+            },
+            {
+              "startIndex": 8,
+              "endIndex": 12
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-slider!ISliderStyleProps:type",
+          "docComment": "/**\n * {@docCategory Slider}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ISliderStyleProps = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Required",
+              "canonicalReference": "!Required:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ISliderProps",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", 'theme'>> & "
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ISliderProps",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", 'className' | 'disabled' | 'vertical'> & {\n    showTransitions?: boolean;\n    showValue?: boolean;\n    titleLabelClassName?: string;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISliderStyleProps",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-slider!ISliderStyles:interface",
+          "docComment": "/**\n * {@docCategory Slider}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ISliderStyles "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ISliderStyles",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderStyles#activeSection:member",
+              "docComment": "/**\n * Style set for active portion of the line.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "activeSection: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "activeSection",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderStyles#container:member",
+              "docComment": "/**\n * Style set for the container of the slider.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "container: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "container",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderStyles#inactiveSection:member",
+              "docComment": "/**\n * Style set for inactive portion of the line.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "inactiveSection: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "inactiveSection",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderStyles#line:member",
+              "docComment": "/**\n * Style set for element that contains all the lines.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "line: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "line",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderStyles#lineContainer:member",
+              "docComment": "/**\n * Style set for both active and inactive sections of the line.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "lineContainer: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "lineContainer",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderStyles#root:member",
+              "docComment": "/**\n * Style set for the root element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "root: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "root",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderStyles#slideBox:member",
+              "docComment": "/**\n * Style set for the actual box containting interactive elements of the slider.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "slideBox: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "slideBox",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderStyles#thumb:member",
+              "docComment": "/**\n * Style set for thumb of the slider.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "thumb: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "thumb",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderStyles#titleLabel:member",
+              "docComment": "/**\n * Style set for the title label above the slider.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "titleLabel: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "titleLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderStyles#valueLabel:member",
+              "docComment": "/**\n * Style set for value label on right/below of the slider.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "valueLabel: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "valueLabel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-slider!ISliderStyles#zeroTick:member",
+              "docComment": "/**\n * Style set for tick on 0 on number line. This element only shows up when originFromZero prop is true.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "zeroTick: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyle",
+                  "canonicalReference": "@fluentui/merge-styles!IStyle:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "zeroTick",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-slider!ONKEYDOWN_TIMEOUT_DURATION:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ONKEYDOWN_TIMEOUT_DURATION = 1000"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ONKEYDOWN_TIMEOUT_DURATION",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-slider!Slider:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "Slider: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ISliderProps",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Slider",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-slider!SliderBase:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "SliderBase: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ISliderProps",
+              "canonicalReference": "@fluentui/react-slider!ISliderProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SliderBase",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        }
+      ]
+    }
+  ]
+}

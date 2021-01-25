@@ -1,0 +1,2091 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/react-cards!",
+  "docComment": "",
+  "name": "@fluentui/react-cards",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/react-cards!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-cards!Card:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "Card: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardProps",
+              "canonicalReference": "@fluentui/react-cards!ICardProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> & {\n    Item: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemProps",
+              "canonicalReference": "@fluentui/react-cards!ICardItemProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">;\n    Section: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionProps",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">;\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Card",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 13
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-cards!CardItem:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "CardItem: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemProps",
+              "canonicalReference": "@fluentui/react-cards!ICardItemProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CardItem",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-cards!CardSection:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "CardSection: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.FunctionComponent",
+              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionProps",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CardSection",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICard:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICard "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICard",
+          "members": [],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardComponent:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardComponent = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IComponent",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardProps",
+              "canonicalReference": "@fluentui/react-cards!ICardProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardTokens",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardStyles",
+              "canonicalReference": "@fluentui/react-cards!ICardStyles:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardComponent",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICardItem:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICardItem "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardItem",
+          "members": [],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardItemComponent:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardItemComponent = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IComponent",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemProps",
+              "canonicalReference": "@fluentui/react-cards!ICardItemProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemTokens",
+              "canonicalReference": "@fluentui/react-cards!ICardItemTokens:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemStyles",
+              "canonicalReference": "@fluentui/react-cards!ICardItemStyles:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemViewProps",
+              "canonicalReference": "@fluentui/react-cards!ICardItemViewProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardItemComponent",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICardItemProps:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICardItemProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemSlots",
+              "canonicalReference": "@fluentui/react-cards!ICardItemSlots:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IStackItemProps",
+              "canonicalReference": "@fluentui/react-internal!IStackItemProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", 'grow' | 'shrink' | 'disableShrink' | 'align' | 'verticalFill' | 'order'>"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyleableComponentProps",
+              "canonicalReference": "@fluentui/foundation-legacy!IStyleableComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemProps",
+              "canonicalReference": "@fluentui/react-cards!ICardItemProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemTokens",
+              "canonicalReference": "@fluentui/react-cards!ICardItemTokens:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemStyles",
+              "canonicalReference": "@fluentui/react-cards!ICardItemStyles:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IBaseProps",
+              "canonicalReference": "@fluentui/utilities!IBaseProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItem",
+              "canonicalReference": "@fluentui/react-cards!ICardItem:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardItemProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardItemProps#fill:member",
+              "docComment": "/**\n * Determines if the CardItem should disregard the children margin specified by Card.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fill?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fill",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            },
+            {
+              "startIndex": 3,
+              "endIndex": 7
+            },
+            {
+              "startIndex": 8,
+              "endIndex": 16
+            },
+            {
+              "startIndex": 17,
+              "endIndex": 21
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardItemSlot:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardItemSlot = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlotProp",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotProp:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemProps",
+              "canonicalReference": "@fluentui/react-cards!ICardItemProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardItemSlot",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICardItemSlots:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICardItemSlots extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStackItemSlots",
+              "canonicalReference": "@fluentui/react-internal!IStackItemSlots:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardItemSlots",
+          "members": [],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardItemStyles:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardItemStyles = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IComponentStyles",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponentStyles:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemSlots",
+              "canonicalReference": "@fluentui/react-cards!ICardItemSlots:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardItemStyles",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardItemStylesReturnType:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardItemStylesReturnType = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReturnType",
+              "canonicalReference": "!ReturnType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Extract",
+              "canonicalReference": "!Extract:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemComponent",
+              "canonicalReference": "@fluentui/react-cards!ICardItemComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "['styles'], "
+            },
+            {
+              "kind": "Reference",
+              "text": "Function",
+              "canonicalReference": "!Function:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardItemStylesReturnType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardItemTokenReturnType:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardItemTokenReturnType = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReturnType",
+              "canonicalReference": "!ReturnType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Extract",
+              "canonicalReference": "!Extract:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemComponent",
+              "canonicalReference": "@fluentui/react-cards!ICardItemComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "['tokens'], "
+            },
+            {
+              "kind": "Reference",
+              "text": "Function",
+              "canonicalReference": "!Function:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardItemTokenReturnType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICardItemTokens:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICardItemTokens extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStackItemTokens",
+              "canonicalReference": "@fluentui/react-internal!IStackItemTokens:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardItemTokens",
+          "members": [],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICardItemViewProps:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICardItemViewProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardItemProps",
+              "canonicalReference": "@fluentui/react-cards!ICardItemProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardItemViewProps",
+          "members": [],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICardProps:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICardProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSlots",
+              "canonicalReference": "@fluentui/react-cards!ICardSlots:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyleableComponentProps",
+              "canonicalReference": "@fluentui/foundation-legacy!IStyleableComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardProps",
+              "canonicalReference": "@fluentui/react-cards!ICardProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardTokens",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardStyles",
+              "canonicalReference": "@fluentui/react-cards!ICardStyles:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IBaseProps",
+              "canonicalReference": "@fluentui/utilities!IBaseProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICard",
+              "canonicalReference": "@fluentui/react-cards!ICard:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.AllHTMLAttributes",
+              "canonicalReference": "@types/react!~React.AllHTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardProps#horizontal:member",
+              "docComment": "/**\n * Defines whether to render a vertical or a horizontal Card.\n *\n * @defaultvalue\n *\n * false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "horizontal?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "horizontal",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardProps#onClick:member",
+              "docComment": "/**\n * Defines a callback that is called when the Card is clicked.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onClick?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(ev?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.MouseEvent",
+                  "canonicalReference": "@types/react!~React.MouseEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onClick",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardProps#onKeyDown:member",
+              "docComment": "/**\n * Defines a callback that is called when the Card is a key is pressed down while focus is on the Card.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onKeyDown?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(ev?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.KeyboardEvent",
+                  "canonicalReference": "@types/react!~React.KeyboardEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onKeyDown",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            },
+            {
+              "startIndex": 3,
+              "endIndex": 11
+            },
+            {
+              "startIndex": 12,
+              "endIndex": 16
+            },
+            {
+              "startIndex": 17,
+              "endIndex": 21
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICardSection:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICardSection "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardSection",
+          "members": [],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardSectionComponent:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardSectionComponent = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IComponent",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionProps",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionTokens",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionTokens:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionStyles",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionStyles:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionViewProps",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionViewProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardSectionComponent",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICardSectionProps:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICardSectionProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionSlots",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionSlots:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IStackProps",
+              "canonicalReference": "@fluentui/react-internal!IStackProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", 'as' | 'horizontal' | 'reversed' | 'horizontalAlign' | 'verticalAlign' | 'verticalFill' | 'disableShrink' | 'grow' | 'wrap'>"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStyleableComponentProps",
+              "canonicalReference": "@fluentui/foundation-legacy!IStyleableComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionProps",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionTokens",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionTokens:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionStyles",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionStyles:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "IBaseProps",
+              "canonicalReference": "@fluentui/utilities!IBaseProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSection",
+              "canonicalReference": "@fluentui/react-cards!ICardSection:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardSectionProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionProps#fill:member",
+              "docComment": "/**\n * Determines if the CardSection should disregard the children margin specified by Card.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fill?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fill",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            },
+            {
+              "startIndex": 3,
+              "endIndex": 7
+            },
+            {
+              "startIndex": 8,
+              "endIndex": 16
+            },
+            {
+              "startIndex": 17,
+              "endIndex": 21
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardSectionSlot:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardSectionSlot = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ISlotProp",
+              "canonicalReference": "@fluentui/foundation-legacy!ISlotProp:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionProps",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardSectionSlot",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICardSectionSlots:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICardSectionSlots extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IStackSlots",
+              "canonicalReference": "@fluentui/react-internal!IStackSlots:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", 'root'> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardSectionSlots",
+          "members": [],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardSectionStyles:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardSectionStyles = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IComponentStyles",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponentStyles:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionSlots",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionSlots:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardSectionStyles",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardSectionStylesReturnType:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardSectionStylesReturnType = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReturnType",
+              "canonicalReference": "!ReturnType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Extract",
+              "canonicalReference": "!Extract:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionComponent",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "['styles'], "
+            },
+            {
+              "kind": "Reference",
+              "text": "Function",
+              "canonicalReference": "!Function:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardSectionStylesReturnType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardSectionTokenReturnType:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardSectionTokenReturnType = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReturnType",
+              "canonicalReference": "!ReturnType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Extract",
+              "canonicalReference": "!Extract:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionComponent",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "['tokens'], "
+            },
+            {
+              "kind": "Reference",
+              "text": "Function",
+              "canonicalReference": "!Function:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardSectionTokenReturnType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICardSectionTokens:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICardSectionTokens extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStackTokens",
+              "canonicalReference": "@fluentui/react-internal!IStackTokens:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardSectionTokens",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionTokens#margin:member",
+              "docComment": "/**\n * Defines the margin to be applied to the CardSection relative to its container.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "margin?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "margin",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICardSectionViewProps:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICardSectionViewProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSectionProps",
+              "canonicalReference": "@fluentui/react-cards!ICardSectionProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardSectionViewProps",
+          "members": [],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICardSlots:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICardSlots "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardSlots",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardSlots#root:member",
+              "docComment": "/**\n * Defines the root slot of the component for managing the layout of the Card.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "root?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStackSlot",
+                  "canonicalReference": "@fluentui/react-internal!IStackSlot:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "root",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardStyles:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardStyles = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IComponentStyles",
+              "canonicalReference": "@fluentui/foundation-legacy!IComponentStyles:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardSlots",
+              "canonicalReference": "@fluentui/react-cards!ICardSlots:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardStyles",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardStylesReturnType:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardStylesReturnType = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReturnType",
+              "canonicalReference": "!ReturnType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Extract",
+              "canonicalReference": "!Extract:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardComponent",
+              "canonicalReference": "@fluentui/react-cards!ICardComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "['styles'], "
+            },
+            {
+              "kind": "Reference",
+              "text": "Function",
+              "canonicalReference": "!Function:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardStylesReturnType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-cards!ICardTokenReturnType:type",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ICardTokenReturnType = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReturnType",
+              "canonicalReference": "!ReturnType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Extract",
+              "canonicalReference": "!Extract:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ICardComponent",
+              "canonicalReference": "@fluentui/react-cards!ICardComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "['tokens'], "
+            },
+            {
+              "kind": "Reference",
+              "text": "Function",
+              "canonicalReference": "!Function:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardTokenReturnType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-cards!ICardTokens:interface",
+          "docComment": "/**\n * {@docCategory Card}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ICardTokens extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "IStackTokens",
+              "canonicalReference": "@fluentui/react-internal!IStackTokens:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ICardTokens",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#borderFocused:member",
+              "docComment": "/**\n * Defines the border of the Card when it is in a focused state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "borderFocused?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "borderFocused",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#boxShadow:member",
+              "docComment": "/**\n * Defines the box shadow of the Card.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "boxShadow?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "boxShadow",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#boxShadowFocused:member",
+              "docComment": "/**\n * Defines the box shadow of the Card when it is in a focused state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "boxShadowFocused?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "boxShadowFocused",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#boxShadowHovered:member",
+              "docComment": "/**\n * Defines the box shadow of the Card when it is in a hovered state.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "boxShadowHovered?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "boxShadowHovered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#childrenMargin:member",
+              "docComment": "/**\n * Defines the margin that is applied to the Card's children.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "childrenMargin?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "childrenMargin",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#cursor:member",
+              "docComment": "/**\n * Defines the mouse cursor to be displayed when pointing over the Card.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "cursor?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "cursor",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#height:member",
+              "docComment": "/**\n * Defines a fixed height for the Card.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "height?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "height",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#highContrastBoxShadow:member",
+              "docComment": "/**\n * Defines the box shadow of the Card when in high contrast mode.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "highContrastBoxShadow?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "highContrastBoxShadow",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#highContrastBoxShadowFocused:member",
+              "docComment": "/**\n * Defines the box shadow of the Card when it is in a focused state and in high contrast mode.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "highContrastBoxShadowFocused?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "highContrastBoxShadowFocused",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#highContrastBoxShadowHovered:member",
+              "docComment": "/**\n * Defines the box shadow of the Card when it is in a hovered state and in high contrast mode.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "highContrastBoxShadowHovered?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "highContrastBoxShadowHovered",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#maxWidth:member",
+              "docComment": "/**\n * Defines the maximum width of the Card.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "maxWidth?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "maxWidth",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#minHeight:member",
+              "docComment": "/**\n * Defines a minimum height the Card has regardless of the contents within it.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "minHeight?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "minHeight",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#minWidth:member",
+              "docComment": "/**\n * Defines the minimum width of the Card.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "minWidth?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "minWidth",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-cards!ICardTokens#width:member",
+              "docComment": "/**\n * Defines a fixed width for the Card.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "width?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "width",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

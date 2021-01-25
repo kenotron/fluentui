@@ -9,7 +9,7 @@ export interface ILink {
     focus(): void;
 }
 /**
- * {@docCategory Link}
+ * @deprecated No longer used.
  */
 export interface ILinkHTMLAttributes<T> extends React.HTMLAttributes<T> {
     type?: string;
@@ -29,17 +29,39 @@ export interface ILinkHTMLAttributes<T> extends React.HTMLAttributes<T> {
     formTarget?: string;
     name?: string;
     value?: string | string[] | number;
-    [index: string]: any;
+    /** Any other props for HTMLElements or a React component passed to `as` */
+    [key: string]: any;
 }
 /**
+ * Link component props. All built-in props for `<a>` and `<button>` are supported (including
+ * various event handlers) even if not listed below.
  * {@docCategory Link}
  */
-export interface ILinkProps extends ILinkHTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLElement>, React.RefAttributes<HTMLElement> {
+export interface ILinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLElement>, Omit<React.ButtonHTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLElement>, 'type'>, React.RefAttributes<HTMLElement> {
     /**
      * Optional callback to access the ILink interface. Use this instead of ref for accessing
      * the public methods and properties of the component.
      */
     componentRef?: IRefObject<ILink>;
+    /**
+     * URL the link points to. If not provided, the link renders as a button (unless that behavior is
+     * overridden using `as`).
+     */
+    href?: string;
+    /**
+     * Where to open the linked URL. Common values are `_blank` (a new tab or window),
+     * `_self` (the current window/context), `_parent`, and `_top`.
+     */
+    target?: string;
+    /**
+     * Relationship to the linked URL (can be a space-separated list).
+     * Most common values are `noreferrer` and/or `noopener`.
+     */
+    rel?: string;
+    /**
+     * Click handler for the link.
+     */
+    onClick?: (event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement | HTMLElement>) => void;
     /**
      * Whether the link is disabled
      */
@@ -56,6 +78,14 @@ export interface ILinkProps extends ILinkHTMLAttributes<HTMLAnchorElement | HTML
      * A component type or primitive that is rendered as the type of the root element.
      */
     as?: React.ElementType;
+    /**
+     * Built-in HTML attribute with different behavior depending on how the link is rendered.
+     * If rendered as `<a>`, hints at the MIME type.
+     * If rendered as `<button>`, override the type of button (`button` is the default).
+     */
+    type?: string;
+    /** Any other props for elements or a React component passed to `as` */
+    [key: string]: any;
 }
 /**
  * {@docCategory Link}

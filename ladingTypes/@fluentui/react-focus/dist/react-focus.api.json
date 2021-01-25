@@ -1,0 +1,1883 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/react-focus!",
+  "docComment": "",
+  "name": "@fluentui/react-focus",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/react-focus!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "@fluentui/react-focus!FocusZone:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class FocusZone extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Component",
+              "canonicalReference": "@types/react!~React.Component:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "IFocusZoneProps",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            },
+            {
+              "kind": "Content",
+              "text": "implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IFocusZone",
+              "canonicalReference": "@fluentui/react-focus!IFocusZone:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FocusZone",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@fluentui/react-focus!FocusZone:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `FocusZone` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(props: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFocusZoneProps",
+                  "canonicalReference": "@fluentui/react-focus!IFocusZoneProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-focus!FocusZone#componentDidMount:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentDidMount(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "componentDidMount"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-focus!FocusZone#componentDidUpdate:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentDidUpdate(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "componentDidUpdate"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-focus!FocusZone#componentWillUnmount:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentWillUnmount(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "componentWillUnmount"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@fluentui/react-focus!FocusZone.defaultProps:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static defaultProps: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFocusZoneProps",
+                  "canonicalReference": "@fluentui/react-focus!IFocusZoneProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "defaultProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": true
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-focus!FocusZone#focus:member(1)",
+              "docComment": "/**\n * Sets focus to the first tabbable item in the zone.\n *\n * @param forceIntoFirstElement - If true, focus will be forced into the first element, even if focus is already in the focus zone.\n *\n * @returns True if focus could be set to an active element, false if no operation was taken.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "focus(forceIntoFirstElement?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "forceIntoFirstElement",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "focus"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-focus!FocusZone#focusElement:member(1)",
+              "docComment": "/**\n * Sets focus to a specific child element within the zone. This can be used in conjunction with shouldReceiveFocus to create delayed focus scenarios (like animate the scroll position to the correct location and then focus.)\n *\n * @param element - The child element within the zone to focus.\n *\n * @param forceAlignment - If true, focus alignment will be set according to the element provided.\n *\n * @returns True if focus could be set to an active element, false if no operation was taken.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "focusElement(element: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", forceAlignment?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "element",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "forceAlignment",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "focusElement"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-focus!FocusZone#focusLast:member(1)",
+              "docComment": "/**\n * Sets focus to the last tabbable item in the zone.\n *\n * @returns True if focus could be set to an active element, false if no operation was taken.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "focusLast(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "focusLast"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-focus!FocusZone.getOuterZones:member(1)",
+              "docComment": "/**\n * Used for testing purposes only.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static getOuterZones(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getOuterZones"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-focus!FocusZone#render:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "render(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.ReactNode",
+                  "canonicalReference": "@types/react!~React.ReactNode:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "render"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@fluentui/react-focus!FocusZone#setFocusAlignment:member(1)",
+              "docComment": "/**\n * Forces horizontal alignment in the context of vertical arrowing to use specific point as the reference, rather than a center based on the last horizontal motion.\n *\n * @param point - the new reference point.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setFocusAlignment(point: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Point",
+                  "canonicalReference": "@fluentui/utilities!Point:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "point",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "setFocusAlignment"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": [
+            {
+              "startIndex": 6,
+              "endIndex": 8
+            }
+          ]
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@fluentui/react-focus!FocusZoneDirection:enum",
+          "docComment": "/**\n * {@docCategory FocusZone}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum FocusZoneDirection "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FocusZoneDirection",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-focus!FocusZoneDirection.bidirectional:member",
+              "docComment": "/**\n * React to all arrows.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "bidirectional = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "2"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "bidirectional",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-focus!FocusZoneDirection.domOrder:member",
+              "docComment": "/**\n * React to all arrows. Navigate next item in DOM on right/down arrow keys and previous - left/up arrow keys. Right and Left arrow keys are swapped in RTL mode.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "domOrder = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "3"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "domOrder",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-focus!FocusZoneDirection.horizontal:member",
+              "docComment": "/**\n * Only react to left/right arrows.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "horizontal = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "horizontal",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@fluentui/react-focus!FocusZoneDirection.vertical:member",
+              "docComment": "/**\n * Only react to up/down arrows.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "vertical = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "0"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "vertical",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@fluentui/react-focus!FocusZoneTabbableElements:type",
+          "docComment": "/**\n * {@docCategory FocusZone}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type FocusZoneTabbableElements = "
+            },
+            {
+              "kind": "Content",
+              "text": "typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "FocusZoneTabbableElements",
+              "canonicalReference": "@fluentui/react-focus!FocusZoneTabbableElements:var"
+            },
+            {
+              "kind": "Content",
+              "text": "[keyof typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "FocusZoneTabbableElements",
+              "canonicalReference": "@fluentui/react-focus!FocusZoneTabbableElements:var"
+            },
+            {
+              "kind": "Content",
+              "text": "]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FocusZoneTabbableElements",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-focus!FocusZoneTabbableElements:var",
+          "docComment": "/**\n * {@docCategory FocusZone}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "FocusZoneTabbableElements: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    none: 0;\n    all: 1;\n    inputOnly: 2;\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "FocusZoneTabbableElements",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-focus!IFocusZone:interface",
+          "docComment": "/**\n * FocusZone component class interface. {@docCategory FocusZone}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFocusZone "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFocusZone",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZone#focus:member(1)",
+              "docComment": "/**\n * Sets focus to the first tabbable item in the zone.\n *\n * @param forceIntoFirstElement - If true, focus will be forced into the first element, even if focus is already in the focus zone.\n *\n * @returns True if focus could be set to an active element, false if no operation was taken.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "focus(forceIntoFirstElement?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "forceIntoFirstElement",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "focus"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZone#focusElement:member(1)",
+              "docComment": "/**\n * Sets focus to a specific child element within the zone. This can be used in conjunction with shouldReceiveFocus to create delayed focus scenarios (like animate the scroll position to the correct location and then focus.)\n *\n * @param childElement - The child element within the zone to focus.\n *\n * @param forceAlignment - If true, focus alignment will be set according to the element provided.\n *\n * @returns True if focus could be set to an active element, false if no operation was taken.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "focusElement(childElement?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", forceAlignment?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "childElement",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "forceAlignment",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "focusElement"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZone#focusLast:member(1)",
+              "docComment": "/**\n * Sets focus to the last tabbable item in the zone.\n *\n * @returns True if focus could be set to an active element, false if no operation was taken.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "focusLast(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "focusLast"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZone#setFocusAlignment:member(1)",
+              "docComment": "/**\n * Forces horizontal alignment in the context of vertical arrowing to use specific point as the reference, rather than a center based on the last horizontal motion.\n *\n * @param point - the new reference point.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setFocusAlignment(point: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Point",
+                  "canonicalReference": "@fluentui/utilities!Point:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "point",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "setFocusAlignment"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-focus!IFocusZoneProps:interface",
+          "docComment": "/**\n * FocusZone component props. {@docCategory FocusZone}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IFocusZoneProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.HTMLAttributes",
+              "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "FocusZone",
+              "canonicalReference": "@fluentui/react-focus!FocusZone:class"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IFocusZoneProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#allowFocusRoot:member",
+              "docComment": "/**\n * Allows focus to park on root when focus is in the `FocusZone` at render time.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "allowFocusRoot?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "allowFocusRoot",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#allowTabKey:member",
+              "docComment": "/**\n * Allows tab key to be handled to tab through a list of items in the focus zone, an unfortunate side effect is that users will not be able to tab out of the focus zone and have to hit escape or some other key.\n *\n * @deprecated\n *\n * Use `handleTabKey` instead.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "allowTabKey?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "allowTabKey",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#ariaDescribedBy:member",
+              "docComment": "/**\n * Sets the aria-describedby attribute.\n *\n * @deprecated\n *\n * Directly use the `aria-describedby` attribute instead\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ariaDescribedBy?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ariaDescribedBy",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#ariaLabelledBy:member",
+              "docComment": "/**\n * Sets the aria-labelledby attribute.\n *\n * @deprecated\n *\n * Directly use the `aria-labelledby` attribute instead\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ariaLabelledBy?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ariaLabelledBy",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#as:member",
+              "docComment": "/**\n * A component that should be used as the root element of the FocusZone component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "as?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.ElementType",
+                  "canonicalReference": "@types/react!~React.ElementType:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "as",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#checkForNoWrap:member",
+              "docComment": "/**\n * Determines whether to check for data-no-horizontal-wrap or data-no-vertical-wrap attributes when determining how to move focus\n *\n * @defaultvalue\n *\n * false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "checkForNoWrap?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "checkForNoWrap",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#className:member",
+              "docComment": "/**\n * Additional class name to provide on the root element, in addition to the ms-FocusZone class.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "className?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "className",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#componentRef:member",
+              "docComment": "/**\n * Optional callback to access the IFocusZone interface. Use this instead of ref for accessing the public methods and properties of the component.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "componentRef?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IRefObject",
+                  "canonicalReference": "@fluentui/utilities!IRefObject:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IFocusZone",
+                  "canonicalReference": "@fluentui/react-focus!IFocusZone:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "componentRef",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#defaultActiveElement:member",
+              "docComment": "/**\n * Optionally provide a selector for identifying the initial active element.\n *\n * @deprecated\n *\n * Use `defaultTabbableElement` instead.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "defaultActiveElement?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "defaultActiveElement",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#defaultTabbableElement:member",
+              "docComment": "/**\n * Optionally defines the initial tabbable element inside the FocusZone. If a string is passed then it is treated as a selector for identifying the initial tabbable element. If a function is passed then it uses the root element as a parameter to return the initial tabbable element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "defaultTabbableElement?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | ((root: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ")"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "defaultTabbableElement",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#direction:member",
+              "docComment": "/**\n * Defines which arrows to react to.\n *\n * @defaultvalue\n *\n * FocusZoneDirection.bidirectional\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "direction?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FocusZoneDirection",
+                  "canonicalReference": "@fluentui/react-focus!FocusZoneDirection:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "direction",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#disabled:member",
+              "docComment": "/**\n * If set, the FocusZone will not be tabbable and keyboard navigation will be disabled. This does not affect disabled attribute of any child.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "disabled?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "disabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#doNotAllowFocusEventToPropagate:member",
+              "docComment": "/**\n * Whether the FocusZone should allow focus events to propagate past the FocusZone.\n *\n * @deprecated\n *\n * Use `stopFocusPropagation` instead.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "doNotAllowFocusEventToPropagate?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "doNotAllowFocusEventToPropagate",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#elementRef:member",
+              "docComment": "/**\n * Optional callback to access the root DOM element.\n *\n * @deprecated\n *\n * Temporary solution which will be replaced with ref in the V8 release.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "elementRef?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.Ref",
+                  "canonicalReference": "@types/react!~React.Ref:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "elementRef",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#elementType:member",
+              "docComment": "/**\n * Element type the root element will use. Default is \"div\".\n *\n * @deprecated\n *\n * Use 'as' instead.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "elementType?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "elementType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#handleTabKey:member",
+              "docComment": "/**\n * Allows tab key to be handled to tab through a list of items in the focus zone, an unfortunate side effect is that users will not be able to tab out of the focus zone and have to hit escape or some other key.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "handleTabKey?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FocusZoneTabbableElements",
+                  "canonicalReference": "@fluentui/react-focus!FocusZoneTabbableElements:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "handleTabKey",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#isCircularNavigation:member",
+              "docComment": "/**\n * If set, will cycle to the beginning of the targets once the user navigates to the next target while at the end, and to the end when navigate to the previous at the beginning.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isCircularNavigation?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "isCircularNavigation",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#isInnerZoneKeystroke:member",
+              "docComment": "/**\n * If provided, this callback will be executed on keypresses to determine if the user intends to navigate into the inner zone. Returning true will ask the first inner zone to set focus.\n *\n * @deprecated\n *\n * Use `shouldEnterInnerZone` instead.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isInnerZoneKeystroke?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(ev: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.KeyboardEvent",
+                  "canonicalReference": "@types/react!~React.KeyboardEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">) => boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "isInnerZoneKeystroke",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#onActiveElementChanged:member",
+              "docComment": "/**\n * Callback for when one of immediate children elements gets active by getting focused or by having one of its respective children elements focused.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onActiveElementChanged?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(element?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", ev?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.FocusEvent",
+                  "canonicalReference": "@types/react!~React.FocusEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onActiveElementChanged",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 8
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#onBeforeFocus:member",
+              "docComment": "/**\n * Callback method for determining if focus should indeed be set on the given element.\n *\n * @deprecated\n *\n * Use `shouldReceiveFocus` instead.\n *\n * @param element - The child element within the zone to focus.\n *\n * @returns True if focus should be set to the given element, false to avoid setting focus.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onBeforeFocus?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(childElement?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onBeforeFocus",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#onFocus:member",
+              "docComment": "/**\n * Callback called when \"focus\" event triggered in FocusZone.\n *\n * @param event - React's original FocusEvent.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onFocus?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.FocusEvent",
+                  "canonicalReference": "@types/react!~React.FocusEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "FocusZone",
+                  "canonicalReference": "@fluentui/react-focus!FocusZone:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onFocus",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 8
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#onFocusNotification:member",
+              "docComment": "/**\n * Callback to notify creators that focus has been set on the FocusZone\n *\n * @deprecated\n *\n * Use `onFocus` instead.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onFocusNotification?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onFocusNotification",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#pagingSupportDisabled:member",
+              "docComment": "/**\n * Determines whether to disable the paging support for Page Up and Page Down keyboard scenarios.\n *\n * @defaultvalue\n *\n * false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "pagingSupportDisabled?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "pagingSupportDisabled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#preventDefaultWhenHandled:member",
+              "docComment": "/**\n * If true, FocusZone prevents the default behavior of Keyboard events when changing focus between elements.\n *\n * @defaultvalue\n *\n * false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "preventDefaultWhenHandled?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "preventDefaultWhenHandled",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#preventFocusRestoration:member",
+              "docComment": "/**\n * If true, prevents the FocusZone from attempting to restore the focus to the inner element when the focus is on the root element after componentDidUpdate.\n *\n * @defaultvalue\n *\n * false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "preventFocusRestoration?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "preventFocusRestoration",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#rootProps:member",
+              "docComment": "/**\n * Deprecated at v1.12.1. DIV props provided to the FocusZone will be mixed into the root element.\n *\n * @deprecated\n *\n * DIV props provided to the FocusZone will be mixed into the root element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "rootProps?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.HTMLAttributes",
+                  "canonicalReference": "@types/react!~React.HTMLAttributes:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLDivElement",
+                  "canonicalReference": "!HTMLDivElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "rootProps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#shouldEnterInnerZone:member",
+              "docComment": "/**\n * Callback function that will be executed on keypresses to determine if the user intends to navigate into the inner (nested) zone. Returning true will ask the first inner zone to set focus.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shouldEnterInnerZone?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(ev: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "React.KeyboardEvent",
+                  "canonicalReference": "@types/react!~React.KeyboardEvent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">) => boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "shouldEnterInnerZone",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#shouldFocusInnerElementWhenReceivedFocus:member",
+              "docComment": "/**\n * If true and FocusZone's root element (container) receives focus, the focus will land either on the defaultTabbableElement (if set) or on the first tabbable element of this FocusZone. Usually a case for nested focus zones, when the nested focus zone's container is a focusable element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shouldFocusInnerElementWhenReceivedFocus?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "shouldFocusInnerElementWhenReceivedFocus",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#shouldFocusOnMount:member",
+              "docComment": "/**\n * Determines if a default tabbable element should be force focused on FocusZone mount.  @default false\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shouldFocusOnMount?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "shouldFocusOnMount",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#shouldInputLoseFocusOnArrowKey:member",
+              "docComment": "/**\n * A callback method to determine if the input element should lose focus on arrow keys\n *\n * @param inputElement - The input element which is to loose focus.\n *\n * @returns True if input element should loose focus or false otherwise.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shouldInputLoseFocusOnArrowKey?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(inputElement: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLInputElement",
+                  "canonicalReference": "!HTMLInputElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "shouldInputLoseFocusOnArrowKey",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#shouldRaiseClicks:member",
+              "docComment": "/**\n * Determines whether the FocusZone will walk up the DOM trying to invoke click callbacks on focusable elements on Enter and Space keydowns to ensure accessibility for tags that don't guarantee this behavior.\n *\n * @defaultvalue\n *\n * true\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shouldRaiseClicks?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "shouldRaiseClicks",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#shouldReceiveFocus:member",
+              "docComment": "/**\n * Callback method for determining if focus should indeed be set on the given element.\n *\n * @param element - The child element within the zone to focus.\n *\n * @returns True if focus should be set to the given element, false to avoid setting focus.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shouldReceiveFocus?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(childElement?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "HTMLElement",
+                  "canonicalReference": "!HTMLElement:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "shouldReceiveFocus",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#shouldResetActiveElementWhenTabFromZone:member",
+              "docComment": "/**\n * If true and TAB key is not handled by FocusZone, resets current active element to null value. For example, when roving index is not desirable and focus should always reset to the default tabbable element.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shouldResetActiveElementWhenTabFromZone?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "shouldResetActiveElementWhenTabFromZone",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-focus!IFocusZoneProps#stopFocusPropagation:member",
+              "docComment": "/**\n * Whether the FocusZone should allow focus events to propagate past the FocusZone.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "stopFocusPropagation?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "stopFocusPropagation",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

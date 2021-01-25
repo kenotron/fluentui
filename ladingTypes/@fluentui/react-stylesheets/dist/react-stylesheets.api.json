@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/react-stylesheets!",
+  "docComment": "",
+  "name": "@fluentui/react-stylesheets",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/react-stylesheets!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-stylesheets!StylesheetContext:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "StylesheetContext: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.Context",
+              "canonicalReference": "@types/react!~React.Context:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "StylesheetContextType",
+              "canonicalReference": "@fluentui/react-stylesheets!StylesheetContextType:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "StylesheetContext",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-stylesheets!StylesheetProvider:var",
+          "docComment": "/**\n * Provider for registering stylesheets in a given target document. The `register` method can be called many times and will only register once per unique target document.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "StylesheetProvider: "
+            },
+            {
+              "kind": "Content",
+              "text": "(props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.PropsWithChildren",
+              "canonicalReference": "@types/react!~React.PropsWithChildren:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "StylesheetProviderProps",
+              "canonicalReference": "@fluentui/react-stylesheets!StylesheetProviderProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX.Element",
+              "canonicalReference": "@types/react!~__global.JSX.Element:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "StylesheetProvider",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 7
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@fluentui/react-stylesheets!StylesheetProviderProps:interface",
+          "docComment": "/**\n * Props for the StylesheetProvider conmponent.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface StylesheetProviderProps "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "StylesheetProviderProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-stylesheets!StylesheetProviderProps#renderStyles:member",
+              "docComment": "/**\n * Optional callback for overriding the default render function for rendering stylesheets.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "renderStyles?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(stylesheets: string[], context: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "StylesheetProviderProps",
+                  "canonicalReference": "@fluentui/react-stylesheets!StylesheetProviderProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "renderStyles",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@fluentui/react-stylesheets!StylesheetProviderProps#target:member",
+              "docComment": "/**\n * Target document to render styles to. Defaults to the `document` global object.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "target?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Document",
+                  "canonicalReference": "!Document:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "target",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-stylesheets!useStylesheet:var",
+          "docComment": "/**\n * A hook for providing a stylesheet or array of stylesheets. Can be used standalone or with the `StylesheetProvider` component to direct styles to be registered to a different target such as a child window or as a string in SSR scenarios.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useStylesheet: "
+            },
+            {
+              "kind": "Content",
+              "text": "(sheets: string | string[] | undefined) => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "useStylesheet",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        }
+      ]
+    }
+  ]
+}

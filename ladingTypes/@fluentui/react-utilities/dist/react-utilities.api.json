@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@fluentui/react-utilities!",
+  "docComment": "",
+  "name": "@fluentui/react-utilities",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@fluentui/react-utilities!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@fluentui/react-utilities!childrenExist:var",
+          "docComment": "/**\n * Tests if children are nil in React and Preact.\n *\n * @param children - The children prop of a component.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "childrenExist: "
+            },
+            {
+              "kind": "Content",
+              "text": "(children: "
+            },
+            {
+              "kind": "Reference",
+              "text": "React.ReactNode",
+              "canonicalReference": "@types/react!~React.ReactNode:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "childrenExist",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        }
+      ]
+    }
+  ]
+}

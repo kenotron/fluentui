@@ -102,6 +102,13 @@ export declare class TextFieldBase extends React.Component<ITextFieldProps, ITex
      */
     private get _errorMessage();
     /**
+     * Renders error message based on the type of the message.
+     *
+     * - If error message is string, it will render using the built in styles.
+     * - If error message is an element, user has full control over how it's rendered.
+     */
+    private _renderErrorMessage;
+    /**
      * If a custom description render function is supplied then treat description as always available.
      * Otherwise defer to the presence of description or error message text.
      */

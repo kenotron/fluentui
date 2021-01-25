@@ -19,4 +19,4 @@ export declare const FontIcon: React.FunctionComponent<IFontIconProps>;
  * @param ariaLabel - Label for the icon for the benefit of screen readers.
  * {@docCategory Icon}
  */
-export declare const getFontIcon: (iconName: string, className?: string | undefined, ariaLabel?: string | undefined) => React.ReactElement<any, string | ((props: any) => React.ReactElement<any, string | any | (new (props: any) => React.Component<any, any, any>)> | null) | (new (props: any) => React.Component<any, any, any>)> | null;
+export declare const getFontIcon: (iconName: string, className?: string | undefined, ariaLabel?: string | undefined) => React.ReactElement<any, any> | null;
