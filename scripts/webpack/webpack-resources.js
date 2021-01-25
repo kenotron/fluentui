@@ -5,9 +5,8 @@
  * @typedef {WebpackConfig & { devServer?: object }} WebpackServeConfig
  * @typedef {import("webpack").Entry} WebpackEntry
  * @typedef {import("webpack").Module} WebpackModule
- * @typedef {import("webpack").Output} WebpackOutput
  */
-/** */
+
 const webpack = require('webpack');
 const path = require('path');
 const fs = require('fs');
@@ -20,6 +19,9 @@ const { findGitRoot } = require('../monorepo/index');
 
 // @ts-ignore
 const webpackVersion = require('webpack/package.json').version;
+const { EnvironmentPlugin } = require('webpack');
+const defaultEnvironmentVars = require('./defaultEnvironmentVars');
+
 console.log(`Webpack version: ${webpackVersion}`);
 
 const gitRoot = findGitRoot();
@@ -204,8 +206,16 @@ module.exports = {
               : output,
 
           externals: {
-            react: 'React',
-            'react-dom': 'ReactDOM',
+            react: {
+              commonjs: 'react',
+              amd: 'react',
+              root: 'React',
+            },
+            'react-dom': {
+              commonjs: 'react-dom',
+              amd: 'react-dom',
+              root: 'ReactDOM',
+            },
           },
 
           resolve: {
@@ -305,7 +315,6 @@ module.exports = {
         plugins: [
           ...(!process.env.TF_BUILD ? [new ForkTsCheckerWebpackPlugin()] : []),
           ...(process.env.TF_BUILD || process.env.LAGE_PACKAGE_NAME ? [] : [new webpack.ProgressPlugin()]),
-          // ...(!process.env.TF_BUILD && process.env.cached ? [new HardSourceWebpackPlugin()] : []),
         ],
       },
       customConfig,
@@ -350,6 +359,9 @@ module.exports = {
         // Use the aliases for react-examples since the examples and demo may depend on some things
         // that the package itself doesn't (and it will include the aliases for all the package's deps)
         alias: getResolveAlias(false /*useLib*/, reactExamples),
+        fallback: {
+          path: require.resolve('path-browserify'),
+        },
       },
     });
   },
@@ -358,7 +370,7 @@ module.exports = {
 function getPlugins(bundleName, isProduction, profile) {
   const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-  const plugins = [];
+  const plugins = [new EnvironmentPlugin(defaultEnvironmentVars)];
 
   if (isProduction && profile) {
     plugins.push(

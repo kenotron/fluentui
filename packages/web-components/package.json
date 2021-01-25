@@ -2,7 +2,7 @@
   "name": "@fluentui/web-components",
   "description": "A library of Fluent Web Components",
   "sideEffects": false,
-  "version": "0.10.2",
+  "version": "0.10.6",
   "author": {
     "name": "Microsoft",
     "url": "https://discord.gg/FcSNfg4"
@@ -74,6 +74,7 @@
     "karma-source-map-support": "^1.4.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^4.0.2",
+    "lodash-es": "^4.17.20",
     "mocha": "^7.1.2",
     "prettier": "~1.19.1",
     "rollup": "^2.7.6",
@@ -84,14 +85,15 @@
     "rollup-plugin-transform-tagged-template": "^0.0.3",
     "rollup-plugin-typescript2": "^0.27.0",
     "source-map": "^0.7.3",
-    "source-map-loader": "^2.0.0",
-    "ts-loader": "^8.0.14",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^7.0.2",
     "ts-node": "^8.0.0",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.9.0",
-    "webpack": "^5.12.3"
+    "webpack": "^4.43.0"
   },
   "dependencies": {
+    "lodash-es": "^4.17.20",
     "@microsoft/fast-colors": "^5.1.0",
     "@microsoft/fast-components-styles-msft": "^4.29.0",
     "@microsoft/fast-element": "^0.21.1",

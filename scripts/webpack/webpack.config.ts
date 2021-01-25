@@ -8,6 +8,7 @@ import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
 import config from '../config';
+import defaultEnvironmentVars from './defaultEnvironmentVars';
 
 const { paths } = config;
 const { __DEV__, __PERF__, __PROD__ } = config.compiler_globals;
@@ -40,7 +41,9 @@ const webpackConfig: webpack.Configuration = {
     'react-dom': 'ReactDOM',
     'react-dom/server': 'ReactDOMServer',
   },
-  node: false,
+  node: {
+    global: true,
+  },
   module: {
     noParse: [/anchor-js/],
     rules: [
@@ -65,8 +68,8 @@ const webpackConfig: webpack.Configuration = {
       typescript: {
         configFile: paths.docs('tsconfig.json'),
       },
-      // watch: [paths.docsSrc(), paths.packages()],
     }),
+    new webpack.EnvironmentPlugin(defaultEnvironmentVars),
     new webpack.DefinePlugin(config.compiler_globals),
     new webpack.ContextReplacementPlugin(/node_modules[\\|/]typescript[\\|/]lib/, /typescript\.js/, false),
     new (CopyWebpackPlugin as any)({
