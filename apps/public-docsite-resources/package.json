@@ -31,7 +31,8 @@
     "@types/webpack-env": "1.16.0",
     "@fluentui/scripts": "^1.0.0",
     "react-app-polyfill": "~1.0.1",
-    "react-dom": "16.8.6"
+    "react-dom": "16.8.6",
+    "@lading/webpack": "^1.0.2"
   },
   "dependencies": {
     "@fluentui/react-examples": "^1.0.0",
@@ -46,6 +47,7 @@
     "@types/react": "16.9.42",
     "office-ui-fabric-core": "^11.0.0",
     "react": "16.8.6",
-    "tslib": "^1.10.0"
+    "tslib": "^1.10.0",
+    "@lading/client": "^1.2.0"
   }
 }

@@ -4,7 +4,7 @@ import { PrimaryButton, DefaultButton } from '@fluentui/react/lib/compat/Button'
 import { ContextualMenu } from '@fluentui/react/lib/ContextualMenu';
 import { SpinButton } from '@fluentui/react/lib/SpinButton';
 import { Toggle } from '@fluentui/react/lib/Toggle';
-import { ComboBox, IComboBoxOption, SelectableOptionMenuItemType } from '@fluentui/react/lib/index';
+import { ComboBox, IComboBoxOption, SelectableOptionMenuItemType } from '@fluentui/react';
 import { useBoolean } from '@fluentui/react-hooks';
 
 const options: IComboBoxOption[] = [

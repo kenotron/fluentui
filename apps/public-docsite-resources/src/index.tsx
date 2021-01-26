@@ -1,9 +1,6 @@
-import { createDemoApp } from '@fluentui/react-docsite-components';
-import { configureEnvironment } from '@fluentui/react-monaco-editor';
-import { AppDefinition } from './AppDefinition';
-import { GettingStartedPage } from './GettingStartedPage';
-
-// Configure example editor
-configureEnvironment({ baseUrl: '.', useMinified: false });
-
-createDemoApp(AppDefinition, GettingStartedPage);
+import { bootstrap } from '@lading/client';
+// arg1: url for the lading server
+// arg2: the manifest name configured on the server
+bootstrap('https://lading-app.azurewebsites.net', 'fluent-website').then(() => {
+  import('./bootstrap');
+});

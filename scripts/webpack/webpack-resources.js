@@ -28,7 +28,7 @@ const gitRoot = findGitRoot();
 
 const cssRule = {
   test: /\.css$/,
-  include: /node_modules/,
+  // include: /node_modules/,
   use: ['style-loader', 'css-loader'],
 };
 
@@ -61,24 +61,24 @@ function shouldPrepend(config) {
  * Prepends the entry points with a react 16 compatible polyfill but only for sites that have react as a dependency
  */
 function createEntryWithPolyfill(entry, config) {
-  if (shouldPrepend(config) && entry) {
-    validateEnv();
+  // if (shouldPrepend(config) && entry) {
+  //   validateEnv();
 
-    const polyfill = 'react-app-polyfill/ie11';
-    if (typeof entry === 'string') {
-      return [polyfill, entry];
-    } else if (Array.isArray(entry)) {
-      return [polyfill, ...entry];
-    } else if (typeof entry === 'object') {
-      const newEntry = { ...entry };
+  //   const polyfill = 'react-app-polyfill/ie11';
+  //   if (typeof entry === 'string') {
+  //     return [polyfill, entry];
+  //   } else if (Array.isArray(entry)) {
+  //     return [polyfill, ...entry];
+  //   } else if (typeof entry === 'object') {
+  //     const newEntry = { ...entry };
 
-      Object.keys(entry).forEach(entryPoint => {
-        newEntry[entryPoint] = createEntryWithPolyfill(entry[entryPoint], config);
-      });
+  //     Object.keys(entry).forEach(entryPoint => {
+  //       newEntry[entryPoint] = createEntryWithPolyfill(entry[entryPoint], config);
+  //     });
 
-      return newEntry;
-    }
-  }
+  //     return newEntry;
+  //   }
+  // }
 
   return entry;
 }
@@ -313,7 +313,7 @@ module.exports = {
         },
 
         plugins: [
-          ...(!process.env.TF_BUILD ? [new ForkTsCheckerWebpackPlugin()] : []),
+          // ...(!process.env.TF_BUILD ? [new ForkTsCheckerWebpackPlugin()] : []),
           ...(process.env.TF_BUILD || process.env.LAGE_PACKAGE_NAME ? [] : [new webpack.ProgressPlugin()]),
         ],
       },

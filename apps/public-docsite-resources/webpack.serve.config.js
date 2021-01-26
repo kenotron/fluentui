@@ -1,22 +1,43 @@
+const webpack = require('webpack');
 const getResolveAlias = require('@fluentui/scripts/webpack/getResolveAlias');
 const resources = require('@fluentui/scripts/webpack/webpack-resources');
 const { addMonacoWebpackConfig } = require('@fluentui/react-monaco-editor/scripts/addMonacoWebpackConfig');
+const { remoteExternal } = require('@lading/webpack');
+const { webpackMerge } = require('just-scripts');
+const path = require('path');
 
 const BUNDLE_NAME = 'demo-app';
 
-module.exports = resources.createServeConfig(
-  addMonacoWebpackConfig({
-    entry: {
-      [BUNDLE_NAME]: './src/index.tsx',
-    },
+const cssRule = {
+  test: /\.css$/,
+  // include: /node_modules/,
+  use: ['style-loader', 'css-loader'],
+};
 
-    externals: {
-      react: 'React',
-      'react-dom': 'ReactDOM',
-    },
+const config = resources.createServeConfig({
+  entry: './src/index.tsx',
+  mode: 'development',
+  output: {
+    filename: `${BUNDLE_NAME}.js`,
+  },
 
-    resolve: {
-      alias: getResolveAlias(),
-    },
-  }),
-);
+  devtool: 'cheap-module-source-map',
+
+  plugins: [
+    new webpack.container.ModuleFederationPlugin({
+      remotes: {
+        '@fluentui/react': remoteExternal('fluentuiReact'),
+      },
+      shared: {
+        react: { singleton: true },
+        'react-dom': { singleton: true },
+      },
+    }),
+  ],
+
+  resolve: {
+    alias: getResolveAlias(),
+  },
+});
+
+module.exports = config;

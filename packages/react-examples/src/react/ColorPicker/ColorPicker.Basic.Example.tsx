@@ -9,7 +9,7 @@ import {
   IColorPickerStyles,
   IColorPickerProps,
   updateA,
-} from '@fluentui/react/lib/index';
+} from '@fluentui/react';
 import { mergeStyleSets } from '@fluentui/react/lib/Styling';
 
 const white = getColorFromString('#ffffff')!;

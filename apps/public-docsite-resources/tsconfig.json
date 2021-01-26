@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "outDir": "lib",
     "target": "es5",
-    "module": "commonjs",
+    "module": "ESNext",
     "jsx": "react",
     "declaration": true,
     "sourceMap": true,
@@ -17,6 +17,7 @@
     "preserveConstEnums": true,
     "noImplicitThis": true,
     "skipLibCheck": true,
+    "esModuleInterop": true,
     "lib": ["es5", "dom", "es2015.promise"],
     "typeRoots": ["../../node_modules/@types", "../../typings"],
     "types": ["webpack-env", "custom-global"],
@@ -24,6 +25,5 @@
       "*": ["../../ladingTypes/*"]
     }
   },
-  //"include": ["src"],
-  "files": ["src/theme/AppThemes.ts"]
+  "include": ["src"]
 }

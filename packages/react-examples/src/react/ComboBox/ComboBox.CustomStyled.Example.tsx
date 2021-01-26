@@ -1,11 +1,5 @@
 import * as React from 'react';
-import {
-  ComboBox,
-  IComboBoxOption,
-  SelectableOptionMenuItemType,
-  Fabric,
-  mergeStyles,
-} from '@fluentui/react/lib/index';
+import { ComboBox, IComboBoxOption, SelectableOptionMenuItemType, Fabric, mergeStyles } from '@fluentui/react';
 
 const wrapperClassName = mergeStyles({
   selectors: {

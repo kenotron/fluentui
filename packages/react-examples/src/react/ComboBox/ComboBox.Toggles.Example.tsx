@@ -1,12 +1,5 @@
 import * as React from 'react';
-import {
-  ComboBox,
-  Fabric,
-  IComboBoxOption,
-  mergeStyles,
-  SelectableOptionMenuItemType,
-  Toggle,
-} from '@fluentui/react/lib/index';
+import { ComboBox, Fabric, IComboBoxOption, mergeStyles, SelectableOptionMenuItemType, Toggle } from '@fluentui/react';
 import { useBoolean } from '@fluentui/react-hooks';
 
 const INITIAL_OPTIONS: IComboBoxOption[] = [
