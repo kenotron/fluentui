@@ -7,8 +7,6 @@ import { HomePage } from './pages/HomePage/HomePage';
 import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
 import { androidLogo, appleLogo, webLogo, macLogo, windowsLogo, crossPlatformLogo } from './utilities/index';
 
-// TODO: handle redirects
-
 initializeFileTypeIcons('https://static2.sharepointonline.com/files/fabric/assets/item-types/');
 
 setRTL(false);
