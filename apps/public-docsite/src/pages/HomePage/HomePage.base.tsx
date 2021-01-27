@@ -27,7 +27,8 @@ import {
 } from '../../utilities/index';
 import { IHomePageProps, IHomePageStyles, IHomePageStyleProps } from './HomePage.types';
 import { monoFont } from './HomePage.styles';
-const reactPackageData = require<any>('@fluentui/react/package.json');
+
+const reactPackageData = { version: 'beta' };
 
 const getClassNames = classNamesFunction<IHomePageStyleProps, IHomePageStyles>();
 
@@ -219,7 +220,7 @@ export class HomePageBase extends React.Component<IHomePageProps, IHomePageState
                     },
                   }}
                 >
-                  Fluent UI React {reactPackageData.version}
+                  Fluent UI React ({reactPackageData.version})
                 </ActionButton>
               </li>
             </ul>

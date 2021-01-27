@@ -34,11 +34,10 @@
     "@fluentui/scripts": "^1.0.0",
     "@fluentui/react-monaco-editor": "^1.0.0-beta.38",
     "react-app-polyfill": "~1.0.1",
-    "write-file-webpack-plugin": "^4.1.0"
+    "write-file-webpack-plugin": "^4.1.0",
+    "@lading/webpack": "^1.0.2"
   },
   "dependencies": {
-    "@fluentui/react": "^8.0.0-beta.39",
-    "@fluentui/react-internal": "^8.0.0-beta.35",
     "@fluentui/react-examples": "^1.0.0",
     "@fluentui/theme": "^2.0.0-beta.12",
     "@microsoft/load-themed-styles": "^1.10.26",
@@ -51,6 +50,7 @@
     "@fluentui/set-version": "^8.0.0-beta.0",
     "@fluentui/theme-samples": "^8.0.0-beta.38",
     "@fluentui/utilities": "^8.0.0-beta.9",
+    "@lading/client": "^1.2.1",
     "@types/react": "16.9.42",
     "@types/react-dom": "16.9.10",
     "json-loader": "^0.5.7",
