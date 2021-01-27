@@ -20,9 +20,9 @@
     "typeRoots": ["../../node_modules/@types", "../../typings"],
     "types": ["jest", "webpack-env", "custom-global", "node"],
     "paths": {
+      "*": ["../../ladingTypes/*"],
       "@fluentui/react-examples/lib/*": ["./src/*"],
-      "@fluentui/react-examples": ["./src"],
-      "*": ["../../ladingTypes/*"]
+      "@fluentui/react-examples": ["./src"]
     }
   },
   "include": ["src"]

@@ -32,22 +32,18 @@
     "@fluentui/scripts": "^1.0.0",
     "react-app-polyfill": "~1.0.1",
     "react-dom": "16.8.6",
-    "@lading/webpack": "^1.0.2"
+    "@lading/webpack": "^1.0.2",
+    "@microsoft/load-themed-styles": "^1.10.26"
   },
   "dependencies": {
     "@fluentui/react-examples": "^1.0.0",
-    "@fluentui/react-internal": "^8.0.0-beta.35",
-    "@microsoft/load-themed-styles": "^1.10.26",
     "@fluentui/api-docs": "^1.0.0",
-    "@fluentui/azure-themes": "^8.0.0-beta.38",
     "@fluentui/react-docsite-components": "^8.0.0-beta.39",
-    "@fluentui/font-icons-mdl2": "^8.0.0-beta.12",
-    "@fluentui/theme-samples": "^8.0.0-beta.38",
     "@fluentui/react-monaco-editor": "^1.0.0-beta.38",
+    "@lading/client": "^1.2.1",
     "@types/react": "16.9.42",
     "office-ui-fabric-core": "^11.0.0",
     "react": "16.8.6",
-    "tslib": "^1.10.0",
-    "@lading/client": "^1.2.0"
+    "tslib": "^1.10.0"
   }
 }

@@ -118,7 +118,7 @@
     "portfinder": "^1.0.20",
     "postcss": "^8.2.4",
     "postcss-loader": "^4.1.0",
-    "postcss-modules": "^2.0.0",
+    "postcss-modules": "^4.0.0",
     "prettier": "~1.19.1",
     "progress": "^2.0.3",
     "prompts": "^2.3.0",

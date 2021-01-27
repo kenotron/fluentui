@@ -3,8 +3,6 @@ const getResolveAlias = require('@fluentui/scripts/webpack/getResolveAlias');
 const resources = require('@fluentui/scripts/webpack/webpack-resources');
 const { addMonacoWebpackConfig } = require('@fluentui/react-monaco-editor/scripts/addMonacoWebpackConfig');
 const { remoteExternal } = require('@lading/webpack');
-const { webpackMerge } = require('just-scripts');
-const path = require('path');
 
 const BUNDLE_NAME = 'demo-app';
 
